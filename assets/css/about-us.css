@@ -1,0 +1,154 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.about-us {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.about-us .about-us-img img {
+  width: 100%;
+}
+
+.about-us .about-us-discription h1 {
+  font-size: 30px;
+  color: #0f383b;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-us .about-us-discription p {
+  line-height: 28px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+
+.our-missions {
+  background-color: #0f383b;
+  padding-bottom: 50px;
+}
+
+.our-missions .mission-and-vision h2 {
+  font-size: 30px;
+  color: #fec407;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.our-missions .mission-and-vision p {
+  color: #fff;
+}
+
+.our-missions .mission-img img {
+  width: 100%;
+}
+
+.our-services {
+  background-color: #f5f5f5;
+  padding: 50px 0px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.our-services h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #0f383b;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.our-services .service1, .our-services .service3, .our-services .service5 {
+  text-align: center;
+}
+
+.our-services .service1 .empty-space, .our-services .service3 .empty-space, .our-services .service5 .empty-space {
+  width: 100%;
+  height: 150px;
+}
+
+.our-services .service1 .service-number, .our-services .service3 .service-number, .our-services .service5 .service-number {
+  text-align: center;
+  font-size: 60px;
+  color: #fec407;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 20px 22px;
+  border: 20px solid #175559;
+  border-radius: 50%;
+}
+
+.our-services .service1 p, .our-services .service3 p, .our-services .service5 p {
+  margin-top: 100px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.our-services .service1 p::before, .our-services .service3 p::before, .our-services .service5 p::before {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 2px;
+  height: 50px;
+  content: '';
+  background-color: #175559;
+}
+
+.our-services .service2, .our-services .service4, .our-services .service6 {
+  text-align: center;
+}
+
+.our-services .service2 .empty-space, .our-services .service4 .empty-space, .our-services .service6 .empty-space {
+  width: 100%;
+  height: 150px;
+}
+
+.our-services .service2 .service-number, .our-services .service4 .service-number, .our-services .service6 .service-number {
+  text-align: center;
+  font-size: 60px;
+  color: #fec407;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 20px 22px;
+  border: 20px solid #175559;
+  border-radius: 50%;
+}
+
+.our-services .service2 p, .our-services .service4 p, .our-services .service6 p {
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.our-services .service2 p::before, .our-services .service4 p::before, .our-services .service6 p::before {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 2px;
+  height: 50px;
+  content: '';
+  background-color: #175559;
+}
+/*# sourceMappingURL=about-us.css.map */

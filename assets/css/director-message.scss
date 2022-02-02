@@ -1,0 +1,47 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+.message {
+    
+    background-color: $heading-primary-color;
+    padding: 50px 0px;
+    padding-top: 100px;
+    background-size: cover;
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+    .message-details {
+        padding-top: 200px;
+        h1 {
+            font-size: 30px;
+            color: $button-bg-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,212 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+.home-screen-banner {
+    position: relative;
+    .university-img {
+        width: 100%;
+        min-height: 700px;
+        max-height: 900px;
+    }
+    .university-name {
+        text-align: center;
+        padding: 50px;
+        position: absolute;
+        bottom: -120px;        
+        left: 50%;
+        transform: translate(-50%);
+        width: 50%;
+        height: 50%;
+        background-color: rgba(23, 85, 89, 0.8);
+        img {
+            width: 150px;
+            max-height: 200px;
+        }
+        h1 {
+            margin-top: 30px;
+            color: $button-bg-color;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.about-university {
+    width: 80%;
+    margin: 150px auto 100px auto;
+    p {
+        line-height: 30px;
+    }
+}
+
+.advantages {
+    text-align: center;
+    padding: 50px 0px;
+    background-color: $heading-primary-color;
+    h2 {
+        text-align: center;
+        color: $button-bg-color;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+    }
+    img {
+        width: 50%;
+        margin-bottom: -200px;
+        // box-shadow: 10px  10px 10px rgba(0,0,0,0.5);
+    }
+}
+
+.fee-strucutre {
+    margin-top: 200px;
+    padding: 50px 0px;
+    border-top: 1px dashed $text-color2;
+    border-bottom: 1px dashed $text-color2;
+
+    
+    h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    table {
+        // margin: 0 auto;
+        
+        min-width: 700px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+    table,
+    th,
+    td {
+        text-align: center;
+        border: 1px solid #000;
+        font-size: 20px;
+        // text-transform: lowercase;
+    }
+    th {
+        background-color: $heading-primary-color;
+        color: #fff;
+    }
+    th,
+    td {
+        padding: 20px 0px;
+    }
+    .description{
+        font-family: serif;
+    }
+}
+
+.admission-process {
+    margin-bottom: 50px;
+    .top-img-wrapper {
+        margin-top: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .admission-process-details {
+        background-color: $primary-bg-color;
+        padding: 50px 0px;
+        h2 {
+            text-align: center;
+            color: $button-bg-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        h3 {
+            background-color: $heading-primary-color;
+            padding: 12px 0px;
+            font-size: 20px;
+            font-weight: bold;
+            color: $button-bg-color;
+            text-align: center;
+        }
+        .admission-card {
+            .setps,
+            .card-discription {
+                height: 160px;
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .card-discription {
+            position: relative;
+            background-color: $heading-primary-color;
+            p {
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                padding: 0px 30px;
+            }
+            &::after {
+                position: absolute;
+                top: 10px;
+                right: -25px;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 25px solid $heading-primary-color;
+                border-bottom: 25px solid transparent;
+            }
+            &::before {
+                position: absolute;
+                top: -20px;
+                right: 50%;
+                transform: translate(-50%);
+                content: "";
+                width: 10px;
+                height: 20px;
+                background-color: $heading-primary-color;
+            }
+        }
+        .admission-card1,
+        .admission-card3,
+        .admission-card5 {
+            .card-discription {
+                &::after {
+                    top: 100px;
+                    right: -25px;
+                }
+            }
+        }
+        .admission-card2,
+        .admission-card4,
+        .admission-card6 {
+            .card-discription {
+                &::before {
+                    top: 160px;
+                }
+            }
+        }
+    }
+}

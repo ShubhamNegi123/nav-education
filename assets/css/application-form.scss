@@ -1,0 +1,117 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 80%;
+    }
+}
+
+.application-form {
+    margin-top: 300px;
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        color: $heading-primary-color;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    form {        
+        position: relative;
+        background-color: #f5f5f5;
+        padding: 200px 100px;
+        box-sizing: border-box;
+        border-top: 60px solid #ffa000;
+        border-right: 40px solid #ffa000;
+        border-left: 40px solid #ffa000;
+        .form-upper-img,.form-bottom-img{
+            position: absolute;
+        }
+        .form-upper-img{
+            top: -154px;
+            left: 50%;
+            transform: translate(-50%);
+            img{
+                width: 90%;
+            }
+        }
+        .form-bottom-img{
+            bottom: 0px;
+            right: -400px;
+            transform: translate(-50%);
+            img{
+                width: 80%;
+            }
+        }
+        .basic-details,.ssc-qualification,.hsc-qualification,.neet-qualification{ 
+            label{
+                color: $text-color;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .error{
+                visibility: hidden;
+                opacity: 0;
+            }
+            input{
+                border: 2px solid #c0c0c0;
+                width: 90%;
+                height: 35px;
+                background-color: #fff;
+            }
+            input[type="checkbox"]{
+                border: 2px solid #c0c0c0;
+                width: 20px;
+                border: 1px solid #000;
+                margin-right: 10px;
+            }
+        }
+        .ssc-qualification,.hsc-qualification,.neet-qualification{
+            h2{
+                text-align: center;
+                font-size: 30px;
+                color: $heading-primary-color;
+                font-weight: bold;
+                margin-top: 40px ;
+            }
+            h3{
+                margin-top: 20px;
+                font-size: 22px;
+                color: $heading-primary-color;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            select{
+                border: 2px solid #c0c0c0;
+                width: 100%;
+                height: 35px;
+                margin-bottom: 20px;
+            }
+            
+        }
+        .submit-button{
+            text-align: center;
+            margin-top: 20px;
+            button{
+                padding: 3px 35px;
+                border-radius: 20px;
+                background-color: $heading-primary-color;
+                color: $button-bg-color;
+                font-size: 18px;
+            }
+        }
+    }
+}
