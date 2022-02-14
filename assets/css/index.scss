@@ -1,0 +1,1018 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 80%;
+    }
+}
+.nav-sidebar-button {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    display: none;
+    cursor: pointer;
+    i {
+        font-size: 30px;
+    }
+}
+
+.nav-close-button {
+    z-index: 999999;
+    position: absolute;
+    top: 75px;
+    right: -25px;
+    display: none;
+    cursor: pointer;
+    i {
+        font-size: 30px;
+        color: #fff;
+    }
+}
+
+#translator{
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;    
+    // background-color: $text-secondary-color;
+    padding: 5px 7px 5px 10px;
+}
+.top-header {
+    background-color: $primary-bg-color;
+    .top-header-left-section,
+    .top-header-right-section {
+        .contact-details,
+        .login-details {
+            ul {
+                justify-content: space-between;
+                li {
+                    padding: 8px 0px;
+                    margin-right: 25px;
+                    a {
+                        font-size: 13px;
+                        color: #fff;
+                        font-family: "Ubuntu", sans-serif;
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 38px;
+    left: 0px;    
+    nav {
+        padding: 10px 0px;
+        z-index: 999;
+        height: 175px;
+        background: url(../images/header-bg1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 80%;
+        .nav-sidebar {
+            cursor: pointer;
+            i {
+                font-size: 30px;
+            }
+        }
+        .website-logo {
+            a {
+                img {
+                    width: 60%;
+                }
+            }
+        }
+        .nav-bar-tabs {       
+            ul {
+                justify-content: space-around;
+                li {
+                    a {
+                        font-size: 13px;
+                        font-family: "Ubuntu", sans-serif;
+                        color: #000;
+                        i {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .countries-tab {
+                    padding-bottom: 10px;
+                    position: relative;
+                    .countries-list {      
+                        opacity: 0;  
+                        visibility: hidden;      
+                        transition: all .3s ease;          
+                        position: absolute;
+                        top: 100px;
+                        width: 150px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        background-color: $heading-primary-color;
+                        li {                            
+                            a {
+                                border-left: 4px solid $heading-primary-color;
+                                transition: all .3s ease;
+                                padding: 10px 20px;                             
+                                // text-align: center;
+                                display: block;
+                                font-size: 13px;
+                                font-family: "Ubuntu", sans-serif;
+                                color: #fff;
+                                &:hover{
+                                    transition: all .3s ease;
+                                    border-left: 4px solid $button-bg-color;
+                                    background: $primary-bg-color;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .countries-list {  
+                            top: 30px;                                
+                            opacity: 1;
+                            visibility: visible;      
+                        }
+                    }
+                }
+            }
+        }
+        .nav-social-icons {
+            ul {
+                justify-content: space-evenly;
+                li {
+                    a {
+                        i {
+                            color: #000;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .fixed-nav-img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+//  home section starts from here
+.home {
+    overflow: hidden;
+    position: relative;
+    padding-top: 40vh;
+    height: 100vh;
+    background: url(../images/home-bg.svg);
+    background-position: center;
+    background-size: cover;
+    .home-banner-heading {
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: $heading-primary-color;
+            line-height: 50px;
+        }
+        p {
+            font-size: 18px;
+            color: $primary-bg-color;
+            margin-bottom: 40px;
+        }
+        a {
+            background-color: $button-bg-color;
+            padding: 12px 40px;
+            color: $text-color;
+            font-weight: bold;          
+        }
+        .absolute-position {
+            position: absolute;
+            bottom: 300px;
+            left: 100px;
+            z-index: 9;
+        }
+        .left-plan-img {
+            top: 305px;
+            left: -7%;
+            width: 90px;
+            transform: translate(40%);
+        }
+        .ballon-left {
+            top: 35px;
+            left: 18%;
+            width: 80px;
+            transform: translate(100%);
+        }
+        .ballon-bottom {
+            top: 40px;
+            left: 30%;
+            width: 80px;
+            transform: translate(-100%);
+        }
+        .ellipse {
+            top: 600px;
+            left: 54%;
+            width: 90px;
+        }
+        .tild-building {
+            bottom: 0px;
+            left: 55%;
+            width: 110px;
+            height: 100px;
+        }
+        .tower {
+            bottom: 0px;
+            left: 39%;
+            width: 280px;
+            height: 50px;
+            transform: translate(100%);
+        }
+        .right-plan-img {
+            top: 17%;
+            left: 85%;
+            width: 90px;
+            transform: translate(100%);
+        }
+        .ballon-right {
+            top: 3%;
+            left: 85%;
+            width: 90px;
+            transform: translate(100%);
+        }
+        .wonders {
+            bottom: 0px;
+            left: 64%;
+            width: 270px;
+            height: 50px;
+            -webkit-transform: translate(100%);
+            transform: translate(100%);
+        }
+        .statue {
+            bottom: 0px;
+            left: 66%;
+            width: 140px;
+            height: 50px;
+            transform: translate(100%);
+        }
+    }
+}
+
+// about us section starts from here
+.about {
+    padding-top: 100px;
+    .about-us-gif {
+        img {
+            max-width: 100%;
+        }
+    }
+    .about-us-contant,
+    .out-story-contant {
+        h2 {
+            color: $heading-primary-color;
+            font-weight: bold;
+        }
+        p {
+            text-align: justify;
+            color: $text-color2;
+            line-height: 28px;
+        }
+    }
+}
+// about us section ends from here
+
+// facilities us section starts from here
+.facilities {
+    background-color: $heading-primary-color;
+    padding: 60px 0px;
+    .facilites-heading {
+        padding-bottom: 30px;
+        h2 {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .facilitiy {
+        position: relative;
+        color: #fff;
+        padding-left: 60px;
+        margin-bottom: 40px;
+        img {
+            width: 40px;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            display: inline-block;
+            color: $button-bg-color;
+        }
+        p {
+            line-height: 28px;
+        }
+    }
+    .end-paragraph {
+        p,
+        a {
+            color: #fff;
+        }
+    }
+}
+// facilities us section starts from here
+
+// services us section starts from here
+.services {
+    background-color: #eee;
+    padding-top: 20px;
+    .services-heading {
+        padding: 50px 0px;
+        h2 {
+            text-transform: uppercase;
+            color: $heading-primary-color;
+            font-weight: bold;
+        }
+    }
+    .services-card {
+        text-align: center;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        padding: 20px 20px 20px 20px;
+        h3 {
+            padding: 0px 50px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: $text-color2;
+            //color: #fff;
+            height: 80px;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 65px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 100px;
+                background-color: $button-bg-color;
+                content: "";
+                height: 1px;
+            }
+        }
+        p {
+            overflow: hidden;
+            height: 100px;
+            color: $text-color;
+            // color: #fff;
+            line-height: 26px;
+            text-align: justify;
+        }
+        a{
+            display: none;
+        }
+    }
+}
+// services us section starts from here
+
+// features us section starts from here
+.features {
+    padding-top: 60px;
+    .services-heading {
+        margin-bottom: 40px;
+        h2 {
+            text-transform: uppercase;
+            color: $heading-primary-color;
+            font-weight: bold;
+        }
+    }
+    .feature-list {
+        ul {
+            li {
+                color: $text-color2;
+                font-size: 16px;
+                margin-bottom: 10px;
+                i {
+                    margin-right: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .feature-img {
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+// features us section starts from here
+
+// logs section starts from here
+.logs {
+    background-color: #eee;
+    padding: 50px 0px;    
+    font-family: "Cinzel", serif;
+    .year-of-exprience,
+    .countries,
+    .universities,
+    .students {
+        text-align: center;
+        .number {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 0px;            
+        }
+        p {
+            font-size: 16px;            
+        }
+        .plus-icon {            
+            font-size: 30px;
+        }
+    }
+}
+// logs section ends from here
+
+// countries section starts from here
+.countries-we-served {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    .countries-we-served-heading {
+        margin: 40px 0px;
+        h2 {
+            text-transform: uppercase;
+            color: $heading-primary-color;
+            font-weight: bold;
+        }
+    }
+    
+    .countries-img {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        .countries-flag {
+            position: absolute;
+            transition: all 0.4s ease;
+            top: 100%;
+            width: 100%;
+            left: 0px;
+            // opacity: .8;
+            img {
+                width: 100%;
+            }
+            h2 {
+                text-transform: uppercase;
+                position: absolute;
+                color: #fff;
+                text-shadow: 4px 4px 4px $primary-bg-color;
+                font-weight: bold;
+                opacity: 1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        &:hover {
+            .countries-flag {
+                top: 0px;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+    .countries-img2 {
+        .countries-flag {
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 25px;
+      }
+      .owl-theme .owl-dots .owl-dot span {
+        width: 12px;
+        height: 12px;       
+      }
+}
+// countries section ends here
+
+.avilable-in-countries {
+    margin-bottom: 50px;
+    margin-top: 80px;
+    .details-about-countries {
+        h2 {
+            text-transform: uppercase;
+            color: $text-color2;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 40px;
+                left: 0px;
+                width: 150px;
+                background-color: #fec407;
+                content: "";
+                height: 1px;
+            }
+        }
+        p {
+            color: $text-color2;
+            line-height: 25px;
+        }
+    }
+    .countries-img {
+        img {
+            width: 100%;
+        }
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 50px;
+      }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 12px;
+        height: 12px;       
+      }
+}
+
+//  testimonails section starts from here
+.testimonials {
+    margin-top: 100px;
+    padding: 50px 0px;
+    background-color: #eee;
+    .testimonials-heading {
+        margin-bottom: 45px;
+        h2 {
+            color: $text-color2;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 45px;
+                left: 0px;
+                width: 150px;
+                background-color: #fec407;
+                content: "";
+                height: 1px;
+            }
+        }
+    }
+    .testimonial-card {
+        position: relative;
+        padding: 50px 20px 20px 20px;
+        border: 1px solid rgb(180, 175, 175);
+        border-radius: 10px;
+        img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 30px;
+            border-radius: 50%;
+        }
+        .student-name {
+            padding-left: 70px;
+            color: $text-color2;
+            font-weight: 600;
+            height: auto;
+        }
+        span {
+            display: inline-block;
+            margin-top: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: bold;
+            color: $text-color2;
+        }
+        p {
+            color: $text-color;
+            line-height: 25px;
+            overflow: hidden;
+            height: 100px;
+        }
+        a {
+            i {
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .owl-carousel .owl-nav {
+        background-color: red;
+        display: block;
+        position: absolute;        
+        top: 100px;
+        width: 100%;
+        .owl-prev{
+            font-weight: bolder;
+            font-size: 20px;
+            position: absolute;
+            left: -50px;
+            font-size: 30px;
+        }
+        .owl-next{
+            font-weight: bolder;
+            font-size: 20px;
+            position: absolute;
+            right: -50px;
+            font-size: 30px;
+        }
+    }
+}
+//  testimonails section ends here
+
+.policies {
+    position: relative;
+    margin-top: 100px;
+    .testimonials-heading {
+        margin-bottom: 30px;
+        h2 {
+            color: $text-color;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+        }
+    }
+    .points {
+        padding-right: 40px;
+        ul {
+            li {
+                position: relative;
+                padding-left: 40px;
+                font-size: 16px;
+                color: $text-color2;
+                line-height: 28px;
+                margin-bottom: 20px;
+                i {
+                    position: absolute;
+                    top: 5px;
+                    left: 0px;
+                    color: $text-color2;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .policies-img {
+        position: absolute;
+        width: 380px;
+        right: 0px;
+        bottom: -100px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.blog {
+    margin-top: 100px;
+    padding: 50px 0px;
+    background-color: #eee;
+    .blog-heading {
+        margin-bottom: 45px;
+        h2 {
+            color: $text-color2;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+        }
+    }
+    .blog-card {
+        background-color: $primary-bg-color;
+        padding: 30px 20px 20px 20px;
+        border-radius: 10px;
+        color: #eee;
+        span {
+            font-size: 16px;
+            color: #eee;
+        }
+        p {
+            color: #eee;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            i {
+                margin-right: 15px;
+            }
+        }
+    }    
+    .owl-carousel .owl-nav {
+        background-color: red;
+        display: block;
+        position: absolute;        
+        top: 50px;
+        width: 100%;
+        .owl-prev{
+            font-weight: bolder;
+            font-size: 20px;
+            position: absolute;
+            left: -50px;
+            font-size: 30px;
+        }
+        .owl-next{
+            font-weight: bolder;
+            font-size: 20px;
+            position: absolute;
+            right: -50px;
+            font-size: 30px;
+        }
+    }
+}
+
+footer {
+    margin-top: 50px;
+    .footer-logo {
+        img {
+            max-width: 100%;
+        }
+    }
+    .footer-nav-links {
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    font-weight: bold;
+                    color: $text-color2;
+                }
+            }
+        }
+    }
+    .footer-connecting-links,
+    .footer-contact-address,
+    .footer-newslatter {
+        h2 {
+            font-size: 14px;
+            font-weight: bold;
+            color: $text-color2;
+        }
+
+        ul {
+            li {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                margin-bottom: 10px;
+                a {
+                    // font-weight: bold;
+                    color: $text-color2;
+                    font-weight: 600;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .footer-newslatter {
+        p {
+            color: $text-color2;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        form {
+            position: relative;
+            input {
+                height: 40px;
+                font-weight: bold;
+                border: 1px solid $text-color;
+                opacity: 0.8;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+            button {
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                padding: 7px 20px 8px 20px;
+                border-radius: 0px 5px 5px 0px;
+                outline: none;
+                margin-left: 30px;
+                margin-top: 20px;
+                background-color: $primary-bg-color;
+                color: #fff;
+            }
+        }
+    }
+    .bottom-footer {     
+        padding: 30px 0px;
+        background: $heading-primary-color;
+        .end-footer {
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    a {
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .rights {
+            position: relative;
+            p {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 0rem;
+            }
+            .watermark{
+                position: absolute;
+                bottom: -30px;
+                left: 0px;
+                color: #fff;
+                opacity: .5;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+// media query
+@media only screen and (max-width: 1200px) {
+    .home {
+        .home-banner-heading {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .home {
+        .home-banner-heading {
+            h1 {
+                font-size: 30px;
+            }
+            .ballon-bottom {
+                left: 45%;
+            }
+            .ellipse {
+                top: 600px;
+                left: 54%;
+                width: 90px;
+            }
+            .tild-building {
+                top: 95%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header nav .website-logo a img {
+        width: 100px;
+    }
+    .home {
+        .home-banner-heading {
+            h1 {
+                font-size: 30px;
+            }
+            .ballon-bottom {
+                left: 55%;
+            }
+            .ellipse {
+                display: none;
+            }
+            .statue {
+                left: 50%;
+            }
+        }
+    }
+    header .top-header .top-header-right-section .login-details ul {
+        justify-content: start;
+    }
+    header nav .nav-social-icons ul {
+        margin-top: -60px;
+        margin-left: 90px;
+        justify-content: end;
+        li a i {
+            padding: 0 10px;
+        }
+    }
+    header {
+        nav {
+            .nav-bar-tabs {
+                position: absolute;
+                top: 72px;
+                right: 0px;
+                z-index: 99999;
+                background-color: $heading-primary-color;
+                right: -200px;
+                width: 200px;
+                padding-bottom: 20px;
+                // height: 500px;
+                ul {
+                    flex-direction: column;
+                    li {
+                        text-align: center;
+                        margin-top: 20px;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-sidebar-button,
+    .nav-close-button {
+        display: block;
+    }
+    .policies .policies-img {
+        img {
+            display: none;
+        }
+    }
+    .countries-we-served {
+        display: none;
+    }
+    footer .bottom-footer .rights p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    header nav .website-logo a img {
+        width: 100px;
+    }
+    .home .home-banner-heading h1 {
+        font-size: 25px;
+        br {
+            display: none;
+        }
+    }
+    .home {
+        .home-banner-heading {
+            .left-plan-img {
+                display: none;
+            }
+            .ballon-left {
+                display: none;
+            }
+            .ballon-bottom {
+                display: none;
+            }
+        }
+        .tild-building {
+            display: none;
+        }
+        .tower {
+            display: none;
+        }
+        .right-plan-img {
+            display: none;
+        }
+        .ballon-right {
+            display: none;
+        }
+        .wonders {
+            display: none;
+        }
+        .statue {
+            display: none;
+        }
+    }
+    header nav .nav-social-icons ul {
+        margin-top: -60px;
+        margin-right: 100px;
+    }
+
+    /*
+    .countries-we-served {
+        display: block;
+    }
+    .countries-we-served .countries-img {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: 350px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .countries-flag{
+            width: 100%;
+            height: 100%;
+        }
+    } */
+}

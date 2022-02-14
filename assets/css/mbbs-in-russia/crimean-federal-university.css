@@ -1,0 +1,230 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.home-screen-banner {
+  position: relative;
+}
+
+.home-screen-banner .university-img {
+  width: 100%;
+  min-height: 700px;
+  max-height: 900px;
+}
+
+.home-screen-banner .university-name {
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 50%;
+  height: 50%;
+  background-color: rgba(23, 85, 89, 0.8);
+}
+
+.home-screen-banner .university-name img {
+  width: 150px;
+  max-height: 200px;
+}
+
+.home-screen-banner .university-name h1 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #fec407;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-university {
+  width: 80%;
+  margin: 150px auto 100px auto;
+}
+
+.about-university p {
+  line-height: 30px;
+}
+
+.advantages {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #0f383b;
+}
+
+.advantages h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fec407;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.advantages ul li {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.advantages img {
+  width: 50%;
+  margin-bottom: -200px;
+}
+
+.fee-strucutre {
+  margin-top: 200px;
+  padding: 50px 0px;
+  border-top: 1px dashed #4d4d4d;
+  border-bottom: 1px dashed #4d4d4d;
+}
+
+.fee-strucutre h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.fee-strucutre table {
+  min-width: 700px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.fee-strucutre table,
+.fee-strucutre th,
+.fee-strucutre td {
+  text-align: center;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+
+.fee-strucutre th {
+  background-color: #0f383b;
+  color: #fff;
+}
+
+.fee-strucutre th,
+.fee-strucutre td {
+  padding: 20px 0px;
+}
+
+.fee-strucutre .description {
+  font-family: serif;
+}
+
+.admission-process {
+  margin-bottom: 50px;
+}
+
+.admission-process .top-img-wrapper {
+  margin-top: 50px;
+}
+
+.admission-process .top-img-wrapper img {
+  width: 100%;
+}
+
+.admission-process .admission-process-details {
+  background-color: #175559;
+  padding: 50px 0px;
+}
+
+.admission-process .admission-process-details h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fec407;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.admission-process .admission-process-details h3 {
+  text-transform: uppercase;
+  background-color: #0f383b;
+  padding: 12px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fec407;
+  text-align: center;
+}
+
+.admission-process .admission-process-details .admission-card .setps,
+.admission-process .admission-process-details .admission-card .card-discription {
+  height: 160px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admission-process .admission-process-details .card-discription {
+  position: relative;
+  background-color: #0f383b;
+}
+
+.admission-process .admission-process-details .card-discription p {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.admission-process .admission-process-details .card-discription::after {
+  position: absolute;
+  top: 10px;
+  right: -25px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 25px solid #0f383b;
+  border-bottom: 25px solid transparent;
+}
+
+.admission-process .admission-process-details .card-discription::before {
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: #0f383b;
+}
+
+.admission-process .admission-process-details .admission-card1 .card-discription::after,
+.admission-process .admission-process-details .admission-card3 .card-discription::after,
+.admission-process .admission-process-details .admission-card5 .card-discription::after {
+  top: 100px;
+  right: -25px;
+}
+
+.admission-process .admission-process-details .admission-card2 .card-discription::before,
+.admission-process .admission-process-details .admission-card4 .card-discription::before,
+.admission-process .admission-process-details .admission-card6 .card-discription::before {
+  top: 160px;
+}
+/*# sourceMappingURL=crimean-federal-university.css.map */
