@@ -24,14 +24,13 @@ body {
     position: relative;
     .university-img {
         width: 100%;
-        min-height: 700px;
-        max-height: 900px;
+        max-height: 100vh;
     }
     .university-name {
         text-align: center;
         padding: 50px;
         position: absolute;
-        bottom: -120px;        
+        bottom: -120px;
         left: 50%;
         transform: translate(-50%);
         width: 50%;
@@ -65,40 +64,42 @@ body {
     padding: 50px 0px;
     background-color: $heading-primary-color;
     h2 {
+        text-align-last: center;
         text-transform: uppercase;
-        text-align: center;
         color: $button-bg-color;
         font-weight: bold;
         margin-bottom: 30px;
     }
     ul {
+        text-align: left;
+        margin-left: 30px;
+        list-style: disc;
         li {
-            text-align: center;
+            line-height: 30px;
+            margin-bottom: 20px;
+            text-align-last: left;
             color: #fff;
-            margin-bottom: 30px;
         }
     }
-    img {
-        width: 50%;
-        margin-bottom: -200px;
-        // box-shadow: 10px  10px 10px rgba(0,0,0,0.5);
+    .img-wrapper {
+        img {
+            width: 100%;
+        }
     }
 }
-
 .fee-strucutre {
-    margin-top: 200px;
+    margin: 100px 0px;
     padding: 50px 0px;
     border-top: 1px dashed $text-color2;
     border-bottom: 1px dashed $text-color2;
 
-    
     h2 {
         margin-bottom: 50px;
         text-align: center;
     }
     table {
         // margin: 0 auto;
-        
+
         min-width: 700px;
         border-collapse: collapse;
         border-spacing: 0;
@@ -120,19 +121,13 @@ body {
     td {
         padding: 20px 0px;
     }
-    .description{
+    .description {
         font-family: serif;
     }
 }
 
 .admission-process {
-    margin-bottom: 50px;
-    .top-img-wrapper {
-        margin-top: 50px;
-        img {
-            width: 100%;
-        }
-    }
+    margin: 50px;    
     .admission-process-details {
         background-color: $primary-bg-color;
         padding: 50px 0px;
@@ -141,18 +136,33 @@ body {
             text-align: center;
             color: $button-bg-color;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+            font-family: serif;
         }
         h3 {
             text-transform: uppercase;
             background-color: $heading-primary-color;
-            padding: 12px 0px;
             font-size: 20px;
+            padding: 12px 0px;
             font-weight: bold;
             color: $button-bg-color;
             text-align: center;
         }
         .admission-card {
+            height: 260px;
+            background-color: $heading-primary-color;
+            position: relative;
+            .card-discription {
+                width: 60%;
+                margin: auto;
+                padding: 20px 0px;
+            }
+            p {
+                color: #fff;
+                text-align: justify;
+            }
+        }
+        /* .admission-card {
             .setps,
             .card-discription {
                 height: 160px;
@@ -161,8 +171,8 @@ body {
                 align-items: center;
                 justify-content: center;
             }
-        }
-        .card-discription {
+        } */
+        /* .card-discription {
             position: relative;
             background-color: $heading-primary-color;
             p {
@@ -211,6 +221,6 @@ body {
                     top: 160px;
                 }
             }
-        }
+        } */
     }
 }

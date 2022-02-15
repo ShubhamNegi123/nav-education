@@ -927,6 +927,12 @@ footer .bottom-footer .rights .watermark a {
   color: #fff;
 }
 
+@media only screen and (max-width: 868px) {
+  header {
+    top: 60px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .home .home-banner-heading h1 {
     font-size: 30px;
@@ -953,6 +959,9 @@ footer .bottom-footer .rights .watermark a {
 @media only screen and (max-width: 767px) {
   header nav .website-logo a img {
     width: 100px;
+  }
+  header {
+    top: 75px;
   }
   .home .home-banner-heading h1 {
     font-size: 30px;
@@ -987,7 +996,6 @@ footer .bottom-footer .rights .watermark a {
     right: 0px;
     z-index: 99999;
     background-color: #0f383b;
-    right: -200px;
     width: 200px;
     padding-bottom: 20px;
   }

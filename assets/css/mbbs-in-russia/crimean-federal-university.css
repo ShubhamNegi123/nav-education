@@ -23,8 +23,7 @@ body .container {
 
 .home-screen-banner .university-img {
   width: 100%;
-  min-height: 700px;
-  max-height: 900px;
+  max-height: 100vh;
 }
 
 .home-screen-banner .university-name {
@@ -70,26 +69,32 @@ body .container {
 }
 
 .advantages h2 {
+  text-align-last: center;
   text-transform: uppercase;
-  text-align: center;
   color: #fec407;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.advantages ul li {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 30px;
+.advantages ul {
+  text-align: left;
+  margin-left: 30px;
+  list-style: disc;
 }
 
-.advantages img {
-  width: 50%;
-  margin-bottom: -200px;
+.advantages ul li {
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align-last: left;
+  color: #fff;
+}
+
+.advantages .img-wrapper img {
+  width: 100%;
 }
 
 .fee-strucutre {
-  margin-top: 200px;
+  margin: 100px 0px;
   padding: 50px 0px;
   border-top: 1px dashed #4d4d4d;
   border-bottom: 1px dashed #4d4d4d;
@@ -130,20 +135,72 @@ body .container {
 }
 
 .admission-process {
-  margin-bottom: 50px;
-}
-
-.admission-process .top-img-wrapper {
-  margin-top: 50px;
-}
-
-.admission-process .top-img-wrapper img {
-  width: 100%;
+  margin: 50px;
 }
 
 .admission-process .admission-process-details {
   background-color: #175559;
   padding: 50px 0px;
+  /* .admission-card {
+            .setps,
+            .card-discription {
+                height: 160px;
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        } */
+  /* .card-discription {
+            position: relative;
+            background-color: $heading-primary-color;
+            p {
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                padding: 0px 30px;
+            }
+            &::after {
+                position: absolute;
+                top: 10px;
+                right: -25px;
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 25px solid transparent;
+                border-left: 25px solid $heading-primary-color;
+                border-bottom: 25px solid transparent;
+            }
+            &::before {
+                position: absolute;
+                top: -20px;
+                right: 50%;
+                transform: translate(-50%);
+                content: "";
+                width: 10px;
+                height: 20px;
+                background-color: $heading-primary-color;
+            }
+        }
+        .admission-card1,
+        .admission-card3,
+        .admission-card5 {
+            .card-discription {
+                &::after {
+                    top: 100px;
+                    right: -25px;
+                }
+            }
+        }
+        .admission-card2,
+        .admission-card4,
+        .admission-card6 {
+            .card-discription {
+                &::before {
+                    top: 160px;
+                }
+            }
+        } */
 }
 
 .admission-process .admission-process-details h2 {
@@ -151,80 +208,34 @@ body .container {
   text-align: center;
   color: #fec407;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-family: serif;
 }
 
 .admission-process .admission-process-details h3 {
   text-transform: uppercase;
   background-color: #0f383b;
-  padding: 12px 0px;
   font-size: 20px;
+  padding: 12px 0px;
   font-weight: bold;
   color: #fec407;
   text-align: center;
 }
 
-.admission-process .admission-process-details .admission-card .setps,
-.admission-process .admission-process-details .admission-card .card-discription {
-  height: 160px;
-  margin-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.admission-process .admission-process-details .card-discription {
+.admission-process .admission-process-details .admission-card {
+  height: 260px;
+  background-color: #0f383b;
   position: relative;
-  background-color: #0f383b;
 }
 
-.admission-process .admission-process-details .card-discription p {
-  font-size: 14px;
+.admission-process .admission-process-details .admission-card .card-discription {
+  width: 60%;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.admission-process .admission-process-details .admission-card p {
   color: #fff;
-  text-align: center;
-  padding: 0px 30px;
-}
-
-.admission-process .admission-process-details .card-discription::after {
-  position: absolute;
-  top: 10px;
-  right: -25px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 25px solid #0f383b;
-  border-bottom: 25px solid transparent;
-}
-
-.admission-process .admission-process-details .card-discription::before {
-  position: absolute;
-  top: -20px;
-  right: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  content: "";
-  width: 10px;
-  height: 20px;
-  background-color: #0f383b;
-}
-
-.admission-process .admission-process-details .admission-card1 .card-discription::after,
-.admission-process .admission-process-details .admission-card3 .card-discription::after,
-.admission-process .admission-process-details .admission-card5 .card-discription::after {
-  top: 100px;
-  right: -25px;
-}
-
-.admission-process .admission-process-details .admission-card2 .card-discription::before,
-.admission-process .admission-process-details .admission-card4 .card-discription::before,
-.admission-process .admission-process-details .admission-card6 .card-discription::before {
-  top: 160px;
+  text-align: justify;
 }
 /*# sourceMappingURL=crimean-federal-university.css.map */

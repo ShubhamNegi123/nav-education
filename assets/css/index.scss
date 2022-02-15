@@ -848,6 +848,11 @@ footer {
 
 
 // media query
+@media only screen and (max-width: 868px) {
+    header {       
+        top: 60px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .home {
         .home-banner-heading {
@@ -856,6 +861,7 @@ footer {
             }
         }
     }
+   
 }
 @media only screen and (max-width: 991px) {
     .home {
@@ -881,6 +887,9 @@ footer {
 @media only screen and (max-width: 767px) {
     header nav .website-logo a img {
         width: 100px;
+    }
+    header {       
+        top: 75px;
     }
     .home {
         .home-banner-heading {
@@ -917,7 +926,6 @@ footer {
                 right: 0px;
                 z-index: 99999;
                 background-color: $heading-primary-color;
-                right: -200px;
                 width: 200px;
                 padding-bottom: 20px;
                 // height: 500px;

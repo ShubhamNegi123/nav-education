@@ -35,6 +35,7 @@ body .container {
 }
 
 .about .about-discription h2 {
+  text-transform: uppercase;
   color: #0f383b;
   font-weight: bold;
   margin-bottom: 30px;
@@ -56,6 +57,7 @@ body .container {
 }
 
 .advantages .heading h2 {
+  text-transform: uppercase;
   color: #fec407;
   font-weight: bold;
   margin-bottom: 30px;
@@ -97,6 +99,7 @@ body .container {
 }
 
 .universities-in-russia .heading h2 {
+  text-transform: uppercase;
   color: #0f383b;
   font-weight: bold;
   margin-bottom: 30px;
