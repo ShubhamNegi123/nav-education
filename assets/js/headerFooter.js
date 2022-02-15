@@ -1,15 +1,16 @@
 $(function () {
     hamburgerMenu();
     // hamburger-menu
-    function hamburgerMenu() {
-        $('.nav-sidebar-button ').click(function () {
-            $('.nav-bar-tabs').animate({
-                right: '0px'
-            });
-            $('.nav-close-button').animate({
-                right: '170px'
-            });
+    $('.nav-sidebar-button ').click(function () {
+        $('.nav-bar-tabs').animate({
+            right: '0px'
         });
+        $('.nav-close-button').animate({
+            right: '170px'
+        });
+    });
+    function hamburgerMenu() {
+        
     }
 
     $('.nav-close-button').click(function () {
@@ -59,24 +60,7 @@ $(function () {
     }
 
 
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 90,
-        modifier: 2,
-        slideShadows: true,
-      },
-      autoplay: {
-        delay: 1000,
-      },
+    
 
-      loop :true,
-      autoPlay: true
-    });
     
 });

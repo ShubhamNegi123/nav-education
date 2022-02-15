@@ -1,6 +1,6 @@
 $(function () {
+
     homeAnimation();
-    hamburgerMenu();
 
     //student owl carosals
     $('.testimonial-owl-carosal,.blog-owl-carosal').owlCarousel({
@@ -83,26 +83,7 @@ $(function () {
 
     // aos library initilization
     AOS.init();
-
-    // hamburger-menu
-    function hamburgerMenu() {
-        $('.nav-sidebar-button ').click(function () {
-            $('.nav-bar-tabs').animate({
-                right: '0px'
-            });
-            $('.nav-close-button').animate({
-                right: '170px'
-            });
-        });
-    }
-    $('.nav-close-button').click(function () {
-        $('.nav-bar-tabs').animate({
-            right: '-200px'
-        });
-        $('.nav-close-button').animate({
-            right: '-25px'
-        });
-    });
+    
 
 
 
