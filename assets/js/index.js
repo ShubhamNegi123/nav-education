@@ -41,13 +41,16 @@ $(function () {
         autoplayHoverPause: true,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
-                items: 2
+                items: 3
             },
             1000: {
                 items: 4
+            },
+            1500: {
+                items: 5
             }
         }
     })
@@ -67,7 +70,7 @@ $(function () {
                 items: 1
             },
             600: {
-                items: 2
+                items: 1
             },
             1000: {
                 items: 1
@@ -83,9 +86,6 @@ $(function () {
 
     // aos library initilization
     AOS.init();
-    
-
-
 
     // all home animation
     function homeAnimation() {
@@ -150,8 +150,5 @@ $(function () {
             top: '27%',
             left: '69%'
         }, 2500);
-
     }
-
-
 });
