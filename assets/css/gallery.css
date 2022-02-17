@@ -1,0 +1,160 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.gallery {
+  margin: 100px 0px;
+}
+
+.gallery h1 {
+  margin: 50px 0px;
+  text-transform: uppercase;
+  color: #0f383b;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallery .img-wrapper img {
+  width: 100%;
+}
+
+.contact-us {
+  margin: 150px 0px;
+  margin-bottom: 100px;
+}
+
+.contact-us .container {
+  width: 50%;
+}
+
+.contact-us h2 {
+  text-transform: uppercase;
+  color: #0f383b;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-us form input {
+  width: 100%;
+}
+
+.contact-us form .name-wrapper,
+.contact-us form .phone-wrapper,
+.contact-us form .email-wrapper,
+.contact-us form .country-wrapper,
+.contact-us form .marital-wrapper,
+.contact-us form .city-wrapper,
+.contact-us form .message-wrapper {
+  margin-bottom: 30px;
+}
+
+.contact-us form .name-wrapper input,
+.contact-us form .phone-wrapper input,
+.contact-us form .email-wrapper input,
+.contact-us form .country-wrapper input,
+.contact-us form .marital-wrapper input,
+.contact-us form .city-wrapper input,
+.contact-us form .message-wrapper input {
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+  background-color: #eee;
+}
+
+.contact-us form .marital-wrapper {
+  padding-left: 20px;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us form .marital-wrapper input {
+  width: 20px;
+}
+
+.contact-us form .marital-wrapper label {
+  padding-left: 10px;
+}
+
+.contact-us form .marital-wrapper .space {
+  width: 30px;
+}
+
+.contact-us form .message-wrapper textarea {
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  background-color: #eee;
+  border: none;
+}
+
+.contact-us form .submit-button button {
+  width: 100%;
+  padding: 6px 0px;
+  background-color: #175559;
+  color: #fec407;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact-us form .submit-button button:hover {
+  background-color: #fec407;
+  color: #175559;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 1300px) {
+  .contact-us .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contact-us .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .gallery .img-wrapper {
+    text-align: center;
+  }
+  .gallery .img-wrapper img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */

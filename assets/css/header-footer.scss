@@ -4,6 +4,102 @@ $text-color: #175559;
 $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
 
+.mode {
+    background-color: #000;
+    color: #fff;
+    .home {
+        background: rgb(1, 1, 1);
+        background: linear-gradient(90deg, rgba(1, 1, 1, 1) 0%, rgba(68, 43, 43, 1) 49%, rgba(0, 0, 0, 1) 100%);
+        h1,
+        p {
+            color: #fff;
+        }
+    }
+    .about .about-us-contant h2,
+    .about .out-story-contant h2 {
+        color: #fff;
+    }
+    .about .about-us-contant p,
+    .about .out-story-contant p {
+        color: #fff;
+    }
+    .services {
+        background-color: #000;
+    }
+    .services .services-heading h2 {
+        color: #fff;
+    }
+    .services .services-card {
+        background-color: $heading-primary-color;
+    }
+    .services .services-card h3,
+    .services .services-card p {
+        color: #fff;
+    }
+    .features .services-heading h2,
+    .features .feature-list ul li {
+        color: #fff;
+    }
+    .logs {
+        p,
+        .plus-icon,
+        .number {
+            color: #000;
+        }
+    }
+    .countries-we-served .countries-we-served-heading h2 {
+        color: #fff;
+    }
+    .avilable-in-countries {
+        .details-about-countries {
+            h2,
+            p {
+                color: #fff;
+            }
+        }
+    }
+    .policies {
+        h2 {
+            color: #fff;
+        }
+        .points {
+            ul {
+                li {
+                    color: #fff;
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .blog {
+        background-color: #000;
+        h2 {
+            color: #fff;
+        }
+    }
+    #footer {
+        ul {
+            li {
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        h2,
+        h3,
+        p {
+            color: #fff;
+        }
+    }
+    .top-header .day-night-mode .night-mode i,
+    .top-header .day-night-mode .day-mode i {
+        color: #000;
+    }
+}
+
 body {
     font-family: "Playfair Display", serif;
     font-size: 14px;
@@ -21,8 +117,8 @@ body {
 }
 .nav-sidebar-button {
     position: absolute;
-    top: 90px;
-    right: 5px;
+    top: 22px;
+    right: 25px;
     display: none;
     cursor: pointer;
     i {
@@ -71,8 +167,30 @@ body {
                             margin-right: 5px;
                         }
                     }
+                    span {
+                        font-size: 13px;
+                        font-family: "Ubuntu", sans-serif;
+                        i {
+                            color: #fff;
+                        }
+                    }
                 }
             }
+        }
+    }
+    .day-night-mode {
+        position: relative;
+        cursor: pointer;
+        position: relative;
+        background-color: yellow;
+        .night-mode,
+        .day-mode {
+            i {
+                font-size: 18px;
+            }
+        }
+        .day-mode {
+            display: none;
         }
     }
 }
@@ -249,7 +367,7 @@ footer {
             }
         }
     }
-    .bottom-footer {     
+    .bottom-footer {
         padding: 30px 0px;
         background: $heading-primary-color;
         .end-footer {
@@ -271,13 +389,13 @@ footer {
                 font-size: 16px;
                 margin-bottom: 0rem;
             }
-            .watermark{
+            .watermark {
                 position: absolute;
                 bottom: -30px;
                 left: 0px;
                 color: #fff;
-                opacity: .5;
-                a{
+                opacity: 0.5;
+                a {
                     color: #fff;
                 }
             }
@@ -285,55 +403,61 @@ footer {
     }
 }
 
-
-
 .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 350px;
-    box-shadow: 0px 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
     filter: blur(2px);
-  }
-  .swiper-slide-active{
-    filter: blur(0px);  
+}
+.swiper-slide-active {
+    filter: blur(0px);
 }
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
-  }
+}
 
+@media only screen and (max-width: 862px) {
+    header {
+        top: 60px;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     header nav .website-logo a img {
         width: 100px;
+    }
+    header {
+        top: 75px;
     }
     header .top-header .top-header-right-section .login-details ul {
         justify-content: start;
     }
     header nav .nav-social-icons ul {
         margin-top: -60px;
-        margin-left: 90px;
+        margin-left: 70px;
         justify-content: end;
         li a i {
-            padding: 0px 10px;
+            padding: 0 10px;
         }
     }
     header {
         nav {
+            //103
             .nav-bar-tabs {
                 position: absolute;
                 top: 72px;
-                right: 0px;
+                right: -200px;
                 z-index: 99999;
                 background-color: $heading-primary-color;
-                right: -200px;
                 width: 200px;
                 padding-bottom: 20px;
                 // height: 500px;
@@ -350,6 +474,16 @@ footer {
             }
         }
     }
+    header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+        top: -70px;
+        left: -150;
+    }
+    header nav .nav-bar-tabs ul .countries-tab .countries-list {
+        left: -10%;
+    }
+    header nav .nav-bar-tabs ul li {
+        margin-top: 10px;
+    }
     .nav-sidebar-button,
     .nav-close-button {
         display: block;
@@ -357,14 +491,39 @@ footer {
     footer .bottom-footer .rights p {
         text-align: center;
     }
+    header nav .nav-social-icons ul {
+        margin-right: 100px;
+    }
 }
-
 @media only screen and (max-width: 567px) {
     header nav .website-logo a img {
         width: 100px;
     }
+    .footer-connecting-links,
+    .footer-contact-address,
+    .footer-newslatter {
+        margin-top: 30px;
+    }
     header nav .nav-social-icons ul {
         margin-top: -60px;
         margin-right: 100px;
+    }
+}
+@media only screen and (max-width: 516px) {
+    header {
+        top: 38px;
+    }
+    .top-header .top-header-left-section {
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px) {
+    header nav .nav-social-icons ul {
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 377px) {
+    header {
+        top: 60px;
     }
 }

@@ -1,3 +1,7 @@
+.day-mode {
+  border: 1px solid #000;
+}
+
 body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
@@ -19,8 +23,8 @@ body .container {
 
 .nav-sidebar-button {
   position: absolute;
-  top: 90px;
-  right: 5px;
+  top: 22px;
+  right: 25px;
   display: none;
   cursor: pointer;
 }
@@ -89,6 +93,36 @@ body .container {
   margin-right: 5px;
 }
 
+.top-header .top-header-left-section .contact-details ul li span,
+.top-header .top-header-left-section .login-details ul li span,
+.top-header .top-header-right-section .contact-details ul li span,
+.top-header .top-header-right-section .login-details ul li span {
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.top-header .top-header-left-section .contact-details ul li span i,
+.top-header .top-header-left-section .login-details ul li span i,
+.top-header .top-header-right-section .contact-details ul li span i,
+.top-header .top-header-right-section .login-details ul li span i {
+  color: #fff;
+}
+
+.top-header .mode {
+  cursor: pointer;
+  position: relative;
+  background-color: yellow;
+  border: 1px solid #fff;
+}
+
+.top-header .mode .night-mode i, .top-header .mode .day-mode i {
+  font-size: 18px;
+}
+
+.top-header .mode .night-mode {
+  display: none;
+}
+
 header {
   z-index: 999;
   width: 100%;
@@ -142,8 +176,8 @@ header nav .nav-bar-tabs ul .countries-tab {
 header nav .nav-bar-tabs ul .countries-tab .countries-list {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: absolute;
   top: 100px;
   width: 150px;
@@ -155,8 +189,8 @@ header nav .nav-bar-tabs ul .countries-tab .countries-list {
 
 header nav .nav-bar-tabs ul .countries-tab .countries-list li a {
   border-left: 4px solid #0f383b;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   padding: 10px 20px;
   display: block;
   font-size: 13px;
@@ -165,8 +199,8 @@ header nav .nav-bar-tabs ul .countries-tab .countries-list li a {
 }
 
 header nav .nav-bar-tabs ul .countries-tab .countries-list li a:hover {
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   border-left: 4px solid #fec407;
   background: #175559;
 }
@@ -312,7 +346,8 @@ header nav .fixed-nav-img {
 }
 
 .about {
-  padding-top: 100px;
+  padding-top: 50px;
+  margin-bottom: 20px;
 }
 
 .about .about-us-gif img {
@@ -392,33 +427,35 @@ header nav .fixed-nav-img {
 }
 
 .services .services-card {
+  position: relative;
+  top: 0px;
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 50px;
   padding: 20px 20px 20px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .services .services-card h3 {
-  padding: 0px 50px;
+  padding: 0px 30px;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
   color: #4d4d4d;
   height: 80px;
   position: relative;
-}
-
-.services .services-card h3::after {
-  position: absolute;
-  top: 65px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: 100px;
-  background-color: #fec407;
-  content: "";
-  height: 1px;
+  /* &::after {
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translate(-50%);
+                width: 100px;
+                background-color: $button-bg-color;
+                content: "";
+                height: 2px;
+            } */
 }
 
 .services .services-card p {
@@ -431,6 +468,14 @@ header nav .fixed-nav-img {
 
 .services .services-card a {
   display: none;
+}
+
+.services .services-card:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: -10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .features {
@@ -593,8 +638,15 @@ header nav .fixed-nav-img {
 }
 
 .avilable-in-countries .details-about-countries p {
+  height: 200px;
+  overflow: hidden;
   color: #4d4d4d;
   line-height: 25px;
+}
+
+.avilable-in-countries .details-about-countries a {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .avilable-in-countries .countries-img img {
@@ -920,14 +972,14 @@ footer .bottom-footer .rights .watermark {
   bottom: -30px;
   left: 0px;
   color: #fff;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 footer .bottom-footer .rights .watermark a {
   color: #fff;
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 862px) {
   header {
     top: 60px;
   }
@@ -993,7 +1045,7 @@ footer .bottom-footer .rights .watermark a {
   header nav .nav-bar-tabs {
     position: absolute;
     top: 72px;
-    right: 0px;
+    right: -200px;
     z-index: 99999;
     background-color: #0f383b;
     width: 200px;
@@ -1012,6 +1064,16 @@ footer .bottom-footer .rights .watermark a {
   header nav .nav-bar-tabs ul li a {
     color: #fff;
   }
+  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+    top: -70px;
+    left: -150;
+  }
+  header nav .nav-bar-tabs ul .countries-tab .countries-list {
+    left: -10%;
+  }
+  header nav .nav-bar-tabs ul li {
+    margin-top: 10px;
+  }
   .nav-sidebar-button,
   .nav-close-button {
     display: block;
@@ -1019,9 +1081,9 @@ footer .bottom-footer .rights .watermark a {
   .policies .policies-img img {
     display: none;
   }
-  .countries-we-served {
-    display: none;
-  }
+  /* .countries-we-served {
+        display: none;
+    } */
   footer .bottom-footer .rights p {
     text-align: center;
   }
@@ -1037,25 +1099,13 @@ footer .bottom-footer .rights .watermark a {
   .home .home-banner-heading h1 br {
     display: none;
   }
-  .home .home-banner-heading .left-plan-img {
-    display: none;
-  }
-  .home .home-banner-heading .ballon-left {
-    display: none;
-  }
-  .home .home-banner-heading .ballon-bottom {
-    display: none;
+  .footer-connecting-links, .footer-contact-address, .footer-newslatter {
+    margin-top: 30px;
   }
   .home .tild-building {
     display: none;
   }
   .home .tower {
-    display: none;
-  }
-  .home .right-plan-img {
-    display: none;
-  }
-  .home .ballon-right {
     display: none;
   }
   .home .wonders {
@@ -1068,23 +1118,29 @@ footer .bottom-footer .rights .watermark a {
     margin-top: -60px;
     margin-right: 100px;
   }
-  /*
-    .countries-we-served {
-        display: block;
-    }
-    .countries-we-served .countries-img {
-        width: 60%;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        height: 350px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-        .countries-flag{
-            width: 100%;
-            height: 100%;
-        }
-    } */
+  .home .home-banner-heading .ballon-bottom {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  header {
+    top: 38px;
+  }
+  .top-header .top-header-left-section {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header nav .nav-social-icons ul {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  header {
+    top: 60px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
