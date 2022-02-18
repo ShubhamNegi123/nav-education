@@ -45,7 +45,7 @@ $(function () {
                 });
             } else {
                 $('header').css({
-                    top: '60px'
+                    top: '38px'
                 });
             }        
     
@@ -93,7 +93,7 @@ $(function () {
                 });
             } else {
                 $('header').css({
-                    top: '60px'
+                    top: '38px'
                 });
             }        
     
