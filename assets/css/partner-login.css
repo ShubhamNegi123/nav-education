@@ -314,5 +314,13 @@ body .container {
   .our-services .service6 p {
     margin-bottom: 65px;
   }
+  .partner {
+    margin-top: 100px;
+  }
+  .our-services .service1 p,
+  .our-services .service3 p,
+  .our-services .service5 p {
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=partner-login.css.map */
