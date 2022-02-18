@@ -1,228 +1,152 @@
-body {
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-body ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
+* ul {
   list-style: none;
 }
 
-body a {
+* a {
   text-decoration: none;
 }
 
-body .container {
-  max-width: 90%;
+* h1,
+* h2,
+* h3 {
+  font-family: serif;
 }
 
 .about-us {
-  margin-top: 200px;
-  margin-bottom: 100px;
-}
-
-.about-us .about-us-img img {
-  width: 100%;
-}
-
-.about-us .about-us-discription h1 {
-  font-size: 30px;
-  color: #0f383b;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.about-us .about-us-discription p {
-  line-height: 28px;
-  text-align: justify;
-  color: #4d4d4d;
-}
-
-.about-us .about-us-discription h2 {
-  color: #0f383b;
-  font-weight: bold;
-}
-
-.about-us .about-us-discription p {
-  text-align: justify;
-  color: #4d4d4d;
-  line-height: 28px;
-}
-
-.our-missions {
-  background-color: #0f383b;
-  padding-bottom: 50px;
-}
-
-.our-missions .mission-and-vision h2 {
-  font-size: 30px;
-  color: #fec407;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.our-missions .mission-and-vision p {
-  color: #fff;
-}
-
-.our-missions .mission-img img {
-  width: 100%;
-}
-
-.our-services {
-  background-color: #f5f5f5;
-  padding: 50px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.our-services h2 {
-  text-align: center;
-  font-size: 30px;
-  color: #0f383b;
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-top: 0px;
-  margin-bottom: 60px;
-}
-
-.our-services hr {
-  display: none;
-}
-
-.our-services .service1,
-.our-services .service3,
-.our-services .service5 {
-  text-align: center;
-}
-
-.our-services .service1 .empty-space,
-.our-services .service3 .empty-space,
-.our-services .service5 .empty-space {
-  width: 100%;
-  height: 150px;
-}
-
-.our-services .service1 .service-number,
-.our-services .service3 .service-number,
-.our-services .service5 .service-number {
-  text-align: center;
-  font-size: 60px;
-  color: #fec407;
-  font-family: serif;
-  font-weight: bolder;
-  padding: 20px 22px;
-  border: 20px solid #175559;
-  border-radius: 50%;
-}
-
-.our-services .service1 p,
-.our-services .service3 p,
-.our-services .service5 p {
   margin-top: 100px;
-  padding-top: 10px;
-  position: relative;
 }
 
-.our-services .service1 p::before,
-.our-services .service3 p::before,
-.our-services .service5 p::before {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: 2px;
-  height: 50px;
-  content: "";
-  background-color: #175559;
-}
-
-.our-services .service2,
-.our-services .service4,
-.our-services .service6 {
+.about-us h1 {
+  margin-bottom: 30px;
   text-align: center;
+  color: #2a353a;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
-.our-services .service2 .empty-space,
-.our-services .service4 .empty-space,
-.our-services .service6 .empty-space {
-  width: 100%;
-  height: 150px;
+.about-us p {
+  color: #736262;
+  line-height: 30px;
+  text-align: justify;
 }
 
-.our-services .service2 .service-number,
-.our-services .service4 .service-number,
-.our-services .service6 .service-number {
-  text-align: center;
-  font-size: 60px;
-  color: #fec407;
+.about-us .about-card {
+  margin-top: 50px;
+}
+
+.about-us .about-card i {
+  font-size: 50px;
+  color: #9d58dd;
+}
+
+.about-us .about-card h2 {
+  margin: 20px 0px;
   font-family: serif;
-  font-weight: bolder;
-  padding: 20px 22px;
-  border: 20px solid #175559;
-  border-radius: 50%;
+  color: #2a353a;
+  word-spacing: 4px;
+  font-weight: 700;
+  font-size: 25px;
 }
 
-.our-services .service2 p,
-.our-services .service4 p,
-.our-services .service6 p {
-  margin-bottom: 100px;
-  padding-bottom: 10px;
-  position: relative;
+.about-us .about-card p {
+  line-height: 25px;
+  text-align: left;
 }
 
-.our-services .service2 p::before,
-.our-services .service4 p::before,
-.our-services .service6 p::before {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: 2px;
-  height: 50px;
-  content: "";
-  background-color: #175559;
+.mission-and-vision {
+  margin-top: 50px;
+  padding: 100px 0px;
+  background-color: #eee;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-@media only screen and (max-width: 1200px) {
-  .our-missions .mission-and-vision h2 {
-    padding: 20px 0px;
-    margin-bottom: 0px;
-  }
+.mission-and-vision h2 {
+  text-align: center;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 991px) {
-  .about-us {
-    margin-top: 100px;
-  }
-  .about-us .about-us-img {
-    text-align: center;
-  }
-  .about-us .about-us-img img {
-    width: 50%;
-  }
-  .about-us .about-us-discription h1 {
-    text-align: center;
-  }
-  .about-us .about-us-discription h2 {
-    text-align: center;
-  }
-  .our-missions .mission-img {
-    text-align: center;
-  }
-  .our-missions .mission-img img {
-    width: 50%;
-  }
-  .our-services hr {
-    display: block;
-  }
+.mission-and-vision p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #736262;
 }
 
-@media only screen and (max-width: 767px) {
-  .our-services hr {
-    display: none;
-  }
+.mission-and-vision .mission-card {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.mission-and-vision .mission-card i {
+  padding-left: 20px;
+  color: #9d58dd;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.mission-and-vision .mission-card h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: serif;
+  padding-left: 20px;
+}
+
+.mission-and-vision .mission-card ul {
+  margin-bottom: 20px;
+  list-style: disc;
+}
+
+.mission-and-vision .mission-card ul li {
+  color: #736262;
+  margin-bottom: 10px;
+}
+
+.mission-and-vision .mission-card:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.2);
+          box-shadow: 0 0 40px rgba(51, 51, 51, 0.2);
+}
+
+.director-message .director-img img {
+  width: 100%;
+}
+
+.director-message .d-message .number {
+  font-size: 100px;
+  color: #9d58dd;
+}
+
+.director-message .d-message p {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #86b789;
+  display: inline-block;
+}
+
+.director-message .d-message h3 {
+  color: #2a353a;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: serif;
+  font-weight: 700;
+}
+
+.director-message .d-message .dm {
+  text-align: justify;
+  color: #2a353a;
+  font-size: 16px;
+  color: #736262;
+  font-weight: normal;
+  line-height: 30px;
 }
 /*# sourceMappingURL=about-us.css.map */

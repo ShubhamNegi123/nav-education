@@ -1,132 +1,101 @@
-body {
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-body ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
+* ul {
   list-style: none;
 }
 
-body a {
+* a {
   text-decoration: none;
 }
 
-body .container {
-  max-width: 90%;
+* h1, * h2, * h3 {
+  font-family: 'Abril Fatface', cursive;
 }
 
-.contact-us {
-  margin: 150px 0px;
-  margin-bottom: 100px;
-}
-
-.contact-us .container {
-  width: 50%;
-}
-
-.contact-us h2 {
+h1 {
   text-transform: uppercase;
-  color: #0f383b;
-  line-height: 50px;
-  font-size: 30px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
   text-align: center;
+}
+
+.form-and-location {
+  border-top: 1px solid #eee;
+  margin-top: 100px;
+}
+
+.form-and-location form {
   margin-bottom: 50px;
 }
 
-.contact-us form input {
-  width: 100%;
-}
-
-.contact-us form .name-wrapper,
-.contact-us form .phone-wrapper,
-.contact-us form .email-wrapper,
-.contact-us form .country-wrapper,
-.contact-us form .marital-wrapper,
-.contact-us form .city-wrapper,
-.contact-us form .message-wrapper {
-  margin-bottom: 30px;
-}
-
-.contact-us form .name-wrapper input,
-.contact-us form .phone-wrapper input,
-.contact-us form .email-wrapper input,
-.contact-us form .country-wrapper input,
-.contact-us form .marital-wrapper input,
-.contact-us form .city-wrapper input,
-.contact-us form .message-wrapper input {
-  height: 50px;
+.form-and-location form label {
   padding-left: 20px;
-  border: none;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #2a353a;
+}
+
+.form-and-location form label i {
+  font-size: 8px;
+  color: #2a353a;
+}
+
+.form-and-location form input {
+  border-radius: 20px;
+  border: 2px solid #eee;
+  height: 40px;
+  display: inline-block;
+  width: 100%;
   background-color: #eee;
 }
 
-.contact-us form .marital-wrapper {
-  padding-left: 20px;
+.form-and-location form textarea {
   background-color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact-us form .marital-wrapper input {
-  width: 20px;
-}
-
-.contact-us form .marital-wrapper label {
-  padding-left: 10px;
-}
-
-.contact-us form .marital-wrapper .space {
-  width: 30px;
-}
-
-.contact-us form .message-wrapper textarea {
-  width: 100%;
   height: 100px;
-  padding-left: 20px;
-  background-color: #eee;
-  border: none;
-}
-
-.contact-us form .submit-button button {
   width: 100%;
-  padding: 6px 0px;
-  background-color: #175559;
-  color: #fec407;
-  text-transform: uppercase;
-  font-weight: bold;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  border-radius: 40px;
+  border: 2px solid #eee;
+  resize: none;
 }
 
-.contact-us form .submit-button button:hover {
-  background-color: #fec407;
-  color: #175559;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+.form-and-location form button {
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 30px;
+  background-color: #2a353a;
 }
 
-@media only screen and (max-width: 1300px) {
-  .contact-us .container {
-    width: 90%;
-  }
+.form-and-location form button:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #da8f87;
 }
 
-@media only screen and (max-width: 991px) {
-  .contact-us .container {
-    width: 80%;
-  }
+.form-and-location .map {
+  width: 100%;
+  height: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .contact-us .container {
-    width: 90%;
+.form-and-location .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 568px) {
+  .contact-banner img {
+    width: 100%;
+    min-height: 200px;
   }
 }
 /*# sourceMappingURL=contact-us.css.map */

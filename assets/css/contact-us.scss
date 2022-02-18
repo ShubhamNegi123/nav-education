@@ -1,116 +1,95 @@
-$primary-bg-color: #175559;
-$heading-primary-color: #0f383b;
-$text-color: #175559;
-$text-color2: #4d4d4d;
-$button-bg-color: #fec407;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-body {
-    font-family: "Playfair Display", serif;
-    font-size: 16px;
+$primary-color: #da8f87;
+$secondary-color: #2a353a;
+
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0px;
+    padding: 0px;
     ul {
-        margin-bottom: 0px;
-        padding-left: 0px;
         list-style: none;
     }
     a {
         text-decoration: none;
     }
-    .container {
-        max-width: 90%;
+    h1,h2,h3{
+        
+        font-family: 'Abril Fatface', cursive;
     }
 }
 
 
-
-.contact-us {
-    margin: 150px 0px;
-    margin-bottom: 100px;
-    .container {
-        width: 50%;
-    }
-    h2 {
-        text-transform: uppercase;
-        color: $heading-primary-color;
-        line-height: 50px;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form-and-location{
+    border-top: 1px solid #eee;
+    margin-top: 100px;
+   
+    form{    
         margin-bottom: 50px;
-    }
-    form {
-        input {
-            width: 100%;
-        }
-        .name-wrapper,
-        .phone-wrapper,
-        .email-wrapper,
-        .country-wrapper,
-        .marital-wrapper,
-        .city-wrapper,
-        .message-wrapper {
-            margin-bottom: 30px;
-            input{
-                height: 50px;
-                padding-left: 20px;
-                border: none;
-                background-color: #eee;
-            }
-        }
-        .marital-wrapper{
+        label{
             padding-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            color: $secondary-color;
+            i{
+                font-size: 8px;
+                color: $secondary-color;
+                
+            }
+        }   
+        input{
+            border-radius: 20px;
+            border: 2px solid #eee;
+            height: 40px;
+            display: inline-block;
+            width: 100%;
             background-color: #eee;
-            display: flex;
-            align-items: center;
-            input{
-                width: 20px;
-            }
-            label{
-                padding-left: 10px;
-            }
-           .space{
-               width: 30px;
-           }
         }
-        .message-wrapper{
-            textarea{
-                width: 100%;
-                height: 100px;
-                padding-left: 20px;
-                background-color: #eee;
-                border: none;
+        textarea{
+            background-color: #eee;
+            height: 100px;
+            width: 100%;
+            border-radius: 40px;
+            border: 2px solid #eee;
+            resize: none;
+        }
+        button{
+            color: #fff;
+            transition: all .3s ease;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 30px;
+            background-color: $secondary-color;
+            &:hover{
+                transition: all .3s ease;
+                background-color: $primary-color;                
             }
         }
-        .submit-button{
-            button{
-                width: 100%;
-                padding: 6px 0px;
-                background-color: $text-color;
-                color: $button-bg-color;
-                text-transform: uppercase;
-                font-weight: bold;
-                transition: all .4s ease;
-                &:hover{
-                background-color: $button-bg-color;
-                color: $text-color;
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-                    transition: all .4s ease;
-                }
-            }
-        }
-    }
 }
-@media only screen and (max-width: 1300px) {
-    .contact-us .container {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 991px) {
-    .contact-us .container {
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .contact-us .container {
-        width: 90%;
+
+@media only screen and (max-width: 568px) {
+    
+    .contact-banner img {
+        width: 100%;
+        min-height: 200px;
     }
 }

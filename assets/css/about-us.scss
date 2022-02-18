@@ -1,206 +1,139 @@
-$primary-bg-color: #175559;
-$heading-primary-color: #0f383b;
-$text-color: #175559;
-$text-color2: #4d4d4d;
-$button-bg-color: #fec407;
 
-body {
-    font-family: "Playfair Display", serif;
-    font-size: 16px;
+$primary-color: #86b789;
+$secondary-color: #2a353a;
+$text-color: #736262;
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0px;
+    padding: 0px;
     ul {
-        margin-bottom: 0px;
-        padding-left: 0px;
         list-style: none;
     }
     a {
         text-decoration: none;
     }
-    .container {
-        max-width: 90%;
+    h1,
+    h2,
+    h3 {
+        font-family: serif;
     }
 }
+
+
 
 .about-us {
-    margin-top: 200px;
-    margin-bottom: 100px;
-    .about-us-img {
-        img {
-            width: 100%;
-        }
+    margin-top: 100px;
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: $secondary-color;
+        font-size: 35px;
+        letter-spacing: 1px;
+        font-weight: 700;
     }
-    .about-us-discription {
-        h1 {
-            font-size: 30px;
-            color: $heading-primary-color;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        p {
-            line-height: 28px;
-            text-align: justify;
-            color: $text-color2;
+    p {
+        color: $text-color;
+        line-height: 30px;
+        text-align: justify;
+    }
+    .about-card {
+        margin-top: 50px;
+        i {
+            font-size: 50px;
+            color: rgb(157, 88, 221);
         }
         h2 {
-            color: $heading-primary-color;
-            font-weight: bold;
+            margin: 20px 0px;
+            font-family: serif;
+            color: $secondary-color;
+            word-spacing: 4px;
+            font-weight: 700;
+            font-size: 25px;
         }
         p {
-            text-align: justify;
-            color: $text-color2;
-            line-height: 28px;
+            line-height: 25px;
+            text-align: left;
         }
     }
 }
 
-.our-missions {
-    background-color: $heading-primary-color;
-    padding-bottom: 50px;
-    .mission-and-vision {
-        h2 {
-            font-size: 30px;
-            color: $button-bg-color;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        p {
-            color: #fff;
-        }
-    }
-    .mission-img {
-        img {
-            width: 100%;
-        }
-    }
-}
-
-.our-services {
-    background-color: #f5f5f5;
-    padding: 50px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.mission-and-vision {
+    margin-top: 50px;
+    padding: 100px 0px;
+    background-color: #eee;
+    transition: all 0.3s ease;
     h2 {
         text-align: center;
-        font-size: 30px;
-        color: $heading-primary-color;
         font-weight: bold;
-        margin-bottom: 30px;
-        margin-top: 0px;
-        margin-bottom: 60px;
     }
-    hr{
-        display: none;
-    }
-    .service1,
-    .service3,
-    .service5 {
+    p {
         text-align: center;
-        .empty-space {
-            width: 100%;
-            height: 150px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        color: $text-color;
+    }
+    .mission-card {
+        background-color: #fff;
+        padding: 20px;
+        i {
+            padding-left: 20px;
+            color: rgb(157, 88, 221);
+            font-size: 40px;
+            font-weight: 100;
         }
-        .service-number {
-            text-align: center;
-            // display: block;
-            font-size: 60px;
-            color: $button-bg-color;
+        h3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
             font-family: serif;
-            font-weight: bolder;
-            padding: 20px 22px;
-            border: 20px solid $text-color;
-            border-radius: 50%;
+            padding-left: 20px;
         }
-        p {
-            margin-top: 100px;
-            padding-top: 10px;
-            // border-top: 1px solid #000;
-            position: relative;
-            &::before {
-                position: absolute;
-                top: -50px;
-                left: 50%;
-                transform: translate(-50%);
-                width: 2px;
-                height: 50px;
-                content: "";
-                background-color: $text-color;
+        ul {
+            margin-bottom: 20px;
+            list-style: disc;
+            li {
+                color: $text-color;
+                margin-bottom: 10px;
             }
         }
-    }
-    .service2,
-    .service4,
-    .service6 {
-        text-align: center;
-        .empty-space {
-            width: 100%;
-            height: 150px;
+        &:hover {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 40px rgba(51, 51, 51, 0.2);
         }
-        .service-number {
-            text-align: center;
-            // display: block;
-            font-size: 60px;
-            color: $button-bg-color;
-            font-family: serif;
-            font-weight: bolder;
-            padding: 20px 22px;
-            border: 20px solid $text-color;
-            border-radius: 50%;
-        }
-        p {
-            margin-bottom: 100px;
-            padding-bottom: 10px;
-            // border-bottom: 1px solid #000;
-            position: relative;
-            &::before {
-                position: absolute;
-                bottom: -50px;
-                left: 50%;
-                transform: translate(-50%);
-                width: 2px;
-                height: 50px;
-                content: "";
-                background-color: $text-color;
-            }
-        }
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .our-missions .mission-and-vision h2 {
-        padding: 20px 0px;
-        margin-bottom: 0px;
     }
 }
 
-@media only screen and (max-width: 991px) {
-    .about-us {
-        margin-top: 100px;
-         }
-    .about-us .about-us-img{
-        text-align: center;
+.director-message {
+    .director-img {
         img {
-            width: 50%;
+            width: 100%;
         }
-    } 
-    .about-us .about-us-discription h1{
-       text-align: center;
     }
-    .about-us .about-us-discription h2{
-       text-align: center;
+    .d-message {
+        .number {
+            font-size: 100px;
+            color: rgb(157, 88, 221);
+        }
+        p {
+            margin-left: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: $primary-color;
+            display: inline-block;
+        }
+        h3 {
+            color: $secondary-color;
+            font-size: 30px;
+            letter-spacing: 1px;
+            font-family: serif;
+            font-weight: 700;
+        }
+        .dm{
+            text-align: justify;
+            color: $secondary-color;
+            font-size: 16px; 
+            color: $text-color; 
+            font-weight: normal;
+            line-height: 30px;      
+        }
     }
-    .our-missions .mission-img{
-          text-align: center;
-          img {
-            width: 50%;
-          } 
-    } 
-    .our-services{
-        hr{
-            display: block;
-        }
-    } 
-}
-@media only screen and (max-width: 767px) {
-    .our-services{
-        hr{
-            display: none;
-        }
-    } 
 }
