@@ -1,0 +1,239 @@
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.home-screen-banner img {
+  width: 100%;
+}
+
+/*
+ 
+
+*/
+.about {
+  padding: 100px 0px;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.about .about-discription h2 {
+  text-transform: uppercase;
+  color: #0f383b;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about .about-discription p {
+  text-align: justify;
+  line-height: 40px;
+}
+
+.advantages {
+  padding: 50px 0px;
+  background-color: #0f383b;
+  position: relative;
+}
+
+.advantages .heading {
+  text-align: center;
+}
+
+.advantages .heading h2 {
+  text-transform: uppercase;
+  color: #fec407;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.advantages .advantage-img {
+  position: absolute;
+  left: 50px;
+  bottom: -80px;
+}
+
+.advantages .advantage-img img {
+  width: 100%;
+}
+
+.advantages .advantages-list ul li {
+  position: relative;
+  padding-left: 20px;
+  color: #fff;
+  line-height: 35px;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.advantages .advantages-list ul li i {
+  position: absolute;
+  top: 12px;
+  left: -10px;
+}
+
+.universities-in-russia {
+  margin-top: 200px;
+  padding: 50px 0px;
+}
+
+.universities-in-russia .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.universities-in-russia .heading h2 {
+  text-transform: uppercase;
+  color: #0f383b;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.universities-in-russia .universities-name ul {
+  text-align: center;
+  list-style: disc;
+}
+
+.universities-in-russia .universities-name ul li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.universities-in-russia .universities-name ul li a {
+  padding-left: 10px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.eligibility-criteria {
+  background-image: url(../images/eligibility-criteria1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+}
+
+.eligibility-criteria .eligibility-criteria-contant {
+  width: 80%;
+  padding-left: 100px;
+}
+
+.eligibility-criteria .eligibility-criteria-contant .heading {
+  margin-bottom: 50px 0px;
+}
+
+.eligibility-criteria .eligibility-criteria-contant .heading h2 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.eligibility-criteria .eligibility-criteria-contant h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.eligibility-criteria .eligibility-criteria-contant ul {
+  margin-top: 30px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.eligibility-criteria .eligibility-criteria-contant ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.gallery {
+  margin: 80px 0px;
+  position: relative;
+}
+
+.gallery .heading {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.gallery .heading h2 {
+  color: #0f383b;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.gallery .gallery-img img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .universities-in-russia {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .advantages .advantage-img {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .advantages .advantage-img {
+    display: none;
+  }
+  .universities-in-russia {
+    margin-top: 50px;
+  }
+  .eligibility-criteria .eligibility-criteria-contant {
+    width: 90%;
+  }
+  .universities-in-russia .universities-name {
+    margin-top: 40px;
+  }
+  .universities-in-russia .heading h2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .eligibility-criteria .eligibility-criteria-contant {
+    width: 100%;
+  }
+  .eligibility-criteria .eligibility-criteria-contant {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home-screen-banner img {
+    width: 100%;
+    min-height: 300px;
+  }
+  .about {
+    padding: 50px 0px;
+  }
+  .about .about-discription p {
+    line-height: 30px;
+  }
+  .advantages .advantages-list ul li {
+    line-height: 30px;
+  }
+}
+/*# sourceMappingURL=mbbs-in-russia.css.map */
