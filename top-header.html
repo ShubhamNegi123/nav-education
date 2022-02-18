@@ -29,7 +29,7 @@ cb=googleTranslateElementInit"></script>
                 </ul>
             </div>
         </div>
-        <div class="day-night-mode d-flex" onclick="Mode()">
+        <div class="day-night-mode" >
             <div class="night-mode" onclick="night_Mode()">
                 <i class="fas fa-moon"></i>
             </div>
@@ -41,13 +41,9 @@ cb=googleTranslateElementInit"></script>
 </div>
 
 <script>
-    /* function night_Mode(){
-        alert();
-    } */
-    function Mode(){
-        $('body').toggleClass('mode')     
-    }   
-    function night_Mode(){
+    
+    function night_Mode(){       
+        $('body').addClass('mode');
         $('.night-mode').css({
             display: 'none'
         })
@@ -56,6 +52,7 @@ cb=googleTranslateElementInit"></script>
         })
     }
     function day_Mode(){
+        $('body').removeClass('mode');
         $('.night-mode').css({
             display: 'block'            
         })
