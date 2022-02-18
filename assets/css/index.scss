@@ -1,5 +1,9 @@
 
-
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
 
 
 body {
@@ -561,8 +565,8 @@ body {
         }
     }
     .owl-carousel .owl-nav {
+        display: none;
         background-color: red;
-        display: block;
         position: absolute;
         top: 50px;
         width: 100%;

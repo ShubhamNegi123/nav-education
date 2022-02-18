@@ -301,7 +301,12 @@ header nav .nav-bar-tabs ul {
       justify-content: space-around;
 }
 
+header nav .nav-bar-tabs ul li {
+  cursor: pointer;
+}
+
 header nav .nav-bar-tabs ul li a {
+  cursor: pointer;
   font-size: 13px;
   /* font-family: "Ubuntu", sans-serif; */
   color: #000;
@@ -512,7 +517,7 @@ footer .bottom-footer .rights .watermark a {
 
 @media only screen and (max-width: 862px) {
   header {
-    top: 60px;
+    top: 38px;
   }
 }
 
@@ -624,7 +629,7 @@ footer .bottom-footer .rights .watermark a {
 
 @media only screen and (max-width: 377px) {
   header {
-    top: 60px;
+    top: 38px;
   }
 }
 /*# sourceMappingURL=header-footer.css.map */

@@ -265,7 +265,9 @@ header {
             ul {
                 justify-content: space-around;
                 li {
-                    a {
+                    cursor: pointer;
+                    a{
+                        cursor: pointer;
                         font-size: 13px;
                         /* font-family: "Ubuntu", sans-serif; */
                         color: #000;
@@ -466,7 +468,7 @@ footer {
 
 @media only screen and (max-width: 862px) {
     header {
-        top: 60px;
+        top: 38px;
     }
 }
 
@@ -573,6 +575,6 @@ footer {
 }
 @media only screen and (max-width: 377px) {
     header {
-        top: 60px;
+        top: 38px;
     }
 }
