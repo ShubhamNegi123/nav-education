@@ -41,7 +41,12 @@ cb=googleTranslateElementInit"></script>
 </div>
 
 <script>
-    
+    let mode = localStorage.getItem('mode');
+    if(mode == 'night_mode'){
+        night_Mode();
+    }else{
+        day_Mode();
+    }
     function night_Mode(){       
         $('body').addClass('mode');
         $('.night-mode').css({
@@ -50,6 +55,8 @@ cb=googleTranslateElementInit"></script>
         $('.day-mode').css({
             display: 'block'
         })
+        localStorage.setItem('mode', 'night_mode');
+        
     }
     function day_Mode(){
         $('body').removeClass('mode');
@@ -59,5 +66,6 @@ cb=googleTranslateElementInit"></script>
         $('.day-mode').css({
             display: 'none'
         })
+        localStorage.setItem('mode','day_mode');
     }
 </script>
