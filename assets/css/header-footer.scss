@@ -3,8 +3,6 @@ $heading-primary-color: #0f383b;
 $text-color: #175559;
 $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
-
 .mode {
     background-color: #000;
     color: #fff;
@@ -140,7 +138,7 @@ $button-bg-color: #fec407;
 body {
     /*    font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     ul {
         margin-bottom: 0px;
         padding-left: 0px;
@@ -172,8 +170,9 @@ body {
     display: none;
     cursor: pointer;
     i {
-        font-size: 30px;
+        font-size: 50px;
         color: #fff;
+        font-weight: lighter;
     }
 }
 
@@ -199,6 +198,7 @@ body {
                     margin-right: 25px;
                     a {
                         font-size: 13px;
+                        font-family: var(--bs-body-font-family);
                         color: #fff;
                         /* font-family: "Ubuntu", sans-serif; */
                         i {
@@ -466,6 +466,16 @@ footer {
     width: 100%;
 }
 
+@media only screen and (max-width: 1400px) {
+    header nav {
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    header nav {
+        height: 100px;
+    }
+}
 @media only screen and (max-width: 862px) {
     header {
         top: 38px;
@@ -525,9 +535,13 @@ footer {
     header nav .nav-bar-tabs ul li {
         margin-top: 10px;
     }
-    .nav-sidebar-button,
-    .nav-close-button {
+    .nav-sidebar-button{
         display: block;
+    }
+    .nav-close-button {
+        display: none;
+        top: 22px;
+        right: 25px;
     }
     footer .bottom-footer .rights p {
         text-align: center;
@@ -540,8 +554,56 @@ footer {
         top: 10px;
         right: 30px;
     }
-    
+    header nav .nav-bar-tabs {
+        position: fixed;
+        top:-50px;
+        right:-50px;
+        width: 0vw;
+        height: 0vh;
+        border-radius: 0% 0% 0% 50vw;
+        background: $heading-primary-color;
+        z-index: 9999;
+        transition: all .5s ease;
+      }
+      header nav .nav-bar-tabs ul {       
+        flex-direction: column;  
+        transition: all .4s ease;
+        opacity: 1;
+        height: 80vh;
+        visibility: visible;
+        margin-top: 100px;   
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 40vh;
+      }
+      
+      header nav .nav-bar-tabs ul .countries-tab .countries-list {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 100px;
+        width: 150px;
+        left: 60%;
+        transform: translate(-50%);
+      }
+      header nav .nav-bar-tabs ul li {          
+        margin-bottom: 5vh;
+      }
+      header nav .nav-bar-tabs ul li a {
+        font-size: 30px;
+      }
+      header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+        top: -300px;
+        left: -85px;
+      }
+      header nav .nav-bar-tabs ul li {
+        margin-bottom: 10px;
+      }
 }
+
+
+
 @media only screen and (max-width: 567px) {
     header nav .website-logo a img {
         width: 100px;
@@ -578,4 +640,31 @@ footer {
     header {
         top: 38px;
     }
+}
+@media only screen and (max-width: 512px) {
+    header nav .nav-bar-tabs ul {              
+        margin-left: 25vh;
+      }
+      header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+        left: 85px;
+      }
+}
+@media only screen and (max-width: 435px) {
+    header nav .nav-bar-tabs ul {              
+        margin-left: 20vh;
+      }
+      header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+        left: 85px;
+      }
+}
+@media only screen and (max-width: 375px) {
+    header nav .nav-bar-tabs ul {              
+        margin-left: 18vh;
+      }
+      header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+        left: 45px;
+      }
+      header nav .nav-bar-tabs ul li a {
+        font-size: 20px;
+      }
 }

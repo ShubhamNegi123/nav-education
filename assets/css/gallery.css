@@ -1,5 +1,5 @@
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Mukta", sans-serif;
   font-size: 16px;
 }
 
@@ -129,6 +129,12 @@ body .container {
   color: #175559;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+@media only screen and (min-width: 1400px) {
+  .gallery {
+    margin-top: 200px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
