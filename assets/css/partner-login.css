@@ -1,0 +1,326 @@
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.partner {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.partner .partner-banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.partner .partner-banner img {
+  width: 50%;
+}
+
+.partner .partner-discription h1 {
+  color: #0f383b;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.partner .partner-discription p {
+  text-align: justify;
+}
+
+.our-services {
+  background-color: #175559;
+  padding: 50px 0px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.our-services h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.our-services .service1,
+.our-services .service3,
+.our-services .service5 {
+  text-align: center;
+}
+
+.our-services .service1 .empty-space,
+.our-services .service3 .empty-space,
+.our-services .service5 .empty-space {
+  width: 100%;
+  height: 150px;
+}
+
+.our-services .service1 .service-number,
+.our-services .service3 .service-number,
+.our-services .service5 .service-number {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  color: #fec407;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 47px 22px;
+  border: 20px solid #fec407;
+  color: #175559;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.our-services .service1 p,
+.our-services .service3 p,
+.our-services .service5 p {
+  margin-top: 100px;
+  padding-top: 10px;
+  color: #fff;
+  position: relative;
+}
+
+.our-services .service1 p::before,
+.our-services .service3 p::before,
+.our-services .service5 p::before {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 2px;
+  height: 50px;
+  content: "";
+  background-color: #fff;
+}
+
+.our-services .service2,
+.our-services .service4,
+.our-services .service6 {
+  text-align: center;
+}
+
+.our-services .service2 .empty-space,
+.our-services .service4 .empty-space,
+.our-services .service6 .empty-space {
+  width: 100%;
+  height: 150px;
+}
+
+.our-services .service2 .service-number,
+.our-services .service4 .service-number,
+.our-services .service6 .service-number {
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  color: #fec407;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 50px 22px;
+  border: 20px solid #fec407;
+  color: #175559;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.our-services .service2 .service-number1,
+.our-services .service4 .service-number1,
+.our-services .service6 .service-number1 {
+  padding: 65px 22px;
+}
+
+.our-services .service2 p,
+.our-services .service4 p,
+.our-services .service6 p {
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  color: #fff;
+  position: relative;
+}
+
+.our-services .service2 p::before,
+.our-services .service4 p::before,
+.our-services .service6 p::before {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 2px;
+  height: 50px;
+  content: "";
+  background-color: #fff;
+}
+
+.our-services hr {
+  display: none;
+  color: #fff;
+}
+
+.join-us {
+  margin: 50px 0px;
+  margin-bottom: 100px;
+}
+
+.join-us .container {
+  width: 50%;
+}
+
+.join-us h2 {
+  color: #0f383b;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.join-us form input {
+  width: 100%;
+}
+
+.join-us form .name-wrapper,
+.join-us form .phone-wrapper,
+.join-us form .whatsapp-wrapper,
+.join-us form .age-wrapper,
+.join-us form .marital-wrapper,
+.join-us form .city-wrapper,
+.join-us form .message-wrapper {
+  margin-bottom: 30px;
+}
+
+.join-us form .name-wrapper input,
+.join-us form .phone-wrapper input,
+.join-us form .whatsapp-wrapper input,
+.join-us form .age-wrapper input,
+.join-us form .marital-wrapper input,
+.join-us form .city-wrapper input,
+.join-us form .message-wrapper input {
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+  background-color: #eee;
+}
+
+.join-us form .marital-wrapper {
+  padding-left: 20px;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.join-us form .marital-wrapper input {
+  width: 20px;
+}
+
+.join-us form .marital-wrapper label {
+  padding-left: 10px;
+}
+
+.join-us form .marital-wrapper .space {
+  width: 30px;
+}
+
+.join-us form .message-wrapper textarea {
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  background-color: #eee;
+  border: none;
+}
+
+.join-us form .submit-button button {
+  width: 100%;
+  padding: 6px 0px;
+  background-color: #175559;
+  color: #fec407;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.join-us form .submit-button button:hover {
+  background-color: #fec407;
+  color: #175559;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .our-services hr {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .partner {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .our-services hr {
+    display: none;
+  }
+  .join-us .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .our-services .service2 .empty-space,
+  .our-services .service4 .empty-space,
+  .our-services .service6 .empty-space,
+  .our-services .service1 .empty-space,
+  .our-services .service3 .empty-space,
+  .our-services .service5 .empty-space {
+    display: none;
+  }
+  .our-services .services {
+    margin-bottom: 20px;
+  }
+  .our-services .service1 p,
+  .our-services .service2 p,
+  .our-services .service3 p,
+  .our-services .service4 p,
+  .our-services .service5 p,
+  .our-services .service6 p {
+    margin-bottom: 65px;
+  }
+  .partner {
+    margin-top: 100px;
+  }
+  .our-services .service1 p,
+  .our-services .service3 p,
+  .our-services .service5 p {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=partner-login.css.map */

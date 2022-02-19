@@ -1,0 +1,236 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Mukta", sans-serif;
+        font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+.home-screen-banner {
+    img {
+        width: 100%;
+    }
+}
+/*
+ 
+
+*/
+
+.about {
+    padding: 100px 0px;
+    .about-img {
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .about-discription {
+        h2 {
+            text-transform: uppercase;
+            color: $heading-primary-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: justify;
+            line-height: 40px;
+        }
+    }
+}
+
+.advantages {
+    padding: 50px 0px;
+    background-color: $heading-primary-color;
+    position: relative;
+    .heading {
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            color: $button-bg-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+    .advantage-img {
+        position: absolute;
+        left: 50px;
+        bottom: -80px; 
+        img {
+            width: 100%;
+        }
+    }
+    .advantages-list {
+        ul {
+            li {
+                position: relative;
+                padding-left: 20px;
+                color: #fff;
+                line-height: 35px;
+                text-align: justify;
+                margin-bottom: 25px;
+                i {
+                    position: absolute;
+                    top: 12px;
+                    left: -10px;
+                }
+            }
+        }
+    }
+}
+
+.universities-in-russia {
+    margin-top: 200px;
+    padding: 50px 0px;
+    .heading {
+        text-align: center;
+        margin-bottom: 50px;
+        h2 {
+            text-transform: uppercase;
+            color: $heading-primary-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+    .universities-name {
+        ul {
+            text-align: center;
+            list-style: disc;
+            li {
+                text-align: left;
+                margin-bottom: 20px;
+                a {
+                    padding-left: 10px;
+                    color: $text-color2;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.eligibility-criteria {
+    background-image: url(../images/eligibility-criteria1.jpg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+    .eligibility-criteria-contant {
+        width: 80%;
+        padding-left: 100px;
+        .heading {
+            margin-bottom: 50px 0px;
+            h2 {
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+        }
+        h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        ul {
+            margin-top: 30px;
+            padding-left: 20px;
+            list-style: disc;
+            li {
+                margin-bottom: 15px;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+    }
+}
+.gallery{
+    margin: 80px 0px;    
+    position: relative;
+    .heading {
+        text-align: center;
+        padding-bottom: 30px;
+        h2 {
+            color: $heading-primary-color;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+    .gallery-img{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .universities-in-russia {
+        margin-top: 100px;
+      }
+}
+@media only screen and (max-width: 1100px) {
+    .advantages .advantage-img {
+        left: 10px;
+      }
+}
+@media only screen and (max-width: 991px) {
+    .advantages .advantage-img {
+        display: none;
+      }
+      .universities-in-russia {
+        margin-top: 50px;
+      }
+      .eligibility-criteria .eligibility-criteria-contant {
+        width: 90%;
+      }
+      .universities-in-russia{
+          .universities-name{
+              margin-top: 40px;
+          }
+      }
+      .universities-in-russia .heading h2 {
+          margin-bottom: 0px;
+      }
+}
+
+@media only screen and (max-width: 767px) {
+    .eligibility-criteria .eligibility-criteria-contant {
+        width: 100%;
+      }
+      .eligibility-criteria .eligibility-criteria-contant {
+        padding-left: 0px;
+      }
+      
+}
+
+@media only screen and (max-width: 576px) {
+    .home-screen-banner img {
+        width: 100%;
+        min-height: 300px;
+      }
+      .about {
+        padding: 50px 0px;
+      }
+      .about .about-discription p {
+        line-height: 30px;
+      }
+      .advantages .advantages-list ul li {
+        line-height: 30px;       
+      }
+
+}
