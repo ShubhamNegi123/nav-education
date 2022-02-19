@@ -636,7 +636,7 @@ footer .bottom-footer .rights .watermark a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-left: 40vh;
+    margin-left: 45vh;
   }
   header nav .nav-bar-tabs ul .countries-tab .countries-list {
     opacity: 0;
@@ -678,6 +678,15 @@ footer .bottom-footer .rights .watermark a {
     margin-top: -60px;
     margin-right: 100px;
   }
+  header nav .nav-bar-tabs ul {
+    margin-left: 35vh;
+  }
+  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+    left: -70px;
+  }
+  header nav .nav-bar-tabs ul li a {
+    font-size: 25px;
+  }
 }
 
 @media only screen and (max-width: 516px) {
@@ -694,6 +703,27 @@ footer .bottom-footer .rights .watermark a {
   }
 }
 
+@media only screen and (max-width: 512px) {
+  header nav .nav-bar-tabs ul {
+    margin-left: 28vh;
+  }
+  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  header nav .nav-bar-tabs ul {
+    margin-left: 25vh;
+  }
+  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
+    left: 20px;
+  }
+  header nav .nav-bar-tabs ul li a {
+    font-size: 25px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   header nav .nav-social-icons ul {
     margin-right: 30px;
@@ -706,30 +736,12 @@ footer .bottom-footer .rights .watermark a {
   }
 }
 
-@media only screen and (max-width: 512px) {
-  header nav .nav-bar-tabs ul {
-    margin-left: 25vh;
-  }
-  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
-    left: 85px;
-  }
-}
-
-@media only screen and (max-width: 435px) {
-  header nav .nav-bar-tabs ul {
-    margin-left: 20vh;
-  }
-  header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
-    left: 85px;
-  }
-}
-
 @media only screen and (max-width: 375px) {
   header nav .nav-bar-tabs ul {
-    margin-left: 18vh;
+    margin-left: 22vh;
   }
   header nav .nav-bar-tabs ul .countries-tab:hover .countries-list {
-    left: 45px;
+    left: 10px;
   }
   header nav .nav-bar-tabs ul li a {
     font-size: 20px;
