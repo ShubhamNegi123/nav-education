@@ -133,8 +133,13 @@ $button-bg-color: #fec407;
     .fee-strucutre td {
         border: 1px solid #fff;
     }
+    .gallery h3 {
+        color: #fff;
+    }
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     /*    font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
