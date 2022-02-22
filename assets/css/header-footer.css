@@ -145,11 +145,24 @@
   color: #fff;
 }
 
+.mode .student-login .student-login-form form .username label, .mode .student-login .student-login-form form .password label {
+  color: #fff;
+}
+
+.mode .student-login .student-login-form form .username input, .mode .student-login .student-login-form form .password input {
+  border-bottom: 2px solid #fff;
+}
+
+.mode .student-login .student-login-form form .username input:focus, .mode .student-login .student-login-form form .password input:focus {
+  background: #fec407;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   /*    font-family: "Playfair Display", serif; */
   font-family: "Mukta", sans-serif;
   font-size: 16px;
@@ -167,6 +180,35 @@ body a {
 
 body .container {
   max-width: 90%;
+}
+
+.become-our-partner, .application-form1 {
+  position: fixed;
+  right: -54px;
+  top: 50%;
+  z-index: 999;
+  font-weight: bold;
+  color: #fec407;
+  background-color: #0f383b;
+  padding: 5px 10px;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  opacity: .9;
+}
+
+.become-our-partner:hover, .application-form1:hover {
+  color: #0f383b;
+  background-color: #fec407;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.application-form1 {
+  top: 70%;
+  right: -55px;
 }
 
 .nav-sidebar-button {
@@ -524,6 +566,42 @@ footer .bottom-footer .rights .watermark a {
   width: 100%;
 }
 
+.top-header .day-night-mode {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  position: fixed;
+  bottom: 60px;
+  right: -30px;
+  width: 102px;
+  z-index: 999999999;
+  background: none;
+}
+
+.top-header .currency-exchange {
+  cursor: pointer;
+  position: absolute;
+  position: fixed;
+  bottom: 60px;
+  right: 95px;
+  width: 50px;
+  z-index: 999999999;
+  background: none;
+}
+
+.top-header .currency-exchange a img {
+  width: 100%;
+}
+
+.top-header .day-night-mode .night-mode i, .top-header .day-night-mode .day-mode i {
+  font-size: 40px;
+  color: yellow;
+}
+
+.mode .top-header .day-night-mode .day-mode i {
+  color: yellow;
+}
+
 @media only screen and (max-width: 1400px) {
   header nav {
     height: 130px;
@@ -610,11 +688,11 @@ footer .bottom-footer .rights .watermark a {
   header nav .nav-social-icons ul {
     margin-right: 100px;
   }
-  .top-header .day-night-mode {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-  }
+  /* .top-header  .day-night-mode{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    } */
   header nav .nav-bar-tabs {
     position: fixed;
     top: -50px;
@@ -704,11 +782,11 @@ footer .bottom-footer .rights .watermark a {
   .top-header .top-header-left-section {
     display: none;
   }
-  .top-header .day-night-mode {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
+  /* .top-header  .day-night-mode{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    } */
 }
 
 @media only screen and (max-width: 512px) {

@@ -44,4 +44,8 @@ body .container {
   line-height: 28px;
   color: #fff;
 }
+
+.top-header .currency-exchange {
+  display: none;
+}
 /*# sourceMappingURL=director-message.css.map */

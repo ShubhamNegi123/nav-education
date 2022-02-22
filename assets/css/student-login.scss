@@ -1,0 +1,131 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {    
+    font-family: "Mukta", sans-serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+.container-fluid {
+    padding-left: 0px;
+}
+.student-login {
+    box-sizing: border-box;
+    width: 100%;
+    h1{
+        font-size: 35px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 200px;
+        text-align: center;
+        font-weight: bold;
+        color: $heading-primary-color;
+    }
+    .img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100vh;
+        background: url(../images/wave.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        img {
+            width: 70%;
+        }
+    }
+    .student-login-form {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 500px;
+        form {
+            padding: 0px 50px; 
+            width: 100%;
+            .avtar-wrapper {
+                text-align: center;
+                img {
+                    width: 100px;
+                    margin: 0 1auto;
+                }
+            }
+            h2{
+                text-transform: uppercase;
+                margin: 10px 0px;
+                text-align: center;
+                font-weight: bold;
+                color: $button-bg-color;
+            }
+            .username,.password{             
+                input{
+                    outline: none;
+                    border: 0px solid;
+                    height:  35px;
+                    bottom: 1px;
+                    width: 100%;
+                    margin-bottom: 40px;
+                    background: transparent;
+                    border-bottom: 2px solid $heading-primary-color;
+                    &:focus{
+                        background: none;
+                    }
+                }
+                label{
+                    font-weight: bold;
+                    color: $text-color;
+                }
+            }
+            button{
+                background-color: $heading-primary-color;
+                display: block;
+                width: 100%;
+                height: 35px;
+                color: $button-bg-color;
+                border-radius: 20px;
+                margin-top: 10px;
+                transition: all .3s ease;
+                &:hover{
+                    transition: all .3s ease;   
+                    background-color: $button-bg-color;
+                    color: $heading-primary-color;
+
+                }
+            }
+        }
+    }
+}
+.top-header .currency-exchange {
+    display: none;
+}
+
+@media only screen and (max-width:991px){
+    .student-login .img-wrapper {
+        display: none;
+    }
+    .student-login .student-login-form {
+        width: 100%;
+        justify-content: center;
+    }
+    .student-login .student-login-form form {
+        width:80%;
+      }
+}
+@media only screen and (max-width:500px){
+    .student-login .student-login-form form {
+        width: 100%;
+      }
+}
+    

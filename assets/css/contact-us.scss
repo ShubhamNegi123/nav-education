@@ -100,6 +100,9 @@ body {
         }
     }
 }
+.top-header .currency-exchange {
+    display: none;
+}
 @media only screen and (max-width: 1300px) {
     .contact-us .container {
         width: 90%;

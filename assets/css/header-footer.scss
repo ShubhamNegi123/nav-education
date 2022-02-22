@@ -136,11 +136,22 @@ $button-bg-color: #fec407;
     .gallery h3 {
         color: #fff;
     }
+    .student-login .student-login-form form .username label, .student-login .student-login-form form .password label {     
+        color: #fff;
+      }
+      .student-login .student-login-form form .username input, .student-login .student-login-form form .password input {
+          border-bottom: 2px solid #fff;
+      }
+      .student-login .student-login-form form .username input:focus, .student-login .student-login-form form .password input:focus {
+        background: $button-bg-color;
+      }
 }
 html {
     scroll-behavior: smooth;
+    
   }
 body {
+    scroll-behavior: smooth;
     /*    font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
     font-size: 16px;
@@ -155,6 +166,30 @@ body {
     .container {
         max-width: 90%;
     }
+}
+
+.become-our-partner,.application-form1{
+    position: fixed;
+    right: -54px;
+    top: 50%;
+    z-index: 999;
+    font-weight: bold;
+    color: $button-bg-color;
+    background-color: $heading-primary-color;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0px 0px;
+    transform: rotate(-90deg);
+    transition: all .4s ease;
+    opacity: .9;
+    &:hover{
+        color: $heading-primary-color;
+        background-color: $button-bg-color;
+        transition: all .4s ease;
+    }
+}
+.application-form1{
+    top: 70%;
+    right: -55px;
 }
 .nav-sidebar-button {
     position: absolute;
@@ -470,7 +505,39 @@ footer {
     display: block;
     width: 100%;
 }
-
+.top-header .day-night-mode {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    bottom: 60px;
+    right: -30px;
+    width: 102px;
+    z-index: 999999999;
+    background: none;    
+  }
+.top-header .currency-exchange {
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    bottom: 60px;
+    right: 95px;
+    width: 50px;
+    z-index: 999999999;
+    background: none;  
+    a{
+        img{
+            width: 100%;
+        }
+    }  
+  }
+.top-header .day-night-mode .night-mode i, .top-header .day-night-mode .day-mode i {
+    font-size: 40px;
+    color: yellow;    
+}
+.mode .top-header .day-night-mode .day-mode i {
+    color: yellow;
+}
 @media only screen and (max-width: 1400px) {
     header nav {
         height: 130px;
@@ -554,11 +621,11 @@ footer {
     header nav .nav-social-icons ul {
         margin-right: 100px;
     }
-    .top-header  .day-night-mode{
+    /* .top-header  .day-night-mode{
         position: absolute;
         top: 10px;
         right: 30px;
-    }
+    } */
     header nav .nav-bar-tabs {
         position: fixed;
         top:-50px;
@@ -640,11 +707,11 @@ footer {
     .top-header .top-header-left-section {
         display: none;
     }
-    .top-header  .day-night-mode{
+    /* .top-header  .day-night-mode{
         position: absolute;
         top: 10px;
         right: 20px;
-    }
+    } */
 }
 @media only screen and (max-width: 512px) {
     header nav .nav-bar-tabs ul {              

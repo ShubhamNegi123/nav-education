@@ -69,13 +69,13 @@ body {
             width: 90px;
         }
         .tild-building {
-            bottom: 0px;
+            bottom: -6px;
             left: 55%;
             width: 110px;
             height: 100px;
         }
         .tower {
-            bottom: 0px;
+            bottom: -6px;
             left: 39%;
             width: 280px;
             height: 50px;
@@ -94,7 +94,7 @@ body {
             transform: translate(100%);
         }
         .wonders {
-            bottom: 0px;
+            bottom: -6px;
             left: 64%;
             width: 270px;
             height: 50px;
@@ -102,7 +102,7 @@ body {
             transform: translate(100%);
         }
         .statue {
-            bottom: 0px;
+            bottom: -6px;
             left: 66%;
             width: 140px;
             height: 50px;
@@ -588,7 +588,9 @@ body {
     }
 }
 
-
+.top-header .currency-exchange {
+    display: none;
+}
 // media query
 @media only screen and (max-width: 862px) {
     header {

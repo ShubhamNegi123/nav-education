@@ -133,6 +133,12 @@ body {
         }
     }
 }
+.application-form1{
+    display: none;
+}
+.top-header .currency-exchange {
+    display: none;
+}
 
 @media only screen and (max-width: 991px) {
     .application-form form {

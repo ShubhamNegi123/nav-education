@@ -182,6 +182,10 @@ body .container {
   width: 100%;
 }
 
+.top-header .currency-exchange {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .universities-in-russia {
     margin-top: 100px;
