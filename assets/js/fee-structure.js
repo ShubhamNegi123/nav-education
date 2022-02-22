@@ -37,7 +37,7 @@ $(function () {
 
 
             // show  totel values
-            $('.fee-strucutre .totel-fee td:nth-child(' + i + ')').text(totalFee);
+            $('.fee-strucutre .totel-fee td:nth-child(' + i + ')').html(`${totalFee} <i class="fas fa-dollar-sign"></i>`);
 
 
 

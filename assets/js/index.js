@@ -91,27 +91,27 @@ $(function () {
     function homeAnimation() {
         // tower animation
         $('.home .home-banner-heading .tower').animate({
-            bottom: '0px',
+            bottom: '-6px',
             height: '492px'
         }, 2500);
 
         // tild-building animation
         $('.home .home-banner-heading .tild-building').animate({
-            bottom: '0px',
+            bottom: '-6px',
             height: '252px'
         }, 2500);
 
 
         // statue animation
         $('.home .home-banner-heading .statue').animate({
-            bottom: '0px',
+            bottom: '-6px',
             height: '364px'
         }, 2500);
 
 
         // wonders animation
         $('.home .home-banner-heading .wonders').animate({
-            bottom: '0px',
+            bottom: '-6px',
             height: '258px'
         }, 2500);
 
