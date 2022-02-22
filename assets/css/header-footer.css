@@ -185,7 +185,7 @@ body .container {
 .become-our-partner, .application-form1 {
   position: fixed;
   right: -54px;
-  top: 50%;
+  top: 300px;
   z-index: 999;
   font-weight: bold;
   color: #fec407;
@@ -207,7 +207,7 @@ body .container {
 }
 
 .application-form1 {
-  top: 70%;
+  top: 600px;
   right: -55px;
 }
 
@@ -455,21 +455,23 @@ footer .footer-newslatter h2 {
 footer .footer-connecting-links ul li,
 footer .footer-contact-address ul li,
 footer .footer-newslatter ul li {
-  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
   margin-bottom: 10px;
+  color: #175559;
+  font-weight: normal;
+  opacity: 0.8;
 }
 
 footer .footer-connecting-links ul li a,
 footer .footer-contact-address ul li a,
 footer .footer-newslatter ul li a {
-  color: #4d4d4d;
-  font-weight: 600;
+  color: #175559;
+  font-weight: normal;
   opacity: 0.8;
 }
 
 footer .footer-newslatter p {
   color: #4d4d4d;
-  font-weight: 600;
+  font-weight: normal;
   opacity: 0.8;
 }
 
