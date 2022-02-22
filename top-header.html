@@ -1,35 +1,44 @@
 <div class="top-header">
-    <div  id="translator"></div>
-<script src="https://translate.google.com/translate_a/element.js?
+    <div id="translator"></div>
+    <script src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"></script>
-<script>
-    function googleTranslateElementInit(){
-        new google.translate.TranslateElement(
-            {pageLanguage: "en"},
-            "translator"
-        );
-    }
-</script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "translator"
+            );
+        }
+    </script>
+
+
+    <div class="currency-exchange">
+        <a href="currency.html"><img src="assets/images/currency-exchange-icon.png" alt=""></a>
+    </div>
+
     <div class="container d-md-flex justify-content-between align-items-center">
         <div class="top-header-left-section">
             <div class="contact-details top1">
                 <ul class="d-flex">
                     <li><a target="_blank" rel="nofollow" href="mailto:admissions@navchetanaglobal.com"><i
                                 class="far fa-envelope"></i>admissions@navchetanaglobal.com</a></li>
-                    <li><a target="_blank" rel="nofollow" href="7835009900"><i class="fas fa-mobile-alt"></i>+91 78350 09900</a></li>
+                    <li><a target="_blank" rel="nofollow" href="7835009900"><i class="fas fa-mobile-alt"></i>+91 78350
+                            09900</a></li>
                 </ul>
             </div>
         </div>
         <div class="top-header-right-section">
             <div class="login-details">
                 <ul class="d-flex">
-                    <li><a target="_blank"  href="application-form.html"><i class="far fa-hand-point-up"></i>Student Login</a></li>
-                    <li><a target="_blank"  href="partner-login.html"><i class="far fa-hand-point-up"></i>Partner Login</a></li>
+                    <li><a target="_blank" href="student-login.html"><i class="far fa-hand-point-up"></i>Student
+                            Login</a></li>
+                    <li><a target="_blank" href="partner-login.html"><i class="far fa-hand-point-up"></i>Partner
+                            Login</a></li>
                     <li><span> <i class="fas fa-search"></i></span></li>
                 </ul>
             </div>
         </div>
-        <div class="day-night-mode" >
+        <div class="day-night-mode">
             <div class="night-mode" onclick="night_Mode()">
                 <i class="fas fa-moon"></i>
             </div>
@@ -38,16 +47,19 @@ cb=googleTranslateElementInit"></script>
             </div>
         </div>
     </div>
+
+    <a href="become-our-partner.html" class="become-our-partner">Become Partner</a>
+    <a href="application-form.html" class="application-form1">Application form</a>
 </div>
 
 <script>
     let mode = localStorage.getItem('mode');
-    if(mode == 'night_mode'){
+    if (mode == 'night_mode') {
         night_Mode();
-    }else{
+    } else {
         day_Mode();
     }
-    function night_Mode(){       
+    function night_Mode() {
         $('body').addClass('mode');
         $('.night-mode').css({
             display: 'none'
@@ -56,16 +68,16 @@ cb=googleTranslateElementInit"></script>
             display: 'block'
         })
         localStorage.setItem('mode', 'night_mode');
-        
+
     }
-    function day_Mode(){
+    function day_Mode() {
         $('body').removeClass('mode');
         $('.night-mode').css({
-            display: 'block'            
+            display: 'block'
         })
         $('.day-mode').css({
             display: 'none'
         })
-        localStorage.setItem('mode','day_mode');
+        localStorage.setItem('mode', 'day_mode');
     }
 </script>

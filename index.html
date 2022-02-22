@@ -994,9 +994,27 @@
     <!-- counter up cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
+    <script src="jquery.easeScroll.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/headerFooter.js"></script>
     <script src="assets/js/hamburher_menu.js"></script>
+    <script>
+        $("html").easeScroll();
+        $("html").easeScroll({
+            frameRate: 80,
+            animationTime: 1000,
+            stepSize: 120,
+            pulseAlgorithm: 1,
+            pulseScale: 8,
+            pulseNormalize: 1,
+            accelerationDelta: 20,
+            accelerationMax: 1,
+            keyboardSupport: true,
+            arrowScroll: 50,
+            touchpadSupport: true,
+            fixedBackground: true
+        });
+    </script>
 
 </body>
 
