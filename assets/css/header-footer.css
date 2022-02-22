@@ -185,7 +185,7 @@ body .container {
 .become-our-partner, .application-form1 {
   position: fixed;
   right: -54px;
-  top: 200px;
+  top: 250px;
   z-index: 999;
   font-weight: bold;
   color: #fec407;
@@ -207,7 +207,7 @@ body .container {
 }
 
 .application-form1 {
-  top: 500px;
+  top: 400px;
   right: -55px;
 }
 
