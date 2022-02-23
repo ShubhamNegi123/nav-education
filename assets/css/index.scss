@@ -108,6 +108,20 @@ body {
             height: 50px;
             transform: translate(100%);
         }
+        .left-plan-img2{
+            width: 90px;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 9;
+        }
+        .right-plan-img2{
+            width: 90px;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 9;
+        }
     }
 }
 

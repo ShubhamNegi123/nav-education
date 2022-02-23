@@ -283,7 +283,7 @@ header {
     nav {
         padding: 10px 0px;
         z-index: 999;
-        height: 175px;
+        height: 150px;
         background: url(../images/header-bg1.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -297,6 +297,7 @@ header {
         .website-logo {
             a {
                 img {
+                    margin-left: 50px;
                     width: 60%;
                 }
             }
@@ -484,7 +485,9 @@ footer {
         }
     }
 }
-
+.top-header .currency-exchange a img {
+    display: none;
+}
 .swiper {
     width: 100%;
     padding-top: 50px;
@@ -510,12 +513,15 @@ footer {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    position: fixed;
-    bottom: 60px;
-    right: -30px;
-    width: 102px;
+    top: 8px;
+    right: 50px;
+    width: 20px;
     z-index: 999999999;
-    background: none;    
+    background: none;   
+    .night-mode i, .top-header .day-night-mode .day-mode i {
+        font-size: 20px;
+        color: yellow;
+      } 
   }
 .top-header .currency-exchange {
     cursor: pointer;
@@ -533,11 +539,11 @@ footer {
     }  
   }
 .top-header .day-night-mode .night-mode i, .top-header .day-night-mode .day-mode i {
-    font-size: 40px;
     color: yellow;    
 }
 .mode .top-header .day-night-mode .day-mode i {
     color: yellow;
+    font-size: 20px;
 }
 @media only screen and (max-width: 1400px) {
     header nav {
@@ -673,6 +679,10 @@ footer {
       header nav .nav-bar-tabs ul li {
         margin-bottom: 10px;
       }
+      .top-header .day-night-mode {
+          right: 35px;
+          top: 10px;
+      }
 }
 
 
@@ -700,6 +710,26 @@ footer {
       header nav .nav-bar-tabs ul li a {
         font-size: 25px;
       }
+      .home .home-banner-heading .left-plan-img {
+          display: none;
+      }
+      .home .home-banner-heading .ballon-bottom {
+        display: none;
+      }
+      .home .home-banner-heading .left-plan-img2 {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0px;
+        right: 10%;
+        transform: rotate(-55deg);
+      }
+      .home .home-banner-heading .right-plan-img2 {
+        opacity: 1;
+        visibility: visible;
+        top: -200px;
+        left: 10%;
+        transform: rotate(-72deg);
+      }
 }
 @media only screen and (max-width: 516px) {
     header {
@@ -707,6 +737,9 @@ footer {
     }
     .top-header .top-header-left-section {
         display: none;
+    }
+    .top-header .day-night-mode {
+        right: 25px;
     }
     /* .top-header  .day-night-mode{
         position: absolute;

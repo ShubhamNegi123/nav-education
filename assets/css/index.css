@@ -120,6 +120,22 @@ body {
           transform: translate(100%);
 }
 
+.home .home-banner-heading .left-plan-img2 {
+  width: 90px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 9;
+}
+
+.home .home-banner-heading .right-plan-img2 {
+  width: 90px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 9;
+}
+
 .about {
   padding-top: 50px;
   margin-bottom: 20px;
