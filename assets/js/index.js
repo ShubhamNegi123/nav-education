@@ -124,7 +124,7 @@ $(function () {
 
         // ballon-bottom animation
         $('.home .home-banner-heading .ballon-bottom').animate({
-            top: '480px'
+            top: '520px'
         }, 2500);
 
 
@@ -150,5 +150,13 @@ $(function () {
             top: '27%',
             left: '69%'
         }, 2500);
+
+        $('.home .home-banner-heading .left-plan-img2').animate({
+            top: '-200px'
+        }, 3000);
+
+        $('.home .home-banner-heading .right-plan-img2').animate({
+            top: '100%'
+        }, 3000);
     }
 });
