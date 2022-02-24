@@ -27,29 +27,34 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script>
+        <script>
+            $(function () {
+                $("#top-header").load("../russia/top-header-in.html");
+            });
+    
+            $(function () {
+                $("#header-navigation").load("../russia/header-in.html");
+            });
+    
+            $(function () {
+                $("#footer").load("../russia/footer-in.html");
+            });
+            $(function () {
+                $("#admission-process").load("../russia/admission-process-step.html");
+            });
         $(function () {
-            $("#top-header").load("../russia/top-header-in.html");
+            $(".translator").load("../language-changer.html");
         });
-
-        $(function () {
-            $("#header-navigation").load("../russia/header-in.html");
-        });
-
-        $(function () {
-            $("#footer").load("../russia/footer-in.html");
-        });
-        $(function () {
-            $("#admission-process").load("../russia/admission-process-step.html");
-        });
-    </script>
-
+        </script>
     <!-- fixed header footer css file -->
     <link rel="stylesheet" href="../assets/css/header-footer.css">
     <link rel="stylesheet" href="../assets/css/mbbs-in-russia/crimean-federal-university.css">
 </head>
 
 <body>
+    
+    <div class="translator"></div>
+    
     <!-- header section starts from here -->
     <div id="top-header"></div>
     <header>
