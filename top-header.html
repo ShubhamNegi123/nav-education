@@ -1,15 +1,4 @@
 <div class="top-header">
-    <div id="translator"></div>
-    <script src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit"></script>
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: "en" },
-                "translator"
-            );
-        }
-    </script>
 
 
     <div class="currency-exchange">
@@ -39,10 +28,10 @@ cb=googleTranslateElementInit"></script>
             </div>
         </div>
         <div class="day-night-mode">
-            <div class="night-mode" onclick="night_Mode()">
-                <i class="fas fa-moon"></i>
+            <div title="Night Mode" class="night-mode" onclick="night_Mode()">
+                <i  class="fas fa-moon"></i>
             </div>
-            <div class="day-mode" onclick="day_Mode()">
+            <div title="day Mode" class="day-mode" onclick="day_Mode()">
                 <i class="fas fa-sun"></i></i>
             </div>
         </div>
