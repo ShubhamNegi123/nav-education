@@ -29,6 +29,19 @@ body .container {
 }
 
 .home-screen-banner .university-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 50px;
   position: absolute;
@@ -141,88 +154,6 @@ body .container {
 .top-header .day-night-mode {
     display: none;
 } */
-#currency-convertor {
-  background-color: #eee;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
-
-.heading {
-  color: #0f383b;
-  text-align-last: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-hr {
-  border-top: 4px solid #fff;
-  position: relative;
-  z-index: 9;
-  width: 40%;
-  margin-bottom: 55px;
-}
-
-.main {
-  position: relative;
-  z-index: 99;
-  width: 50vw;
-  margin: auto;
-  padding: 60px;
-  border-radius: 5px;
-  background-color: #175559;
-  color: white;
-}
-
-label {
-  font-size: 20px;
-}
-
-.btn {
-  width: 200px;
-}
-
-#oamount {
-  margin-bottom: 20px;
-}
-
-.input-group-text {
-  background-color: #0f383b;
-  color: #fec407;
-  border: none;
-}
-
-#finalAmount {
-  opacity: 0;
-  margin: 50px auto;
-}
-
-#finalAmount h2 {
-  font-size: 50px;
-}
-
-.finalValue {
-  font-family: "Amiri", serif;
-  color: #0f383b;
-}
-
-#finalAmount {
-  position: relative;
-  z-index: 99;
-}
-
-.finalValue {
-  color: #0f383b;
-  position: relative;
-  z-index: 99;
-}
-
-#finalAmount h2 {
-  color: #0f383b;
-  font-size: 30px;
-}
-
 .admission-process .top-img-wrapper img {
   width: 100%;
 }
@@ -334,10 +265,26 @@ label {
   text-align: justify;
 }
 
+@media only screen and (max-width: 1555px) {
+  .home-screen-banner .university-name h1 {
+    margin-top: 10px;
+  }
+  .home-screen-banner .university-name img {
+    width: 130px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .home-screen-banner .university-name img {
     width: 100px;
     max-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .home-screen-banner .university-name h1 {
+    margin-top: 10px;
+    font-size: 32px;
   }
 }
 
@@ -370,7 +317,7 @@ label {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 785px) {
   .home-screen-banner .university-name {
     padding: 20px;
   }
@@ -386,6 +333,15 @@ label {
   .admission-process .admission-process-details .admission-card {
     min-height: auto;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .home-screen-banner .university-name img {
+    width: 60px;
+  }
+  .home-screen-banner .university-name h1 {
+    font-size: 20px;
   }
 }
 

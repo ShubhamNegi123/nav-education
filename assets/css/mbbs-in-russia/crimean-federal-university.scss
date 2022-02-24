@@ -4,7 +4,7 @@ $text-color: #175559;
 $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
 
-body {    
+body {
     /* font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
     font-size: 16px;
@@ -29,6 +29,10 @@ body {
         min-height: 50vh;
     }
     .university-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
         text-align: center;
         padding: 50px;
         position: absolute;
@@ -132,87 +136,10 @@ body {
 .top-header .day-night-mode {
     display: none;
 } */
-#currency-convertor{
-    background-color: #eee;
-    padding-top: 50px;
-    padding-bottom: 10px;
-}
-.heading {
-    color: $heading-primary-color;
-    text-align-last: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-hr {
-    border-top: 4px solid #fff;
-    position: relative;
-    z-index: 9;
-    width: 40%;
-    margin-bottom: 55px;
-}
-
-.main {
-    position: relative;
-    z-index: 99;
-    width: 50vw;
-    margin: auto;
-    padding: 60px;
-    border-radius: 5px;
-    background-color: $primary-bg-color;
-    color: white;
-}
-
-label {
-    font-size: 20px;
-}
-
-.btn {
-    width: 200px;
-}
-#oamount{
-    margin-bottom: 20px;
-}
-.input-group-text {
-    background-color: $heading-primary-color;
-    color: $button-bg-color;
-    border: none;
-}
-#finalAmount {
-    opacity: 0;
-    margin: 50px auto;
-}
-
-#finalAmount h2 {
-    font-size: 50px;
-}
-
-.finalValue {
-    font-family: "Amiri", serif;
-    color: $heading-primary-color;
-}
-
-#finalAmount {
-    position: relative;
-    z-index: 99;
-}
-
-.finalValue {
-    color: $heading-primary-color;
-    position: relative;
-    z-index: 99;
-}
-
-#finalAmount h2 {
-    color: $heading-primary-color;
-    font-size: 30px;
-}
 
 .admission-process {
-    .top-img-wrapper{
-        img{
+    .top-img-wrapper {
+        img {
             width: 100%;
         }
     }
@@ -315,10 +242,30 @@ label {
     }
 }
 
+@media only screen and (max-width: 1555px) {
+    .home-screen-banner .university-name {
+        h1 {
+            margin-top: 10px;
+        }
+        img{
+            width: 130px;
+        }
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     .home-screen-banner .university-name img {
         width: 100px;
         max-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .home-screen-banner .university-name {
+        h1 {
+            margin-top: 10px;
+            font-size: 32px;
+        }
     }
 }
 
@@ -349,7 +296,9 @@ label {
     }
 }
 
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 785px) {
     .home-screen-banner .university-name {
         padding: 20px;
     }
@@ -367,6 +316,28 @@ label {
         height: auto;
     }
 }
+
+
+
+@media only screen and (max-width: 370px) {
+    .home-screen-banner .university-name img {
+        width: 60px;
+      }
+      .home-screen-banner .university-name h1 {
+        font-size: 20px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     hr {

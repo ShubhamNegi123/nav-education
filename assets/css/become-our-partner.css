@@ -204,7 +204,7 @@ body .container {
 
 .join-us form .name-wrapper,
 .join-us form .phone-wrapper,
-.join-us form .whatsapp-wrapper,
+.join-us form .email-wrapper,
 .join-us form .age-wrapper,
 .join-us form .marital-wrapper,
 .join-us form .city-wrapper,
@@ -214,7 +214,7 @@ body .container {
 
 .join-us form .name-wrapper input,
 .join-us form .phone-wrapper input,
-.join-us form .whatsapp-wrapper input,
+.join-us form .email-wrapper input,
 .join-us form .age-wrapper input,
 .join-us form .marital-wrapper input,
 .join-us form .city-wrapper input,
@@ -223,6 +223,19 @@ body .container {
   padding-left: 20px;
   border: none;
   background-color: #eee;
+}
+
+.join-us form .name-wrapper .error,
+.join-us form .phone-wrapper .error,
+.join-us form .email-wrapper .error,
+.join-us form .age-wrapper .error,
+.join-us form .marital-wrapper .error,
+.join-us form .city-wrapper .error,
+.join-us form .message-wrapper .error {
+  opacity: 0;
+  visibility: hidden;
+  color: red;
+  font-size: 14px;
 }
 
 .join-us form .marital-wrapper {

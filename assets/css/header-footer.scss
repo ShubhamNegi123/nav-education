@@ -17,6 +17,13 @@ $button-bg-color: #fec407;
     span {
         color: #fff;
     }
+    #currency-convertor {
+        background-color: #000;
+        color: #fff;
+    }
+    #finalAmount h2 {
+        color: #fff;
+      }
     .nav-sidebar-button i {
         color: #000;
       }
@@ -219,7 +226,7 @@ body {
 #translator {
     position: fixed;
     z-index: 9999;
-    bottom: 0px;
+    bottom: -20px;
     right: 0px;
     display: inline-block;
     // background-color: $text-secondary-color;
@@ -433,18 +440,16 @@ footer {
                 font-weight: bold;
                 border: 1px solid $text-color;
                 opacity: 0.8;
-                border-radius: 5px;
+                border-radius:5px 0px 0px 5px;
                 padding-left: 10px;
             }
             button {
                 position: absolute;
-                top: -20px;
-                right: -20px;
-                padding: 7px 20px 8px 20px;
+                top: 0px;
+                padding: 8px 20px 6px 20px;
                 border-radius: 0px 5px 5px 0px;
                 outline: none;
-                margin-left: 30px;
-                margin-top: 20px;
+                border: 1px solid $primary-bg-color;
                 background-color: $primary-bg-color;
                 color: #fff;
             }
@@ -485,9 +490,7 @@ footer {
         }
     }
 }
-.top-header .currency-exchange a img {
-    display: none;
-}
+/* */
 .swiper {
     width: 100%;
     padding-top: 50px;
@@ -527,8 +530,8 @@ footer {
     cursor: pointer;
     position: absolute;
     position: fixed;
-    bottom: 60px;
-    right: 95px;
+    bottom: 50px;
+    right: 65px;
     width: 50px;
     z-index: 999999999;
     background: none;  

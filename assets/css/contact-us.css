@@ -44,7 +44,7 @@ body .container {
 .contact-us form .name-wrapper,
 .contact-us form .phone-wrapper,
 .contact-us form .email-wrapper,
-.contact-us form .country-wrapper,
+.contact-us form .age-wrapper,
 .contact-us form .marital-wrapper,
 .contact-us form .city-wrapper,
 .contact-us form .message-wrapper {
@@ -54,7 +54,7 @@ body .container {
 .contact-us form .name-wrapper input,
 .contact-us form .phone-wrapper input,
 .contact-us form .email-wrapper input,
-.contact-us form .country-wrapper input,
+.contact-us form .age-wrapper input,
 .contact-us form .marital-wrapper input,
 .contact-us form .city-wrapper input,
 .contact-us form .message-wrapper input {
@@ -62,6 +62,19 @@ body .container {
   padding-left: 20px;
   border: none;
   background-color: #eee;
+}
+
+.contact-us form .name-wrapper .error,
+.contact-us form .phone-wrapper .error,
+.contact-us form .email-wrapper .error,
+.contact-us form .age-wrapper .error,
+.contact-us form .marital-wrapper .error,
+.contact-us form .city-wrapper .error,
+.contact-us form .message-wrapper .error {
+  opacity: 0;
+  visibility: hidden;
+  color: red;
+  font-size: 14px;
 }
 
 .contact-us form .marital-wrapper {
@@ -100,17 +113,16 @@ body .container {
   padding: 6px 0px;
   background-color: #175559;
   color: #fec407;
-  text-transform: uppercase;
   font-weight: bold;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .contact-us form .submit-button button:hover {
   background-color: #fec407;
   color: #175559;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .top-header .currency-exchange {

@@ -15,6 +15,15 @@
   color: #fff;
 }
 
+.mode #currency-convertor {
+  background-color: #000;
+  color: #fff;
+}
+
+.mode #finalAmount h2 {
+  color: #fff;
+}
+
 .mode .nav-sidebar-button i {
   color: #000;
 }
@@ -241,7 +250,7 @@ body .container {
 #translator {
   position: fixed;
   z-index: 9999;
-  bottom: 0px;
+  bottom: -20px;
   right: 0px;
   display: inline-block;
   padding: 5px 7px 5px 10px;
@@ -485,19 +494,17 @@ footer .footer-newslatter form input {
   font-weight: bold;
   border: 1px solid #175559;
   opacity: 0.8;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   padding-left: 10px;
 }
 
 footer .footer-newslatter form button {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  padding: 7px 20px 8px 20px;
+  top: 0px;
+  padding: 8px 20px 6px 20px;
   border-radius: 0px 5px 5px 0px;
   outline: none;
-  margin-left: 30px;
-  margin-top: 20px;
+  border: 1px solid #175559;
   background-color: #175559;
   color: #fff;
 }
@@ -543,10 +550,7 @@ footer .bottom-footer .rights .watermark a {
   color: #fff;
 }
 
-.top-header .currency-exchange a img {
-  display: none;
-}
-
+/* */
 .swiper {
   width: 100%;
   padding-top: 50px;
@@ -593,8 +597,8 @@ footer .bottom-footer .rights .watermark a {
   cursor: pointer;
   position: absolute;
   position: fixed;
-  bottom: 60px;
-  right: 95px;
+  bottom: 50px;
+  right: 65px;
   width: 50px;
   z-index: 999999999;
   background: none;

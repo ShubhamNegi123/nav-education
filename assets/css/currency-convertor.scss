@@ -1,0 +1,104 @@
+
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    /* font-family: "Playfair Display", serif; */
+    font-family: "Mukta", sans-serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+.top-header .currency-exchange a img {
+    display: none;
+}
+#currency-convertor {
+    background-color: #eee;
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+.heading {
+    color: $heading-primary-color;
+    text-align-last: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border-top: 4px solid #fff;
+    position: relative;
+    z-index: 9;
+    width: 40%;
+    margin-bottom: 55px;
+}
+
+.main {
+    position: relative;
+    z-index: 99;
+    width: 50vw;
+    margin: auto;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: $primary-bg-color;
+    color: white;
+}
+
+label {
+    font-size: 20px;
+}
+
+.btn {
+    width: 200px;
+}
+#oamount {
+    margin-bottom: 20px;
+}
+.input-group-text {
+    background-color: $heading-primary-color;
+    color: $button-bg-color;
+    border: none;
+}
+#finalAmount {
+    margin: 50px auto;
+}
+
+#finalAmount h2 {
+    font-size: 50px;
+}
+
+.finalValue {
+    font-family: "Amiri", serif;
+    color: $heading-primary-color;
+}
+
+#finalAmount {
+    position: relative;
+    z-index: 99;
+}
+
+.finalValue {
+    color: $heading-primary-color;
+    position: relative;
+    z-index: 99;
+}
+
+#finalAmount h2 {
+    color: $heading-primary-color;
+    font-size: 30px;
+}
