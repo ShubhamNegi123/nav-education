@@ -249,15 +249,20 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .admission-process .admission-process-details .admission-card .card-discription {
   width: 80%;
   margin: auto;
   padding: 10px 0px;
+}
+
+.admission-process .admission-process-details .admission-card .card-discription .setps {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .admission-process .admission-process-details .admission-card p {

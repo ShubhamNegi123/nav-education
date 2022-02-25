@@ -1,5 +1,5 @@
 .mode {
-  background-color: #000;
+  background-color: #0f383b;
   color: #fff;
 }
 
@@ -29,14 +29,19 @@
 }
 
 .mode .home {
-  background: #010101;
-  background: -webkit-gradient(linear, left top, right top, from(#010101), color-stop(49%, #442b2b), to(black));
-  background: linear-gradient(90deg, #010101 0%, #442b2b 49%, black 100%);
+  background: #0f383b;
+  background: radial-gradient(circle, rgba(15, 56, 59, 0.994835) 41%, black 100%);
 }
 
 .mode .home h1,
 .mode .home p {
   color: #fff;
+}
+
+.mode .about .about-us-gif img {
+  max-width: 100%;
+  background: radial-gradient(circle, rgba(15, 56, 59, 0.994835) 41%, black 100%);
+  border-radius: 50%;
 }
 
 .mode .about .about-us-contant h2,
@@ -50,15 +55,19 @@
 }
 
 .mode .services {
-  background-color: #000;
+  background-color: #0f383b;
 }
 
 .mode .services .services-heading h2 {
   color: #fff;
 }
 
+.mode .facilities {
+  background-color: #000;
+}
+
 .mode .services .services-card {
-  background-color: #0f383b;
+  background-color: #175559;
 }
 
 .mode .services .services-card h3,
@@ -71,10 +80,14 @@
   color: #fff;
 }
 
+.mode .logs {
+  background-color: #175559;
+}
+
 .mode .logs p,
 .mode .logs .plus-icon,
 .mode .logs .number {
-  color: #000;
+  color: #fff;
 }
 
 .mode .countries-we-served .countries-we-served-heading h2 {
@@ -99,11 +112,15 @@
 }
 
 .mode .blog {
-  background-color: #000;
+  background-color: #175559;
 }
 
 .mode .blog h2 {
   color: #fff;
+}
+
+.mode .blog .blog-card {
+  background-color: #0f383b;
 }
 
 .mode #footer ul li {
@@ -120,6 +137,10 @@
   color: #fff;
 }
 
+.mode .bottom-footer {
+  background-color: #000;
+}
+
 .mode .top-header .day-night-mode .night-mode i,
 .mode .top-header .day-night-mode .day-mode i {
   color: #000;
@@ -133,6 +154,23 @@
 
 .mode .our-services {
   background-color: #000;
+}
+
+.mode .our-services h2 {
+  color: #fff;
+}
+
+.mode .services {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mode .gallery {
+  background-color: #175559;
+}
+
+.mode .our-missions {
+  background-color: #175559;
 }
 
 .mode .gallery h1,
@@ -154,16 +192,27 @@
   color: #fff;
 }
 
-.mode .student-login .student-login-form form .username label, .mode .student-login .student-login-form form .password label {
+.mode .student-login .student-login-form form .username label,
+.mode .student-login .student-login-form form .password label {
   color: #fff;
 }
 
-.mode .student-login .student-login-form form .username input, .mode .student-login .student-login-form form .password input {
+.mode .student-login .student-login-form form .username input,
+.mode .student-login .student-login-form form .password input {
   border-bottom: 2px solid #fff;
 }
 
-.mode .student-login .student-login-form form .username input:focus, .mode .student-login .student-login-form form .password input:focus {
+.mode .student-login .student-login-form form .username input:focus,
+.mode .student-login .student-login-form form .password input:focus {
   background: #fec407;
+}
+
+.mode .advantages {
+  background-color: #000;
+}
+
+.mode .application-form {
+  background-color: #175559;
 }
 
 html {
@@ -191,7 +240,8 @@ body .container {
   max-width: 90%;
 }
 
-.become-our-partner, .application-form1 {
+.become-our-partner,
+.application-form1 {
   position: fixed;
   right: -54px;
   top: 280px;
@@ -203,16 +253,17 @@ body .container {
   border-radius: 5px 5px 0px 0px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  opacity: .9;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0.9;
 }
 
-.become-our-partner:hover, .application-form1:hover {
+.become-our-partner:hover,
+.application-form1:hover {
   color: #0f383b;
   background-color: #fec407;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .application-form1 {
@@ -588,7 +639,8 @@ footer .bottom-footer .rights .watermark a {
   background: none;
 }
 
-.top-header .day-night-mode .night-mode i, .top-header .day-night-mode .top-header .day-night-mode .day-mode i {
+.top-header .day-night-mode .night-mode i,
+.top-header .day-night-mode .top-header .day-night-mode .day-mode i {
   font-size: 20px;
   color: yellow;
 }
@@ -608,7 +660,8 @@ footer .bottom-footer .rights .watermark a {
   width: 100%;
 }
 
-.top-header .day-night-mode .night-mode i, .top-header .day-night-mode .day-mode i {
+.top-header .day-night-mode .night-mode i,
+.top-header .day-night-mode .day-mode i {
   color: yellow;
 }
 
@@ -621,11 +674,37 @@ footer .bottom-footer .rights .watermark a {
   header nav {
     height: 130px;
   }
+  header nav .website-logo a img {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  footer .footer-newslatter form button {
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    border-radius: 5px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   header nav {
     height: 100px;
+  }
+  header nav .website-logo a img {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer .footer-newslatter form button {
+    top: 0px;
+    right: 0px;
+  }
+  header nav .website-logo a img {
+    margin-left: 25px;
   }
 }
 
@@ -717,16 +796,16 @@ footer .bottom-footer .rights .watermark a {
     border-radius: 0% 0% 0% 50vw;
     background: #0f383b;
     z-index: 9999;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   header nav .nav-bar-tabs ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     opacity: 1;
     height: 80vh;
     visibility: visible;
@@ -767,6 +846,9 @@ footer .bottom-footer .rights .watermark a {
   .top-header .day-night-mode {
     right: 35px;
     top: 10px;
+  }
+  header nav .website-logo a img {
+    margin-left: 0px;
   }
 }
 
@@ -857,6 +939,9 @@ footer .bottom-footer .rights .watermark a {
 @media only screen and (max-width: 400px) {
   header nav .nav-social-icons ul {
     margin-right: 30px;
+  }
+  footer .footer-newslatter form button {
+    left: 70%;
   }
 }
 

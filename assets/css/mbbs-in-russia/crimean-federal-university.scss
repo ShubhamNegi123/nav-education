@@ -168,11 +168,16 @@ body {
             background-color: $heading-primary-color;
             position: relative;
             display: flex;
-            align-items: center;
             .card-discription {
                 width: 80%;
                 margin: auto;
                 padding: 10px 0px;
+                .setps{
+                    position: absolute;
+                    top: 10px;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
             }
             p {
                 color: #fff;
