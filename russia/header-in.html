@@ -1,4 +1,3 @@
-
 <header>
     <!-- nav bar starts from here -->
     <nav>
@@ -55,6 +54,8 @@
                             <li><a target="_blank" rel="nofollow"
                                     href="https://www.linkedin.com/company/navchetanaglobal"><i
                                         class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UChJMa95otYycbs1CFg20xbg"><i
+                                        class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,35 +65,35 @@
 </header>
 
 <script>
-    function hamburger_menu(){   
-    $('.nav-close-button').css({
-        display: 'block'
-    })
+    function hamburger_menu() {
+        $('.nav-close-button').css({
+            display: 'block'
+        })
 
-    $('.nav-bar-tabs').css({
-        transition: 'all .5s ease',
-        width: '150vw',
-        height: '150vh',
-    },function(){
-        $('.nav-bar-tabs ul').css({
+        $('.nav-bar-tabs').css({
             transition: 'all .5s ease',
-            opacity: '1',
-            visibility: 'visible'
+            width: '150vw',
+            height: '150vh',
+        }, function () {
+            $('.nav-bar-tabs ul').css({
+                transition: 'all .5s ease',
+                opacity: '1',
+                visibility: 'visible'
+            });
         });
-    });
-    
 
-}   
-function close_Hamburger_menu(){
-    $('.nav-bar-tabs').css({
-        transition: 'all .5s ease',
-        width: '0vw',
-        height: '0vh',
-    });  
-    $('.nav-close-button').css({
-        display: 'none'
-    })
 
-    
-} 
+    }
+    function close_Hamburger_menu() {
+        $('.nav-bar-tabs').css({
+            transition: 'all .5s ease',
+            width: '0vw',
+            height: '0vh',
+        });
+        $('.nav-close-button').css({
+            display: 'none'
+        })
+
+
+    } 
 </script>
