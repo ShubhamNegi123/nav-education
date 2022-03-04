@@ -324,6 +324,7 @@ body .container {
 .top-header .top-header-left-section .login-details ul li,
 .top-header .top-header-right-section .contact-details ul li,
 .top-header .top-header-right-section .login-details ul li {
+  cursor: pointer;
   padding: 8px 0px;
   margin-right: 25px;
 }
@@ -375,6 +376,100 @@ body .container {
 
 .top-header .day-night-mode .day-mode {
   display: none;
+}
+
+.search-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.search-box .btn-search {
+  border-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.search-box .btn-search i {
+  font-size: 14px;
+}
+
+.search-box .btn-search:focus ~ .input-search {
+  width: 300px;
+  font-family: "Mukta", sans-serif;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.search-box .input-search {
+  width: 1px;
+  height: 25px;
+  border-style: none;
+  padding: 0px 4px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* background-color: #22a6b3; */
+  background-color: transparent;
+  padding-right: 25px;
+  color: #fff;
+  font-family: var(--bs-body-font-family);
+  font-size: 13px;
+}
+
+.search-box .input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.search-box .input-search::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.search-box .input-search:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.search-box .input-search::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.search-box .input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 header {
@@ -647,6 +742,7 @@ footer .bottom-footer .rights .watermark a {
 
 .top-header .currency-exchange {
   cursor: pointer;
+  display: none;
   position: absolute;
   position: fixed;
   bottom: 50px;
@@ -698,6 +794,12 @@ footer .bottom-footer .rights .watermark a {
   }
 }
 
+@media only screen and (max-width: 1090px) {
+  .search-box .input-search:focus {
+    width: 200px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   footer .footer-newslatter form button {
     top: 0px;
@@ -705,6 +807,9 @@ footer .bottom-footer .rights .watermark a {
   }
   header nav .website-logo a img {
     margin-left: 25px;
+  }
+  .search-box .input-search:focus {
+    width: 110px;
   }
 }
 

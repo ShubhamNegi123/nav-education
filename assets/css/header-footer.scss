@@ -3,6 +3,9 @@ $heading-primary-color: #0f383b;
 $text-color: #175559;
 $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
+
+
+
 .mode {
     background-color: $heading-primary-color;
     color: #fff;
@@ -142,18 +145,18 @@ $button-bg-color: #fec407;
     }
     .our-services {
         background-color: #000;
-       h2{
-           color: #fff;
-       }
+        h2 {
+            color: #fff;
+        }
     }
-    .services{
+    .services {
         padding: 5px;
         border-radius: 5px;
     }
     .gallery {
         background-color: $primary-bg-color;
     }
-    .our-missions{
+    .our-missions {
         background-color: $primary-bg-color;
     }
     .gallery h1,
@@ -209,6 +212,7 @@ body {
     }
     .container {
         max-width: 90%;
+        
     }
 }
 
@@ -279,6 +283,7 @@ body {
             ul {
                 justify-content: space-between;
                 li {
+                    cursor: pointer;
                     padding: 8px 0px;
                     margin-right: 25px;
                     a {
@@ -315,6 +320,65 @@ body {
         }
         .day-mode {
             display: none;
+        }
+    }
+}
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    .btn-search {
+        border-style: none;
+        font-size: 18px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color: #ffffff;
+        background-color: transparent;
+        pointer-events: painted;
+        i {
+            font-size: 14px;
+        }
+        &:focus ~ .input-search {
+            width: 300px;
+            font-family: "Mukta", sans-serif;
+            border-radius: 0px;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+        }
+    }
+    .input-search {
+        width: 1px;        
+        height: 25px;
+        border-style: none;
+        padding: 0px 4px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+        /* background-color: #22a6b3; */
+        background-color: transparent;
+        padding-right: 25px;
+        color: #fff;        
+        font-family: var(--bs-body-font-family);
+        font-size: 13px;
+        &:focus {
+            width: 300px;
+            border-radius: 0px;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 100;
         }
     }
 }
@@ -567,6 +631,7 @@ footer {
 }
 .top-header .currency-exchange {
     cursor: pointer;
+    display: none;
     position: absolute;
     position: fixed;
     bottom: 50px;
@@ -594,7 +659,7 @@ footer {
     }
     header nav .website-logo a img {
         margin-left: 40px;
-      }
+    }
 }
 @media only screen and (max-width: 1250px) {
     footer .footer-newslatter form button {
@@ -604,14 +669,27 @@ footer {
         border-radius: 5px;
     }
 }
+
+
 @media only screen and (max-width: 1200px) {
     header nav {
         height: 100px;
     }
     header nav .website-logo a img {
         margin-left: 35px;
-      }
+    }
 }
+
+
+
+@media only screen and (max-width: 1090px) {
+    .search-box .input-search:focus {
+        width: 200px;
+    }
+}
+
+
+
 @media only screen and (max-width: 991px) {
     footer .footer-newslatter form button {
         top: 0px;
@@ -619,8 +697,14 @@ footer {
     }
     header nav .website-logo a img {
         margin-left: 25px;
-      }
+    }
+    .search-box .input-search:focus {
+        width: 110px;
+    }
 }
+
+
+
 @media only screen and (max-width: 862px) {
     header {
         top: 38px;
@@ -751,7 +835,7 @@ footer {
     }
     header nav .website-logo a img {
         margin-left: 0px;
-      }
+    }
 }
 
 @media only screen and (max-width: 567px) {

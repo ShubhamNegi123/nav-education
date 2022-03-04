@@ -137,6 +137,7 @@ body {
     display: none;
 } */
 
+
 .admission-process {
     .top-img-wrapper {
         img {
@@ -246,6 +247,92 @@ body {
         } */
     }
 }
+
+
+
+
+.top-header .currency-exchange a img {
+    display: none;
+}
+
+#currency-convertor {
+    background-color: $heading-primary-color;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.heading {
+    color: $button-bg-color;
+    text-align-last: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border-top: 4px solid #fff;
+    position: relative;
+    z-index: 9;
+    width: 40%;
+    margin-bottom: 55px;
+}
+
+.main {
+    position: relative;
+    z-index: 99;
+    width: 50vw;
+    margin: auto;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: $primary-bg-color;
+    color: white;
+}
+
+label {
+    font-size: 20px;
+}
+
+.btn {
+    width: 200px;
+}
+#oamount {
+    margin-bottom: 20px;
+}
+.input-group-text {
+    background-color: $heading-primary-color;
+    color: $button-bg-color;
+    border: none;
+}
+#finalAmount {
+    margin: 50px auto;
+}
+
+#finalAmount h2 {
+    font-size: 50px;
+}
+
+.finalValue {
+    font-family: "Amiri", serif;
+    color: $heading-primary-color;
+}
+
+#finalAmount {
+    position: relative;
+    z-index: 99;
+}
+
+.finalValue {    
+    color: $button-bg-color;
+    position: relative;
+    z-index: 99;
+}
+
+#finalAmount h2 {
+    color: $button-bg-color;
+    font-size: 30px;
+}
+
+
 
 @media only screen and (max-width: 1555px) {
     .home-screen-banner .university-name {

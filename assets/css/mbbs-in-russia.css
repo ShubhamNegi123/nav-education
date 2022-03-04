@@ -107,16 +107,25 @@ body .container {
 
 .universities-in-russia .universities-name ul {
   text-align: center;
-  list-style: disc;
+  list-style: none;
 }
 
 .universities-in-russia .universities-name ul li {
   text-align: left;
   margin-bottom: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.universities-in-russia .universities-name ul li i {
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  color: #0f383b;
+  margin-right: 10px;
 }
 
 .universities-in-russia .universities-name ul li a {
-  padding-left: 10px;
   color: #4d4d4d;
   text-transform: uppercase;
   text-align: left;

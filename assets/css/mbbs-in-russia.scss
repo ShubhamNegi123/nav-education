@@ -110,12 +110,20 @@ body {
     .universities-name {
         ul {
             text-align: center;
-            list-style: disc;
+            list-style: none;
             li {
                 text-align: left;
                 margin-bottom: 20px;
+                position: relative;
+                margin-left: 20px;
+                i{
+                    position: absolute;
+                    left: -30px;
+                    top: 2px;
+                    color: $heading-primary-color;
+                    margin-right: 10px;
+                }
                 a {
-                    padding-left: 10px;
                     color: $text-color2;
                     text-transform: uppercase;
                     text-align: left;
