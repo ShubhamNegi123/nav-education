@@ -1,4 +1,4 @@
-<div class="top-header">   
+<div class="top-header">
     <div class="currency-exchange">
         <a href="../currency.html"><img src="../assets/images/currency-exchange-icon.png" alt=""></a>
     </div>
@@ -19,7 +19,12 @@
                 <ul class="d-flex">
                     <li><a href="../student-login.html"><i class="far fa-hand-point-up"></i>Student Login</a></li>
                     <li><a href="../partner-login.html"><i class="far fa-hand-point-up"></i>Partner Login</a></li>
-                    <li><span> <i class="fas fa-search"></i></span></li>
+                    <li><span>
+                            <div class="search-box">
+                                <button class="btn-search"><i class="fas fa-search"></i></button>
+                                <input type="text" class="input-search " placeholder="Type to Search...">
+                            </div>
+                        </span></li>
                 </ul>
             </div>
         </div>
@@ -61,4 +66,314 @@
         })
         localStorage.setItem('mode', 'day_mode');
     }
+
+
+
+    $('.input-search').keypress(function (e) {
+        if (e.which == 13) {
+            //getting user input and converting into lowerc
+            let value = $(this).val().toLowerCase();
+            let country_Name = ['armenia', 'bangladesh', 'belarus', 'china',
+                'georgia', 'kazakhstan', 'kyrgyzstan', 'nepal', 'philippins',
+                'russia', 'ukraine',]
+
+            let country_Location = [
+                '../mbbs-in-armenia.html',
+                '../mbbs-in-bangladesh.html',
+                '../mbbs-in-belarus.html',
+                '../mbbs-in-china.html',
+                '../mbbs-in-georgia.html',
+                '../mbbs-in-kazakhstan.html',
+                '../mbbs-in-kyrgyzstan.html',
+                '../mbbs-in-nepal.html',
+                '../mbbs-in-philippins.html',
+                '../mbbs-in-russia.html',
+                '../mbbs-in-ukraine.html',
+            ]
+
+            let university_name = [
+                // countries
+
+
+
+                /* russia */
+                'bashkir', 'belgorod', 'chuvash ', 'crimean', 'First', 'moscow', 'kabardino', 'balkarian', 'kazan', 'federal',
+                'kuban', 'kurshir', 'Kazan', 'mari', 'ogarev', 'mordovia', 'omsk', 'orel', 'orenburg', 'penza',
+                'people', 'friendship', 'pirogov', 'prem', 'pskov', 'rosdov', 'smolensk', 'south', 'ural',
+                'petersburg', 'pediatric', 'volgograd', 'tula', 'ural', 'Ulyanovs', 'voronezh','east-west','rostov','research',
+
+
+                /* bangladesh */
+                /* 'bangladesh medical college', */ //exception for me
+                'anwer ', 'barind ', 'central ', 'dhaka ', 'sirajul', 'islam', 'west ', 'eastern ', ' chittagong', 'enam ', 'islami', ' rajshahi',
+                'jahrul ', 'mainamoti ', 'monno ', 'north', 'sirajganj', 'parkview ', 'sylhet', 'popular', 'rangpur', 'shahabuddin ',
+                'tairunnnsa', ' memorial ', ' gazipur', 'cumilla',
+                'tmss ', 'bogra','tairunnessa','bengal','jahurul',
+
+
+                /* china */
+                'anhui ', 'china ', 'three', 'gorges', 'dalian ', 'fujian ', 'jiangsu ', 'jilin ', 'kunming', 'nanjing ',
+                'nantong ', 'ningxia', 'north', 'sichuan', 'qingado ', 'shandong', 'shandong ', 'sichuan', 'sochow',
+                'southeast ', 'wenzhou', 'xian', 'jiaotong ','qingdao',
+
+
+                /* georgia */
+                // 'university of georgia', //task
+                'caucasus',
+                'david', 'tvildiani ', 'east', 'european',
+                'european', 'grigol', 'robakidze','tbilisi',
+
+
+                /* KAZAKHSTAN */
+                'altai', 'astana', 'south ', 'marat', 'ospanov ','farabi',
+
+
+                /* TOP MEDICAL UNIVERSITIES IN KYRGYZSTAN */
+                'asian', 'kyrgya', ' slavic ', 'medicine', ' ism', 'jalal', ' abad ', 'kyrgya ', 'osh ',
+
+
+                /* PHILLIPINS */
+                'gullas ', 'lyceum', 'northwestern ', 'lady', ' fatima ', 'perpetual', 'help',
+
+
+                /* TOP MEDICAL UNIVERSITIES IN RUSSIA */
+                'bashkir', 'belgorod', 'chuvash ', 'cremian ', 'First ', 'moscow ', 'kabardino ', 'balkarian',
+                'kazan ', 'kuban ', 'kurshir ', 'Kazan ', 'mari s', 'ogarev', ' mordovia', 'omsk ', 'orel ', 'orenburg', 'penza ',
+                'people', ' friendship', 'pirogov ', 'prem ', 'pskov ', 'rosdov', 'smolensk ', 'south ', 'ural ',
+                'petersburg', 'volgograd', 'tula ', 'ural ', 'Ulyanovsk ', 'voronezh',
+
+
+                /* TOP MEDICAL UNIVERSITIES IN UKRAINE */
+                'vn',
+                'bogomolets', 'bukovinian', 'dnipropetrovsk', 'ivanco ', 'kharkiv', 'kiev ', 'lviv ', 'odessa ',
+                'poltava ', 'taras', 'shevchenko', 'ternopil', 'vinnitsya ', 'karazina ', 'zaporozhye','ivano',
+
+
+                /* armenian */
+                'armenian', 'mkhitar', 'gosh', 'tereza', 'traditional', 'yerevan', 'haybusak',
+                
+                /* belarus */
+                'belarusian', 'gomel', 'grodno', 'vitebsk',
+
+            ];
+
+
+            let university_location = [
+                //country name
+
+
+
+                // russia university name            
+                '../russia/bashkir-state-medical-university.html',
+                '../russia/belgorod-state-university.html',
+                '../russia/chuvash-state-university.html',
+                '../russia/crimean-federal-university.html',
+                '../russia/First-moscow-state-medical-university.html',
+                '../russia/kabardino-balkarian-state-university.html',
+                '../russia/kazan-federal-university.html',
+                '../russia/kuban-state-medical-university.html',
+                '../russia/kurshir-state-medical-university.html',
+                '../russia/Kazan-state-medical-university.html',
+                '../russia/mari-state-university.html',
+                '../russia/ogarev-mordovia-state-university.html',
+                '../russia/omsk-state-medical-university.html',
+                '../russia/orel-state-medical-university.html',
+                '../russia/orenburg-state-medical-university.html',
+                '../russia/penza-state-medical-university.html',
+                '../russia/people-friendship-university-of-russia.html',
+                '../russia/pirogov-russian-national-research-medical.html',
+                '../russia/prem-state-medical-university.html',
+                '../russia/pskov-state-medical--university.html',
+                '../russia/rostov-state-medical-university.html',
+                '../russia/smolensk-state-medical-university.html',
+                '../russia/south-ural-state-medical-university.html',
+                '../russia/st-petersburg-sta…medical-university.html',
+                '../russia/the-volgograd-state-medical-university.html',
+                '../russia/tula-state-medical-university.html',
+                '../russia/ural-state-medical-university.html',
+                '../russia/Ulyanovsk-state-medical-university.html',
+                '../russia/voronezh-state-medical-university.html',
+                '../russia/altai-state-medical-university.html',
+
+
+
+                /* BANGLADESH */
+                '../bangladesh/anwer-khan-mo…ical-college-dhaka.html',
+                '../bangladesh/bangladesh-medical-college.html',
+                '../bangladesh/barind-medical-college-rajshahi.html',
+                '../bangladesh/central-medical-college-comilla.html',
+                '../bangladesh/dhaka-medical-college-dhaka.html',
+                '../bangladesh/dr-sirajul-islam-medical-college-dhaka.html',
+                '../bangladesh/east-west-medical-college-dhaka.html',
+                '../bangladesh/eastern-medical-collage-chittagong.html',
+                '../bangladesh/enam-medical-college-dhaka.html',
+                '../bangladesh/islami-bank-medical-college-rajshahi.html',
+                '../bangladesh/jahurul-islam-medical-college-dhaka.html',
+                '../bangladesh/mainamoti-medical-college-cumilla.html',
+                '../bangladesh/monno-medical-college.html',
+                '../bangladesh/north-bengal-medical-college-sirajganj.html',
+                '../bangladesh/rangpur-community-medical-college-rangpur.html',
+                '../bangladesh/parkview-medical-college-sylhet.html',
+                '../bangladesh/popular-medical-college.html',
+                '../bangladesh/rangpur-community-medical-college-rangpur.html',
+                '../bangladesh/shahabuddin-medical-college.html',
+                '../bangladesh/tairunnessa-memorial-medical-college-gazipur.html',
+                '../bangladesh/tmss-medical-college-bogra.html',
+
+
+                /* UKRAINE */
+                '../ukraine/bukovinian-state-medical-university.html',
+                '../ukraine/dnipropetrovsk-medical-academy.html',
+                '../ukraine/ivano-national-medical-university.html',
+                '../ukraine/kharkiv-national-medical-university.html',
+                '../ukraine/kyiv-national-medical-university.html',
+                '../ukraine/lviv-national-medical-university.html',
+                '../ukraine/odessa-national-medical-university.html',
+                '../ukraine/poltava-state-medical-university.html',
+                '../ukraine/taras-shevchenko-national-university-of-kyiv.html',
+                '../ukraine/ternopil-national-medical-university.html',
+                '../ukraine/vinnitsya-national-medical-university.html',
+                '../ukraine/vn-karazin-national-university.html',
+                '../ukraine/zaporozhye-state-medical-university.html',
+                '../ukraine/bogomolets-national-medical-university.html',
+
+
+
+
+                /* philippines */
+                '../philippines/lyceum-northwestern-university.html',
+                '../philippines/our-lady-of-fatima-university.html',
+                '../philippines/university-of-perpetual-help.htm',
+                '../philippines/gullas-college-of-medicine.html',
+
+
+
+                /* kazakhstan */
+                '../kazakhstan/astana-medical-university.html',
+                '../kazakhstan/international-medical-school.html',
+                '../kazakhstan/kazakh-national-medical-university.html',
+                '../kazakhstan/south-kazakh-medical-academy.html',
+                '../kazakhstan/west-kazakh-marat-ospanov-state-medical-university.html',
+                '../kyrgyzstan/asian-medical-institute.html',
+                '../kazakhstan/al-farabi-kazakh-national-university.html',
+
+
+                /* georgia */
+                '../georgia/caucasus-international-university.html',
+                '../georgia/david-tvildiani-medical-university.html',
+                '../georgia/east-european-university.html',
+                '../georgia/european-university-tbilisi.html',
+                '../georgia/grigol-robakidze-university.html',
+                '../georgia/university-of-georgia.html',
+
+                /* china */
+                '../china/china-medical-university.html',
+                '../china/china-three-gorges-university.html',
+                '../china/dalian-medical-university.html',
+                '../china/fujian-medical-university.html',
+                '../china/jiangsu-university.html',
+                '../china/jilin-university.html',
+                '../china/kunming-medical-university.html',
+                '../china/nanjing-medical-university.html',
+                '../china/nantong-university.html',
+                '../china/ningxia-university.html',
+                '../china/north-sichuan-medical-university.html',
+                '../china/qingdao-university.html',
+                '../china/shandong-university.html',
+                '../china/sichuan-university.html',
+                '../china/sochow-university.html',
+                '../china/southeast-university.html',
+                '../china/wenzhou-medical-university.html',
+                '../china/xian-jiaotong-university.html',
+                '../china/anhui-medical-university.html',
+
+
+                /* kyrgyzstan */
+                '../kyrgyzstan/asian-medical-institute.html',
+                '../kyrgyzstan/kyrgyz-russian-slavic-university.html',
+                '../kyrgyzstan/international-school-of-medicine-ism.html',
+                '../kyrgyzstan/jalal-abad-state-university.html',
+                '../kyrgyzstan/kyrgyz-state-medical-academy.html',
+                '../kyrgyzstan/osh-state-university.html',
+
+
+
+                /* armenia */
+                '../armenia/armenian-medical-institute.html',
+                '../armenia/mkhitar-gosh-armenian-university.html',
+                '../armenia/st-tereza-medical-university.html',
+                '../armenia/university-of-traditional-medicine.html',
+                '../armenia/yerevan-haybusak-university.html',
+
+                /* belarus */
+                '../belarus/belarusian-state-medical-university.html',
+                '../belarus/gomel-state-medical-university.html',
+                '../belarus/grodno-state-medical-university.html',
+                '../belarus/vitebsk-state-medical-university.html',
+
+            ];
+
+            let target_Value = '';
+
+
+
+            for (let i = 0; i < country_Name.length; i++) {
+                if (value.search(country_Name[i]) > -1) {
+                    target_Value = country_Name[i];
+                    break;
+                }
+            }
+
+            if (target_Value != '') {
+                for (let i = 0; i < country_Location.length; i++) {
+                    if (country_Location[i].search(target_Value) > -1) {
+                        window.location.href = country_Location[i];
+                        break;
+                    }
+                }
+            }else {
+                for (let i = 0; i < university_name.length; i++) {
+                    if (value.search(university_name[i]) > -1) {
+                        target_Value = university_name[i];
+                        break;
+                    }
+                }
+                if (target_Value != '') {
+                    for (let i = 0; i < university_location.length; i++) {
+                        if (university_location[i].search(target_Value) > 0) {
+                            console.log(university_location[i]);
+                            window.location.href = university_location[i];
+                            break;
+                        }
+                    }
+
+                }
+                if (target_Value == '') {
+                    $('.input-search').val(value);
+                    $('.input-search').addClass('animate__animated animate__shakeX');
+                    setTimeout(() => {
+                        $('.input-search').removeClass('animate__animated animate__shakeX');
+                    }, 2000);
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    });
+
 </script>

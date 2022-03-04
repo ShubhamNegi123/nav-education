@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no user-scalable=no "> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no user-scalable=no ">
     <title>Asian Medical Institute</title>
 
     <!-- bootstrap css cdn -->
-     <link rel="stylesheet" href="../assets/css/bootstrap-5.1/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.1/bootstrap.min.css">
+
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -41,9 +41,12 @@
         $(function () {
             $("#admission-process").load("../russia/admission-process-step.html");
         });
-             $(function () {
-                $(".translator").load("../language-changer.html");
-            });
+        $(function () {
+            $(".translator").load("../language-changer.html");
+        });
+        $(function () {
+            $("#currency-convertor-wrapper").load("../currency.html");
+        });
     </script>
 
     <!-- fixed header footer css file -->
@@ -53,7 +56,7 @@
 
 <body>
     <div class="translator"></div>
-    
+
     <!-- header section starts from here -->
     <div id="top-header"></div>
     <header>
@@ -62,7 +65,7 @@
     <!-- header section ends here -->
 
     <section class="home-screen-banner">
-        <img class="university-img" src="../assets/images/universities/kyrgyzstan/Asian-medical-institute-7slider.png"
+        <img class="university-img" src="../assets/images/universities/kyrgyzstan/Asian-medical-institute-7slider.jpg"
             alt="mbbs in khazakhstan">
         <div class="university-name">
             <img src="../assets/images/white-university.png" alt="university logo">
@@ -103,16 +106,19 @@
             <div class="row mt-5">
                 <div class="col-lg-7 ">
                     <ul>
-                  
-                <li>Asian Medical Institute has an affordable fee structure for Indian students.</li>
-                <li>It is the top-ranked University with quality education.</li>
-                <li>The medium of teaching at the Asian Medical Institute is English which makes Indian students understand better.</li>
-                <li>Asian medical institute is worldwide recognized and also NMC approved, so students can practice in India after completing a medical degree in the Asian Medical Institute.</li>
-                <li>Asian Medical Institute has minimum eligibility criteria for Indian students. Students need not qualify IELTS or TOEFL.</li>
-                <li>The institute has 8 hospitals reserved for the students to teach perfectly.</li>
-                <li>Asian Medical Institute has a modern campus.</li>
-                <li>Qualified and experienced staff from foreign and local.</li>               
-            
+
+                        <li>Asian Medical Institute has an affordable fee structure for Indian students.</li>
+                        <li>It is the top-ranked University with quality education.</li>
+                        <li>The medium of teaching at the Asian Medical Institute is English which makes Indian students
+                            understand better.</li>
+                        <li>Asian medical institute is worldwide recognized and also NMC approved, so students can
+                            practice in India after completing a medical degree in the Asian Medical Institute.</li>
+                        <li>Asian Medical Institute has minimum eligibility criteria for Indian students. Students need
+                            not qualify IELTS or TOEFL.</li>
+                        <li>The institute has 8 hospitals reserved for the students to teach perfectly.</li>
+                        <li>Asian Medical Institute has a modern campus.</li>
+                        <li>Qualified and experienced staff from foreign and local.</li>
+
                     </ul>
                 </div>
                 <div class="col-lg-5 d-flex align-items-end">
@@ -182,7 +188,9 @@
         </div>
     </div>
 
-    
+
+    <div id="currency-convertor-wrapper"></div>
+
     <section id="admission-process"></section>
 
     <footer>
