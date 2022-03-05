@@ -13,7 +13,7 @@
 
 
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <!-- owl carosal cdn -->
     <link rel="stylesheet"
@@ -125,14 +125,21 @@
                 <div class="col-lg-8">
                     <div class="advantages-list">
                         <ul>
-                            <li><i class="fas fa-check"></i>For the complete period of study, the language of instructions in English.</li>
+                            <li><i class="fas fa-check"></i>For the complete period of study, the language of
+                                instructions in English.</li>
                             <li><i class="fas fa-check"></i>Medical degree from Belarus is recognized worldwide.</li>
-                            <li><i class="fas fa-check"></i>A medical degree from Belarus is eligible for license exams like MCI, PMDC, USMLE, PLAB, etc.</li>
-                            <li><i class="fas fa-check"></i>The admission process at Belarus medical University is very easy.</li>
-                            <li><i class="fas fa-check"></i>Campus life at Belarus medical University is very friendly and pleasant.</li>
-                            <li><i class="fas fa-check"></i>In Belarus, there are many good hospitals where students can go for internships after completion of their course.</li>
-                            <li><i class="fas fa-check"></i>The tuition fees at medical universities in Belarus are affordable.</li>
-                            <li><i class="fas fa-check"></i>Life in Belarus is very secure for international students.</li>                            
+                            <li><i class="fas fa-check"></i>A medical degree from Belarus is eligible for license exams
+                                like MCI, PMDC, USMLE, PLAB, etc.</li>
+                            <li><i class="fas fa-check"></i>The admission process at Belarus medical University is very
+                                easy.</li>
+                            <li><i class="fas fa-check"></i>Campus life at Belarus medical University is very friendly
+                                and pleasant.</li>
+                            <li><i class="fas fa-check"></i>In Belarus, there are many good hospitals where students can
+                                go for internships after completion of their course.</li>
+                            <li><i class="fas fa-check"></i>The tuition fees at medical universities in Belarus are
+                                affordable.</li>
+                            <li><i class="fas fa-check"></i>Life in Belarus is very secure for international students.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -149,9 +156,12 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="belarus/belarusian-state-medical-university.html">belarusian state medical
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="belarus/belarusian-state-medical-university.html">belarusian state medical
                                     university</a></li>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="belarus/gomel-state-medical-university.html">gomel state medical university</a>
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="belarus/gomel-state-medical-university.html">gomel state medical
+                                    university</a>
                             </li>
                         </ul>
                     </div>
@@ -159,7 +169,8 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="belarus/grodno-state-medical-university.html">grodno state medical
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="belarus/grodno-state-medical-university.html">grodno state medical
                                     university</a></li>
                         </ul>
                     </div>
@@ -167,7 +178,8 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="belarus/vitebsk-state-medical-university.html">vitebsk state medical
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="belarus/vitebsk-state-medical-university.html">vitebsk state medical
                                     university</a></li>
                         </ul>
                     </div>
@@ -175,6 +187,33 @@
             </div>
         </div>
     </section>
+
+    <div class="weather">
+        <script>
+            (function (d, s, id) {
+                if (d.getElementById(id)) {
+                    if (window.__TOMORROW__) {
+                        window.__TOMORROW__.renderWidget();
+                    }
+                    return;
+                }
+                const fjs = d.getElementsByTagName(s)[0];
+                const js = d.createElement(s);
+                js.id = id;
+                js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow" data-location-id="015989" data-language="EN" data-unit-system="METRIC" data-skin="dark"
+            data-widget-type="summary" style="padding-bottom:22px;position:relative;">
+            <a href="https://www.tomorrow.io/weather/" rel="nofollow noopener noreferrer" target="_blank"
+                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">               
+            </a>
+        </div>
+    </div>
+
 
     <section class="eligibility-criteria ">
         <div class="container ">
@@ -258,29 +297,29 @@
 
 
         $('.gallery-slider').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplaySpeed: 3000,
-        slideTransition: 'linear',
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            800: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            },
-            1500: {
-                items: 6
+            loop: true,
+            margin: 30,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            slideTransition: 'linear',
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                },
+                1500: {
+                    items: 6
+                }
             }
-        }
-    })
+        })
     </script>
 </body>
 

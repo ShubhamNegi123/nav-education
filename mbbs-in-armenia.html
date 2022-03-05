@@ -23,7 +23,7 @@
 
 
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <!-- Playfair Display google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,6 +75,8 @@
     <section class="home-screen-banner">
         <img src="assets/images/Countries Banner/Banner ARMENIA.jpg" alt="mbbs in russia">
     </section>
+
+
 
     <section class="about">
         <div class="container">
@@ -167,6 +169,7 @@
         </div>
     </section>
 
+
     <section class="universities-in-russia">
         <div class="heading">
             <h2>TOP MEDICAL UNIVERSITIES IN Armenia </h2>
@@ -176,8 +179,10 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="armenia/armenian-medical-institute.html">armenian medical institute</a></li>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="armenia/mkhitar-gosh-armenian-university.html">mkhitar gosh armenian
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="armenia/armenian-medical-institute.html">armenian medical institute</a></li>
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="armenia/mkhitar-gosh-armenian-university.html">mkhitar gosh armenian
                                     university</a></li>
                         </ul>
                     </div>
@@ -185,9 +190,11 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="armenia/st-tereza-medical-university.html">st tereza medical university</a>
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="armenia/st-tereza-medical-university.html">st tereza medical university</a>
                             </li>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="armenia/university-of-traditional-medicine.html">university of traditional
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="armenia/university-of-traditional-medicine.html">university of traditional
                                     medicine</a></li>
                         </ul>
                     </div>
@@ -195,7 +202,8 @@
                 <div class="col-lg-4">
                     <div class="universities-name">
                         <ul>
-                            <li><i class="fa-solid fa-building-columns"></i><a href="armenia/yerevan-haybusak-university.html">yerevan haybusak university</a></li>
+                            <li><i class="fa-solid fa-building-columns"></i><a
+                                    href="armenia/yerevan-haybusak-university.html">yerevan haybusak university</a></li>
                         </ul>
                     </div>
                 </div>
@@ -203,6 +211,33 @@
         </div>
     </section>
 
+    <div class="weather">
+
+
+        <script>
+            (function (d, s, id) {
+                if (d.getElementById(id)) {
+                    if (window.__TOMORROW__) {
+                        window.__TOMORROW__.renderWidget();
+                    }
+                    return;
+                }
+                const fjs = d.getElementsByTagName(s)[0];
+                const js = d.createElement(s);
+                js.id = id;
+                js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow" data-location-id="000581" data-language="EN" data-unit-system="METRIC" data-skin="dark"
+            data-widget-type="summary" style="padding-bottom:22px;position:relative;">
+            <a href="https://www.tomorrow.io/weather/" rel="nofollow noopener noreferrer" target="_blank"
+                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+            </a>          
+        </div>
+    </div>
     <section class="eligibility-criteria ">
         <div class="container ">
             <div class="eligibility-criteria-contant">
@@ -256,6 +291,7 @@
         </div>
     </section>
 
+
     <footer>
         <div id="footer"></div>
     </footer>
@@ -288,29 +324,29 @@
 
 
         $('.gallery-slider').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplaySpeed: 3000,
-        slideTransition: 'linear',
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            800: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            },
-            1500: {
-                items: 6
+            loop: true,
+            margin: 30,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 3000,
+            slideTransition: 'linear',
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                800: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                },
+                1500: {
+                    items: 6
+                }
             }
-        }
-    })
+        })
     </script>
 </body>
 
