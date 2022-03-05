@@ -597,6 +597,7 @@ footer .footer-nav-links ul li {
 
 footer .footer-nav-links ul li a {
   font-weight: bold;
+  font-size: 14px;
   color: #4d4d4d;
 }
 
@@ -612,23 +613,23 @@ footer .footer-connecting-links ul li,
 footer .footer-contact-address ul li,
 footer .footer-newslatter ul li {
   margin-bottom: 10px;
-  color: #175559;
+  color: #4d4d4d;
   font-weight: normal;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 footer .footer-connecting-links ul li a,
 footer .footer-contact-address ul li a,
 footer .footer-newslatter ul li a {
-  color: #175559;
+  color: #4d4d4d;
   font-weight: normal;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 footer .footer-newslatter p {
   color: #4d4d4d;
   font-weight: normal;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 footer .footer-newslatter form {
@@ -639,7 +640,7 @@ footer .footer-newslatter form input {
   height: 40px;
   font-weight: bold;
   border: 1px solid #175559;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 5px 0px 0px 5px;
   padding-left: 10px;
 }
@@ -727,7 +728,7 @@ footer .bottom-footer .rights .watermark a {
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  top: 8px;
+  top: 10px;
   right: 50px;
   width: 20px;
   z-index: 999999999;
@@ -736,7 +737,7 @@ footer .bottom-footer .rights .watermark a {
 
 .top-header .day-night-mode .night-mode i,
 .top-header .day-night-mode .top-header .day-night-mode .day-mode i {
-  font-size: 20px;
+  font-size: 16px;
   color: yellow;
 }
 
@@ -763,7 +764,7 @@ footer .bottom-footer .rights .watermark a {
 
 .mode .top-header .day-night-mode .day-mode i {
   color: yellow;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -775,7 +776,7 @@ footer .bottom-footer .rights .watermark a {
   }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1356px) {
   footer .footer-newslatter form button {
     top: 50px;
     left: 50%;

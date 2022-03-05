@@ -1,0 +1,214 @@
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+}
+
+body ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .container {
+  max-width: 90%;
+}
+
+.services {
+  background-color: #eee;
+  padding-top: 150px;
+}
+
+.services .services-heading {
+  padding: 50px 0px;
+}
+
+.services .services-heading h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f383b;
+  font-weight: bold;
+}
+
+.services .services-card {
+  position: relative;
+  top: 0px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  padding: 20px 20px 20px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services .services-card .services-card-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .services-card .services-card-heading h3 {
+  padding-left: 20px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4d4d4d;
+  position: relative;
+  /* &::after {
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 100px;
+                    background-color: $button-bg-color;
+                    content: "";
+                    height: 2px;
+                } */
+}
+
+.services .services-card .services-card-heading img {
+  width: 100px;
+}
+
+.services .services-card p {
+  margin-top: 20px;
+  padding: 0px 10px;
+  overflow: hidden;
+  color: #175559;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.services .services-card a {
+  display: none;
+}
+
+.services .services-card:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: -10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.contact-us {
+  margin: 150px 0px;
+  margin-bottom: 100px;
+}
+
+.contact-us .container {
+  width: 50%;
+}
+
+.contact-us h2 {
+  text-transform: uppercase;
+  color: #0f383b;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-us form input {
+  width: 100%;
+}
+
+.contact-us form .name-wrapper,
+.contact-us form .phone-wrapper,
+.contact-us form .email-wrapper,
+.contact-us form .country-wrapper,
+.contact-us form .marital-wrapper,
+.contact-us form .city-wrapper,
+.contact-us form .message-wrapper {
+  margin-bottom: 30px;
+}
+
+.contact-us form .name-wrapper input,
+.contact-us form .phone-wrapper input,
+.contact-us form .email-wrapper input,
+.contact-us form .country-wrapper input,
+.contact-us form .marital-wrapper input,
+.contact-us form .city-wrapper input,
+.contact-us form .message-wrapper input {
+  height: 50px;
+  padding-left: 20px;
+  border: none;
+  background-color: #eee;
+}
+
+.contact-us form .marital-wrapper {
+  padding-left: 20px;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us form .marital-wrapper input {
+  width: 20px;
+}
+
+.contact-us form .marital-wrapper label {
+  padding-left: 10px;
+}
+
+.contact-us form .marital-wrapper .space {
+  width: 30px;
+}
+
+.contact-us form .message-wrapper textarea {
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  background-color: #eee;
+  border: none;
+}
+
+.contact-us form .submit-button button {
+  width: 100%;
+  padding: 6px 0px;
+  background-color: #175559;
+  color: #fec407;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact-us form .submit-button button:hover {
+  background-color: #fec407;
+  color: #175559;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.top-header .currency-exchange {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .services .services-card .services-card-heading {
+    display: block;
+  }
+  .services .services-card .services-card-heading h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .services .services-card .services-card-heading img {
+    width: 80px;
+  }
+}
+
+/*  */
+/*# sourceMappingURL=services.css.map */

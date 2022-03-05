@@ -40,8 +40,10 @@ body .container {
 }
 
 .about-us .about-us-discription h2 {
+  font-size: 30px;
   color: #0f383b;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .about-us .about-us-discription p {

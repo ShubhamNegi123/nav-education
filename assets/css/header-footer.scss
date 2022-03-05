@@ -196,8 +196,10 @@ $button-bg-color: #fec407;
 }
 html {
     scroll-behavior: smooth;
+    
 }
 body {
+    
     scroll-behavior: smooth;
     /*    font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
@@ -501,6 +503,7 @@ footer {
                 margin-bottom: 10px;
                 a {
                     font-weight: bold;
+                    font-size: 14px;
                     color: $text-color2;
                 }
             }
@@ -518,13 +521,13 @@ footer {
         ul {
             li {
                 margin-bottom: 10px;
-                color: $text-color;
+                color: $text-color2;
                 font-weight: normal;
-                opacity: 0.8;
+                opacity: 0.9;
                 a {
-                    color: $text-color;
+                    color: $text-color2;
                     font-weight: normal;
-                    opacity: 0.8;
+                    opacity: 0.9;
                 }
             }
         }
@@ -533,7 +536,7 @@ footer {
         p {
             color: $text-color2;
             font-weight: normal;
-            opacity: 0.8;
+            opacity: 0.9;
         }
         form {
             position: relative;
@@ -541,7 +544,7 @@ footer {
                 height: 40px;
                 font-weight: bold;
                 border: 1px solid $text-color;
-                opacity: 0.8;
+                opacity: 0.9;
                 border-radius: 5px 0px 0px 5px;
                 padding-left: 10px;
             }
@@ -618,14 +621,14 @@ footer {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    top: 8px;
+    top: 10px;
     right: 50px;
     width: 20px;
     z-index: 999999999;
     background: none;
     .night-mode i,
     .top-header .day-night-mode .day-mode i {
-        font-size: 20px;
+        font-size: 16px;
         color: yellow;
     }
 }
@@ -651,7 +654,7 @@ footer {
 }
 .mode .top-header .day-night-mode .day-mode i {
     color: yellow;
-    font-size: 20px;
+    font-size: 16px;
 }
 @media only screen and (max-width: 1400px) {
     header nav {
@@ -661,7 +664,7 @@ footer {
         margin-left: 40px;
     }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1356px) {
     footer .footer-newslatter form button {
         top: 50px;
         left: 50%;
