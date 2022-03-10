@@ -68,6 +68,19 @@ body .container {
   width: 80%;
 }
 
+.application-form form .passport-wrapper, .application-form form .passout-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.application-form form .passport-wrapper label[for="checkbox"], .application-form form .passout-wrapper label[for="checkbox"] {
+  margin-right: 20px;
+}
+
 .application-form form .basic-details label,
 .application-form form .ssc-qualification label,
 .application-form form .hsc-qualification label,
@@ -94,15 +107,28 @@ body .container {
 .application-form form .hsc-qualification input,
 .application-form form .neet-qualification input {
   border: 2px solid #c0c0c0;
-  width: 90%;
+  width: 100%;
   height: 35px;
   background-color: #fff;
 }
 
-.application-form form .basic-details input[type="checkbox"],
-.application-form form .ssc-qualification input[type="checkbox"],
-.application-form form .hsc-qualification input[type="checkbox"],
-.application-form form .neet-qualification input[type="checkbox"] {
+.application-form form .basic-details select,
+.application-form form .ssc-qualification select,
+.application-form form .hsc-qualification select,
+.application-form form .neet-qualification select {
+  border: 2px solid #c0c0c0;
+  width: 100%;
+  height: 35px;
+  background-color: #fff;
+  color: #175559;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.application-form form .basic-details input[type="radio"],
+.application-form form .ssc-qualification input[type="radio"],
+.application-form form .hsc-qualification input[type="radio"],
+.application-form form .neet-qualification input[type="radio"] {
   border: 2px solid #c0c0c0;
   width: 20px;
   border: 1px solid #000;
@@ -113,24 +139,16 @@ body .container {
 .application-form form .ssc-qualification .checkbox-wrapper,
 .application-form form .hsc-qualification .checkbox-wrapper,
 .application-form form .neet-qualification .checkbox-wrapper {
-  position: relative;
-}
-
-.application-form form .basic-details .checkbox-wrapper #checkbox,
-.application-form form .ssc-qualification .checkbox-wrapper #checkbox,
-.application-form form .hsc-qualification .checkbox-wrapper #checkbox,
-.application-form form .neet-qualification .checkbox-wrapper #checkbox {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.application-form form .basic-details .checkbox-wrapper label,
-.application-form form .ssc-qualification .checkbox-wrapper label,
-.application-form form .hsc-qualification .checkbox-wrapper label,
-.application-form form .neet-qualification .checkbox-wrapper label {
-  margin-top: 5px;
-  margin-left: 30px;
+  border: 1px solid #000;
+  /* #checkbox {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    label {
+                        margin-top: 5px;
+                        margin-left: 30px;
+                    }
+                } */
 }
 
 .application-form form .ssc-qualification h2,

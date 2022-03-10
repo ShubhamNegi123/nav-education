@@ -215,6 +215,14 @@
   background-color: #175559;
 }
 
+.mode .services .services-card .services-card-heading h3 {
+  color: #fff;
+}
+
+.mode header nav .nav-bar-tabs ul li {
+  color: #000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -510,6 +518,13 @@ header nav .nav-bar-tabs ul {
 
 header nav .nav-bar-tabs ul li {
   cursor: pointer;
+  font-size: 13px;
+  /* font-family: "Ubuntu", sans-serif; */
+  color: #000;
+}
+
+header nav .nav-bar-tabs ul li i {
+  margin-left: 5px;
 }
 
 header nav .nav-bar-tabs ul li a {
@@ -658,6 +673,7 @@ footer .footer-newslatter form button {
 
 footer .bottom-footer {
   padding: 30px 0px;
+  padding-bottom: 35px;
   background: #0f383b;
 }
 
@@ -796,12 +812,21 @@ footer .bottom-footer .rights .watermark a {
 }
 
 @media only screen and (max-width: 1090px) {
+  .search-box .btn-search:focus ~ .input-search {
+    width: 200px;
+  }
   .search-box .input-search:focus {
     width: 200px;
   }
 }
 
 @media only screen and (max-width: 991px) {
+  .search-box .btn-search:focus ~ .input-search {
+    width: 150px;
+  }
+  .search-box .input-search:focus {
+    width: 150px;
+  }
   footer .footer-newslatter form button {
     top: 0px;
     right: 0px;
@@ -811,6 +836,12 @@ footer .bottom-footer .rights .watermark a {
   }
   .search-box .input-search:focus {
     width: 110px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .search-box {
+    display: none;
   }
 }
 
@@ -939,6 +970,10 @@ footer .bottom-footer .rights .watermark a {
   header nav .nav-bar-tabs ul li {
     margin-bottom: 5vh;
   }
+  header nav .nav-bar-tabs ul li {
+    font-size: 30px;
+    color: #fff;
+  }
   header nav .nav-bar-tabs ul li a {
     font-size: 30px;
   }
@@ -955,6 +990,12 @@ footer .bottom-footer .rights .watermark a {
   }
   header nav .website-logo a img {
     margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .admission-process .admission-process-details .admission-card {
+    padding-top: 50px;
   }
 }
 

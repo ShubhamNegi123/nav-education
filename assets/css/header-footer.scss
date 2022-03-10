@@ -4,8 +4,6 @@ $text-color: #175559;
 $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
 
-
-
 .mode {
     background-color: $heading-primary-color;
     color: #fff;
@@ -193,13 +191,24 @@ $button-bg-color: #fec407;
     .application-form {
         background-color: $primary-bg-color;
     }
+    .services .services-card .services-card-heading h3 {
+        color: #fff;
+    }
+    header nav .nav-bar-tabs ul li {      
+        color: #000;
+      }
 }
+
+
+
+
+
+
+
 html {
     scroll-behavior: smooth;
-    
 }
 body {
-    
     scroll-behavior: smooth;
     /*    font-family: "Playfair Display", serif; */
     font-family: "Mukta", sans-serif;
@@ -214,7 +223,6 @@ body {
     }
     .container {
         max-width: 90%;
-        
     }
 }
 
@@ -354,7 +362,7 @@ body {
         }
     }
     .input-search {
-        width: 1px;        
+        width: 1px;
         height: 25px;
         border-style: none;
         padding: 0px 4px;
@@ -366,7 +374,7 @@ body {
         /* background-color: #22a6b3; */
         background-color: transparent;
         padding-right: 25px;
-        color: #fff;        
+        color: #fff;
         font-family: var(--bs-body-font-family);
         font-size: 13px;
         &:focus {
@@ -418,6 +426,12 @@ header {
                 justify-content: space-around;
                 li {
                     cursor: pointer;
+                    font-size: 13px;
+                    /* font-family: "Ubuntu", sans-serif; */
+                    color: #000;
+                    i {
+                        margin-left: 5px;
+                    }
                     a {
                         cursor: pointer;
                         font-size: 13px;
@@ -562,6 +576,7 @@ footer {
     }
     .bottom-footer {
         padding: 30px 0px;
+        padding-bottom: 35px;
         background: $heading-primary-color;
         .end-footer {
             ul {
@@ -673,7 +688,6 @@ footer {
     }
 }
 
-
 @media only screen and (max-width: 1200px) {
     header nav {
         height: 100px;
@@ -683,17 +697,33 @@ footer {
     }
 }
 
-
-
 @media only screen and (max-width: 1090px) {
-    .search-box .input-search:focus {
-        width: 200px;
+    .search-box .btn-search {
+        &:focus ~ .input-search {
+            width: 200px;
+        }
+    }
+    .search-box .input-search {
+        &:focus{
+            width: 200px;
+        }
     }
 }
 
-
-
 @media only screen and (max-width: 991px) {
+    
+    .search-box .btn-search {
+        &:focus ~ .input-search {
+            width: 150px;
+        }
+    }
+    .search-box .input-search {
+        &:focus{
+            width: 150px;
+        }
+    }
+    
+    
     footer .footer-newslatter form button {
         top: 0px;
         right: 0px;
@@ -706,6 +736,12 @@ footer {
     }
 }
 
+
+@media only screen and (max-width: 925px) {
+    .search-box{
+        display: none;
+    }
+}
 
 
 @media only screen and (max-width: 862px) {
@@ -822,6 +858,10 @@ footer {
     header nav .nav-bar-tabs ul li {
         margin-bottom: 5vh;
     }
+    header nav .nav-bar-tabs ul li {
+        font-size: 30px;
+        color: #fff;
+    }
     header nav .nav-bar-tabs ul li a {
         font-size: 30px;
     }
@@ -839,6 +879,13 @@ footer {
     header nav .website-logo a img {
         margin-left: 0px;
     }
+  
+}
+
+@media only screen and (max-width: 785px) {
+    .admission-process .admission-process-details .admission-card {       
+        padding-top: 50px;
+      }
 }
 
 @media only screen and (max-width: 567px) {
