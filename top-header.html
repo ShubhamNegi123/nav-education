@@ -61,9 +61,16 @@
         $('.day-mode').css({
             display: 'block'
         })
+        $('.service1 img').attr('src','assets/images/services33.png');
+        $('.service2 img').attr('src','assets/images/services44.png');
+        $('.service3 img').attr('src','assets/images/services22.png');
+        $('.service4 img').attr('src','assets/images/services11.png');
+        $('.service5 img').attr('src','assets/images/services66.png');
+        $('.service6 img').attr('src','assets/images/services55.png');
         localStorage.setItem('mode', 'night_mode');
 
     }
+    
     function day_Mode() {
         $('body').removeClass('mode');
         $('.night-mode').css({
@@ -72,6 +79,12 @@
         $('.day-mode').css({
             display: 'none'
         })
+        $('.service1 img').attr('src','assets/images/services3.png');
+        $('.service2 img').attr('src','assets/images/services4.png');
+        $('.service3 img').attr('src','assets/images/services2.png');
+        $('.service4 img').attr('src','assets/images/services1.png');
+        $('.service5 img').attr('src','assets/images/services6.png');
+        $('.service6 img').attr('src','assets/images/services5.png');
         localStorage.setItem('mode', 'day_mode');
     }
 
@@ -325,9 +338,6 @@
             ];
 
             let target_Value = '';
-
-
-
             for (let i = 0; i < country_Name.length; i++) {
                 if (value.search(country_Name[i]) > -1) {
                     target_Value = country_Name[i];
@@ -387,50 +397,3 @@
     });
 </script>
 
-
-<!-- 
-
-
-
- */
-
-            /*  for (let i = 0; i < countries_Name.length; i++) {
-                 if (value.indexOf(countries_Name[i]) > -1) {
-                     country = countries_Name[i];
-                     window.location.href = country;
-                 }else{
-                     console.log('else');
-                 }
-             }
-  */
-
-
-            /*  for (let i = 0; i < university_Name.length; i++) {
-                 if (value.indexOf(university_Name[i]) > -1) {
-                     university = university_Name[i];
-                 }
-             }
-              let countryString = countries_Name[i].toString();
-       
-                if ((countryString.indexOf(value)) > -1) {
-                    country = countryString;          
-                    console.log(country);  
-                    window.location.href =country; 
-                } else{
-                    $('.input-search').val(value);
-                    $('.input-search').addClass('animate_animated animate_shakeX');
-                    setTimeout(() => {
-                        $('.input-search').removeClass('animate_animated animate_shakeX');
-                    }, 500);
-                }    
-  */
-
-/* 
-           
- */
-  
- -->
-
-
-
--->

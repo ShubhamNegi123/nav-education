@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no user-scalable=no "> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no user-scalable=no ">
     <title>Application Form</title>
     <link rel="stylesheet" href="assets/css/bootstrap-5.1/bootstrap.min.css">
     <!-- fontawesome cdn -->
@@ -15,7 +15,7 @@
     <!-- animate css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    
+
 
     <!-- Playfair Display google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
         $(function () {
             $("#footer").load("footer.html");
         });
-		$(function () {
+        $(function () {
             $(".translator").load("language-changer.html");
         });
     </script>
@@ -69,7 +69,7 @@
 
 <body>
     <div class="translator"></div>
-    
+
     <!-- header section starts from here -->
     <div id="top-header"></div>
     <header>
@@ -128,10 +128,27 @@
                             <br>
                             <label for="nationality" class="error nationality-error">error</label>
                         </div>
+                       
                         <div class="col-md-6  ">
-                            <div class="checkbox-wrapper">
-                                <input type="checkbox" id="checkbox">
-                                <label for="checkbox"> Do you have passport</label>
+                            <label for="cast">Cast</label>
+                            <div class="cast">
+                                <select>
+                                    <option value="select">Select cast</option>
+                                    <option value="general">General</option>
+                                    <option value="sc">SC</option>
+                                    <option value="st">ST</option>
+                                    <option value="obc">OBC</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6  ">
+                            <label for="passport">Do you have passport? </label>
+                            <div class="passport-wrapper">
+                                <input type="radio" id="checkbox1" name="passport"> 
+                                <label for="checkbox">Yes</label>         
+                                <input type="radio" id="checkbox2" name="passport"> 
+                                <label for="checkbox2">No</label>         
                             </div>
                         </div>
                     </div>
@@ -142,18 +159,16 @@
                         <h3>SSC Qualification</h3>
                         <div class="col-md-12">
                             <label for="ssc-board">School Board</label>
-                            <select name="ssc-board" id="ssc-board">
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                            </select>
+                            <br>
+                            <input type="text" name="ssc-board" id="ssc-board">
+                            <br>
+                            <label for="ssc-board" class="error ssc-board-error">error</label>
+
                         </div>
                         <div class="col-md-3">
                             <label for="ssc-tenth-percentage">Tenth Percentage</label>
                             <br>
-                            <input type="text" name="ssc-tenth-percentage" id="ssc-tenth-percentage" >
+                            <input type="text" name="ssc-tenth-percentage" id="ssc-tenth-percentage">
                             <br>
                             <label for="ssc-tenth-percentage" class="error ssc-tenth-percentage-error">error</label>
                         </div>
@@ -185,13 +200,10 @@
                         <h3>HSC Qualification</h3>
                         <div class="col-md-12">
                             <label for="hsc-board">School Board</label>
-                            <select name="hsc-board" id="hsc-board">
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                                <option value="a">abc</option>
-                            </select>
+                            <br>
+                            <input type="text" name="hsc-board" id="hsc-board">
+                            <br>
+                            <label for="hsc-board" class=" error hsc-board-error">error</label>
                         </div>
                         <div class="col-md-3">
                             <label for="hsc-tenth-percentage">Tenth Percentage</label>
@@ -260,7 +272,7 @@
                     </div>
                 </div>
                 <div class="neet-qualification">
-                    <div class="row">
+                    <div class="row ">
                         <h3>NEET Qualification</h3>
                         <div class="col-md-6">
                             <label for="neet-exam-year">NEET Exam Year</label>
@@ -275,6 +287,15 @@
                             <input type="text" class="neet-marks" id="neet-marks">
                             <br>
                             <label for="neet-marks" class="error neet-marks-error">error</label>
+                        </div>
+                        <div class="col-md-6  ">
+                            <label for="passout">Did you clear NEET.? </label>
+                            <div class="passout-wrapper">
+                                <input type="radio" id="passout1" name="passout"> 
+                                <label for="checkbox">Yes</label>         
+                                <input type="radio" id="passout2" name="passout"> 
+                                <label for="checkbox2">No</label>         
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,9 +329,9 @@
     <script src="assets/js/form-validation.js"></script>
     <script src="assets/js/hamburher_menu.js"></script>
 
-      
-        
-    
+
+
+
 </body>
 
 </html>
