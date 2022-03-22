@@ -79,7 +79,7 @@
 
     <section class="application-form">
         <div class="container">
-            <form action="student-form.php" id="s-form">
+            <form action="assets/php/applicationForm.php" method="post" id="s-form">
                 <div class="form-upper-img">
                     <img src="assets/images/application-upper-img.png" alt="application-upper-img">
                 </div>
@@ -89,28 +89,28 @@
                         <div class="col-md-6">
                             <label for="first-name">First Name</label>
                             <br>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first_name" id="first-name">
                             <br>
                             <label for="first-name" class="error fname-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="last-name">Last Name</label>
                             <br>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last_name" id="last-name">
                             <br>
                             <label for="last-name" class="error lname-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="father-name">Father Name</label>
                             <br>
-                            <input type="text" name="father-name" id="father-name">
+                            <input type="text" name="father_name" id="father-name">
                             <br>
                             <label for="father-name" class="error father-name-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="mother-name">Mother Name</label>
                             <br>
-                            <input type="text" name="mother-name" id="mother-name">
+                            <input type="text" name="mother_name" id="mother-name">
                             <br>
                             <label for="mother-name" class="error mother-name-error">error</label>
                         </div>
@@ -129,18 +129,7 @@
                             <label for="nationality" class="error nationality-error">error</label>
                         </div>
                        
-                        <div class="col-md-6  ">
-                            <label for="cast">Cast</label>
-                            <div class="cast">
-                                <select>
-                                    <option value="select">Select cast</option>
-                                    <option value="general">General</option>
-                                    <option value="sc">SC</option>
-                                    <option value="st">ST</option>
-                                    <option value="obc">OBC</option>
-                                </select>
-                            </div>
-                        </div>
+                      
 
                         <div class="col-md-6  ">
                             <label for="passport">Do you have passport? </label>
@@ -160,36 +149,36 @@
                         <div class="col-md-12">
                             <label for="ssc-board">School Board</label>
                             <br>
-                            <input type="text" name="ssc-board" id="ssc-board">
+                            <input type="text" name="ssc_board" id="ssc-board">
                             <br>
                             <label for="ssc-board" class="error ssc-board-error">error</label>
 
                         </div>
                         <div class="col-md-3">
-                            <label for="ssc-tenth-percentage">Tenth Percentage</label>
+                            <label for="ssc-tenth-percentage">10<sup>th </sup>&nbsp; Percentage</label>
                             <br>
-                            <input type="text" name="ssc-tenth-percentage" id="ssc-tenth-percentage">
+                            <input type="text" name="ssc_tenth_percentage" id="ssc-tenth-percentage">
                             <br>
                             <label for="ssc-tenth-percentage" class="error ssc-tenth-percentage-error">error</label>
                         </div>
                         <div class="col-md-3">
-                            <label for="ssc-tenth-year">Tenth Year</label>
+                            <label for="ssc-tenth-year">year of passing</label>
                             <br>
-                            <input type="text" class=" ssc-tenth-year" id="ssc-tenth-year">
+                            <input type="text" name="ssc_tenth_year" id="ssc-tenth-year">
                             <br>
                             <label for="ssc-tenth-year" class="error ssc-tenth-year-error">error</label>
                         </div>
                         <div class="col-md-3">
                             <label for="ssc-tenth-marks">Tenth Marks</label>
                             <br>
-                            <input type="text" name="ssc-tenth-marks" id="ssc-tenth-marks">
+                            <input type="text" name="ssc_tenth_marks" id="ssc-tenth-marks">
                             <br>
                             <label for="ssc-tenth-marks" class="error ssc-tenth-marks-error">error</label>
                         </div>
                         <div class="col-md-3">
                             <label for="ssc-marks-out-of">Out of / Total Marks</label>
                             <br>
-                            <input type="text" name="ssc-marks-out-of" id="ssc-marks-out-of">
+                            <input type="text" name="ssc_marks_out_of" id="ssc-marks-out-of">
                             <br>
                             <label for="ssc-marks-out-of" class="error ssc-marks-uot-of-error">error</label>
                         </div>
@@ -201,70 +190,70 @@
                         <div class="col-md-12">
                             <label for="hsc-board">School Board</label>
                             <br>
-                            <input type="text" name="hsc-board" id="hsc-board">
+                            <input type="text" name="hsc_board" id="hsc-board">
                             <br>
                             <label for="hsc-board" class=" error hsc-board-error">error</label>
                         </div>
                         <div class="col-md-3">
-                            <label for="hsc-tenth-percentage">Tenth Percentage</label>
+                            <label for="hsc-tenth-percentage">12<sup>th </sup>&nbsp; Percentage</label>
                             <br>
-                            <input type="text" name="hsc-tenth-percentage" id="hsc-tenth-percentage">
+                            <input type="text" name="hsc_tenth_percentage" id="hsc-tenth-percentage">
                             <br>
                             <label for="hsc-tenth-percentage" class=" error hsc-tenth-percentage-error">error</label>
                         </div>
                         <div class="col-md-3">
-                            <label for="hsc-tenth-year">Tenth Year</label>
+                            <label for="hsc-tenth-year">year of passing</label>
                             <br>
-                            <input type="text" name="hsc-tenth-year" id="hsc-tenth-year">
+                            <input type="text" name="hsc_tenth_year" id="hsc-tenth-year">
                             <br>
                             <label for="hsc-tenth-year" class="error hsc-tenth-year-error">error</label>
                         </div>
                         <div class="col-md-3">
-                            <label for="hsc-tenth-marks">Tenth Marks</label>
+                            <label for="hsc-tenth-marks">12<sup>th </sup>&nbsp; Marks</label>
                             <br>
-                            <input type="text" name="hsc-tenth-marks" id="hsc-tenth-marks">
+                            <input type="text" name="hsc_tenth_marks" id="hsc-tenth-marks">
                             <br>
                             <label for="hsc-tenth-marks" class="error hsc-tenth-marks-error">error</label>
                         </div>
                         <div class="col-md-3">
                             <label for="hsc-marks-out-of">Out of / Total Marks</label>
                             <br>
-                            <input type="text" name="hsc-marks-out-of" id="hsc-marks-out-of">
+                            <input type="text" name="hsc_marks_out_of" id="hsc-marks-out-of">
                             <br>
                             <label for="hsc-marks-out-of" class="error hsc-marks-out-of-error">error</label>
                         </div>
                         <div class="col-md-4">
                             <label for="physics">Physics</label>
                             <br>
-                            <input type="text" class="physics" id="physics">
+                            <input type="text" name="physics" id="physics">
                             <br>
                             <label for="physics" class="error physics-error">error</label>
                         </div>
                         <div class="col-md-4">
                             <label for="chemistry">Chemistry</label>
                             <br>
-                            <input type="text" class="chemistry" id="chemistry">
+                            <input type="text" name="chemistry" id="chemistry">
                             <br>
                             <label for="chemistry" class="error chemistry-error">error</label>
                         </div>
                         <div class="col-md-4">
                             <label for="biology">Biology</label>
                             <br>
-                            <input type="text" class="biology" id="biology">
+                            <input type="text" name="biology" id="biology">
                             <br>
                             <label for="biology" class="error biology-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="pcb-percentage">PCB Percentage</label>
                             <br>
-                            <input type="text" class="pcb-percentage" id="pcb-percentage">
+                            <input type="text" name="pcb_percentage" id="pcb-percentage">
                             <br>
                             <label for="pcb-percentage" class="error pcb-percentage-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="aggregate">Aggregate</label>
                             <br>
-                            <input type="text" class="aggregate" id="aggregate">
+                            <input type="text" name="aggregate" id="aggregate">
                             <br>
                             <label for="aggregate" class="error aggregate-error">error</label>
                         </div>
@@ -277,19 +266,31 @@
                         <div class="col-md-6">
                             <label for="neet-exam-year">NEET Exam Year</label>
                             <br>
-                            <input type="text" class="neet-exam-year" id="neet-exam-year">
+                            <input type="text" name="neet_exam_year" id="neet-exam-year">
                             <br>
                             <label for="neet-exam-year" class="error neet-exam-year-error">error</label>
                         </div>
                         <div class="col-md-6">
                             <label for="neet-marks">NEET Marks</label>
                             <br>
-                            <input type="text" class="neet-marks" id="neet-marks">
+                            <input type="text" name="neet_marks" id="neet-marks">
                             <br>
                             <label for="neet-marks" class="error neet-marks-error">error</label>
                         </div>
                         <div class="col-md-6  ">
-                            <label for="passout">Did you clear NEET.? </label>
+                            <label for="cast">Cast</label>
+                            <div class="cast">
+                                <select name="select-cast">
+                                    <option value="select">Select Category</option>
+                                    <option value="general">General</option>
+                                    <option value="sc">SC</option>
+                                    <option value="st">ST</option>
+                                    <option value="obc">OBC</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6  ">
+                            <label for="passout">Did You Qualify NEET ?  </label>
                             <div class="passout-wrapper">
                                 <input type="radio" id="passout1" name="passout"> 
                                 <label for="checkbox">Yes</label>         
@@ -297,6 +298,7 @@
                                 <label for="checkbox2">No</label>         
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="submit-button">
