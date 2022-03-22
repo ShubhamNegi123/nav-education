@@ -85,6 +85,7 @@ body .container {
 .application-form form .ssc-qualification label,
 .application-form form .hsc-qualification label,
 .application-form form .neet-qualification label {
+  text-transform: capitalize;
   color: #175559;
   font-size: 16px;
   font-weight: bold;

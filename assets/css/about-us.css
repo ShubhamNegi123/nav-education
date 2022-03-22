@@ -124,6 +124,7 @@ body .container {
   margin-top: 100px;
   padding-top: 10px;
   position: relative;
+  text-transform: lowercase;
 }
 
 .our-services .service1 p::before,
@@ -169,6 +170,7 @@ body .container {
 .our-services .service2 p,
 .our-services .service4 p,
 .our-services .service6 p {
+  text-transform: lowercase;
   margin-bottom: 100px;
   padding-bottom: 10px;
   position: relative;

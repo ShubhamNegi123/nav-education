@@ -603,7 +603,7 @@ footer {
 }
 
 footer .footer-logo img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 footer .footer-nav-links ul li {
@@ -648,7 +648,15 @@ footer .footer-newslatter p {
 }
 
 footer .footer-newslatter form {
+  text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer .footer-newslatter form input {
@@ -656,14 +664,16 @@ footer .footer-newslatter form input {
   font-weight: bold;
   border: 1px solid #175559;
   opacity: 0.9;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
   padding-left: 10px;
 }
 
 footer .footer-newslatter form button {
-  position: absolute;
-  top: 0px;
-  padding: 8px 20px 6px 20px;
+  width: 100%;
+  margin: 0 auto;
+  /* position: absolute;
+                top: 0px; */
+  padding: 7px 20px 5px 20px;
   border-radius: 0px 5px 5px 0px;
   outline: none;
   border: 1px solid #175559;
@@ -792,16 +802,14 @@ footer .bottom-footer .rights .watermark a {
   }
 }
 
-@media only screen and (max-width: 1356px) {
-  footer .footer-newslatter form button {
-    top: 50px;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    border-radius: 5px;
-  }
-}
-
+/* @media only screen and (max-width: 1356px) {
+    footer .footer-newslatter form button {
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
+    }
+} */
 @media only screen and (max-width: 1200px) {
   header nav {
     height: 100px;
@@ -827,10 +835,10 @@ footer .bottom-footer .rights .watermark a {
   .search-box .input-search:focus {
     width: 150px;
   }
-  footer .footer-newslatter form button {
-    top: 0px;
-    right: 0px;
-  }
+  /* footer .footer-newslatter form button {
+        top: 0px;
+        right: 0px;
+    } */
   header nav .website-logo a img {
     margin-left: 25px;
   }
@@ -1087,9 +1095,9 @@ footer .bottom-footer .rights .watermark a {
   header nav .nav-social-icons ul {
     margin-right: 30px;
   }
-  footer .footer-newslatter form button {
-    left: 70%;
-  }
+  /* footer .footer-newslatter form button {
+        left: 70%;
+    } */
 }
 
 @media only screen and (max-width: 377px) {

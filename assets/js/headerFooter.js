@@ -1,8 +1,14 @@
 $(function () {
+
+   
+    
    $('head').append($('<link rel="stylesheet" type="text/css" />').attr('href', 'http://example.com/example.css'));   
    
     var windowWidth = $(window).width();
-    // console.log(windowWidth);    
+    // console.log(windowWidth);   
+        
+
+     
     if(windowWidth > 870) {
         $(window).scroll(function (event) {
             var scroll = $(window).scrollTop();

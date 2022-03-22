@@ -115,6 +115,7 @@ body {
             padding-top: 10px;
             // border-top: 1px solid #000;
             position: relative;
+            text-transform: lowercase;
             &::before {
                 position: absolute;
                 top: -50px;
@@ -146,7 +147,8 @@ body {
             border: 20px solid $text-color;
             border-radius: 50%;
         }
-        p {
+        p {            
+            text-transform: lowercase;
             margin-bottom: 100px;
             padding-bottom: 10px;
             // border-bottom: 1px solid #000;

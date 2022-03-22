@@ -154,6 +154,39 @@ $(function () {
            \ /
 */
 
+
+$("#ssc-board").on("blur", function () {
+    if ($(this).val() == '') {
+        $('.ssc-board-error').css({
+            visibility: 'visible',
+            opacity: 1,
+        });
+        $('.ssc-board-error').text('Please fill out this field');
+
+    }else {
+        $('.ssc-board-error').css({
+            visibility: 'hidden',
+                opacity: 0
+        });        
+    }
+});
+
+$("#hsc-board").on("blur", function () {
+    if ($(this).val() == '') {
+        $('.hsc-board-error').css({
+            visibility: 'visible',
+            opacity: 1,
+        });
+        $('.hsc-board-error').text('Please fill out this field');
+
+    }else {
+        $('.hsc-board-error').css({
+            visibility: 'hidden',
+                opacity: 0
+        });      
+    }
+});
+
     /* tenth-percentage  */
     $('#ssc-tenth-percentage').on("blur", function () {
         if ($(this).val() == '') {
@@ -176,6 +209,8 @@ $(function () {
             });
         }
     });
+
+
     /* hsc tenth-percentage */
     $('#hsc-tenth-percentage').on("blur", function () {
         if ($(this).val() == '') {
@@ -310,22 +345,16 @@ $(function () {
     });
 
     /* tenth marks */
-    $('#ssc-tenth-marks').on("blur", function () {        
+    $('#ssc-tenth-marks').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
-            $('.neet-exam-year-error').css({
+            $('.ssc-tenth-marks-error').css({
                 visibility: 'visible',
                 opacity: 1,
             });
-            $('.neet-exam-year-error').text('Please fill out this field');
+            $('.ssc-tenth-marks-error').text('Please fill out this field');
 
-        } else if (isNaN(stm)) {
-            $('.ssc-tenth-marks-error').text('Enter valid marks');
-            $('.ssc-tenth-marks-error').css({
-                visibility: 'visible',
-                opacity: 1
-            });
         } else {
             $('.ssc-tenth-marks-error').css({
                 visibility: 'hidden',
@@ -334,15 +363,15 @@ $(function () {
         }
     });
     /* hsc */
-    $('#hsc-tenth-marks').on("blur", function () {        
+    $('#hsc-tenth-marks').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
-            $('.neet-exam-year-error').css({
+            $('.hsc-tenth-marks-error').css({
                 visibility: 'visible',
                 opacity: 1,
             });
-            $('.neet-exam-year-error').text('Please fill out this field');
+            $('.hsc-tenth-marks-error').text('Please fill out this field');
 
         } else if (isNaN(stm)) {
             $('.hsc-tenth-marks-error').text('Enter valid marks');
@@ -357,7 +386,7 @@ $(function () {
             });
         }
     });
-    $('#neet-marks').on("blur", function () {        
+    $('#neet-marks').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
@@ -382,7 +411,7 @@ $(function () {
     });
 
 
-    $('#ssc-marks-out-of').on("blur", function () {        
+    $('#ssc-marks-out-of').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
@@ -405,7 +434,7 @@ $(function () {
             });
         }
     });
-    $('#hsc-marks-out-of').on("blur", function () {        
+    $('#hsc-marks-out-of').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
@@ -453,9 +482,9 @@ $(function () {
             });
         }
     });
-    
 
-    $('#chemistry').on("blur", function () {        
+
+    $('#chemistry').on("blur", function () {
         let stm = $(this).val();
         stm = parseInt(stm);
         if ($(this).val() == '') {
