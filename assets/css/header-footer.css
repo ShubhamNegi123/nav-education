@@ -603,7 +603,8 @@ header nav .fixed-nav-img {
 }
 
 footer {
-  margin-top: 50px;
+  border-top: 1px solid #eee;
+  padding-top: 50px;
 }
 
 footer .footer-logo img {
