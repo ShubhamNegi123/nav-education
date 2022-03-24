@@ -1,0 +1,44 @@
+$primary-bg-color: #175559;
+$heading-primary-color: #0f383b;
+$text-color: #175559;
+$text-color2: #4d4d4d;
+$button-bg-color: #fec407;
+
+body {
+    font-family: "Mukta", sans-serif;
+    font-size: 16px;
+    ul {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+.policies{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    h2{
+       text-align: center;
+       margin-bottom: 50px; 
+       font-weight: bold;
+       color: $heading-primary-color;
+    }
+    ul{
+        list-style: disc;
+       
+        li{
+            font-family: "Mukta", sans-serif;
+            color: #4d4d4d;            
+            width: 90%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+        }
+    }
+}

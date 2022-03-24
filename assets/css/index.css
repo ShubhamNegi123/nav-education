@@ -306,7 +306,8 @@ body {
 
 .features .feature-img img {
   max-width: 100%;
-  width: 100%;
+  width: 80%;
+  margin-top: -50px;
 }
 
 .logs {
@@ -791,7 +792,9 @@ body {
   .home .home-banner-heading h1 br {
     display: none;
   }
-  .footer-connecting-links, .footer-contact-address, .footer-newslatter {
+  .footer-connecting-links,
+  .footer-contact-address,
+  .footer-newslatter {
     margin-top: 30px;
   }
   .home .tild-building {

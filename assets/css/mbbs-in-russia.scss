@@ -6,7 +6,7 @@ $button-bg-color: #fec407;
 
 body {
     font-family: "Mukta", sans-serif;
-        font-size: 16px;
+    font-size: 16px;
     ul {
         margin-bottom: 0px;
         padding-left: 0px;
@@ -19,7 +19,6 @@ body {
         max-width: 90%;
     }
 }
-
 
 .home-screen-banner {
     img {
@@ -116,7 +115,7 @@ body {
                 margin-bottom: 20px;
                 position: relative;
                 margin-left: 20px;
-                i{
+                i {
                     position: absolute;
                     left: -30px;
                     top: 2px;
@@ -127,15 +126,14 @@ body {
                     color: $text-color2;
                     text-transform: uppercase;
                     position: relative;
-                    
                     text-align: left;
-                    &::after{
+                    &::after {
                         position: absolute;
                         bottom: -4px;
                         left: 0px;
                         width: 100%;
                         height: 1px;
-                        content: '';
+                        content: "";
                         background-color: #0f383b;
                     }
                 }
@@ -146,7 +144,7 @@ body {
 
 .eligibility-criteria {
     background-image: url(../images/eligibility-criteria1.jpg);
-    background-size: cover;    
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px 0px;
@@ -180,8 +178,8 @@ body {
         }
     }
 }
-.gallery{
-    padding: 80px 0px;    
+.gallery {
+    padding: 80px 0px;
     position: relative;
     .heading {
         text-align: center;
@@ -192,8 +190,8 @@ body {
             margin-bottom: 30px;
         }
     }
-    .gallery-img{
-        img{
+    .gallery-img {
+        img {
             width: 100%;
         }
     }
@@ -202,60 +200,57 @@ body {
     display: none;
 }
 
-
 @media only screen and (max-width: 1200px) {
     .universities-in-russia {
         margin-top: 100px;
-      }
+    }
 }
 @media only screen and (max-width: 1100px) {
     .advantages .advantage-img {
         left: 10px;
-      }
+    }
 }
 @media only screen and (max-width: 991px) {
     .advantages .advantage-img {
         display: none;
-      }
-      .universities-in-russia {
+    }
+    .universities-in-russia {
         margin-top: 50px;
-      }
-      .eligibility-criteria .eligibility-criteria-contant {
+    }
+    .eligibility-criteria .eligibility-criteria-contant {
         width: 90%;
-      }
-      .universities-in-russia{
-          .universities-name{
-              margin-top: 40px;
-          }
-      }
-      .universities-in-russia .heading h2 {
-          margin-bottom: 0px;
-      }
+    }
+    .universities-in-russia {
+        .universities-name {
+            margin-top: 40px;
+        }
+    }
+    .universities-in-russia .heading h2 {
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .eligibility-criteria .eligibility-criteria-contant {
         width: 100%;
-      }
-      .eligibility-criteria .eligibility-criteria-contant {
+    }
+    .eligibility-criteria .eligibility-criteria-contant {
         padding-left: 0px;
-      }
-      
+    }
 }
 
 @media only screen and (max-width: 576px) {
     .home-screen-banner img {
         width: 100%;
         min-height: 300px;
-      }
-      .about {
+    }
+    .about {
         padding: 50px 0px;
-      }
-      .about .about-discription p {
+    }
+    .about .about-discription p {
         line-height: 30px;
-      }
-      .advantages .advantages-list ul li {
-        line-height: 30px;       
-      }
-
+    }
+    .advantages .advantages-list ul li {
+        line-height: 30px;
+    }
 }

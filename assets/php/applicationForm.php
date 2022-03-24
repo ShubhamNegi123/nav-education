@@ -1,5 +1,5 @@
 <?php
-$to = "shubhamraj.srg65@gmail.com";
+$to = "shubham@navchetanaglobal.com";
 $first_name = $_REQUEST['first_name'];
 $last_name = $_REQUEST['last_name'];
 $father_name = $_REQUEST['father_name'];
@@ -28,7 +28,7 @@ $passout = $_REQUEST['passout'];
 
 
 $subject = "Message from: $name";
-$headers = "shubhamraj.srg65@gmail.com";
+$headers = "shubham@navchetanaglobal.com";
 
 
 $body = "From: $name \n

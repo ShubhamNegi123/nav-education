@@ -223,6 +223,10 @@
   color: #000;
 }
 
+.mode .universities-in-russia .universities-name ul li i {
+  color: #fec407;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -685,6 +689,24 @@ footer .bottom-footer {
   padding: 30px 0px;
   padding-bottom: 35px;
   background: #0f383b;
+  /* .rights {
+            position: relative;
+            p {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 0rem;
+            }
+            .watermark {
+                position: absolute;
+                bottom: -30px;
+                left: 0px;
+                color: #fff;
+                opacity: 0.5;
+                a {
+                    color: #fff;
+                }
+            }
+        } */
 }
 
 footer .bottom-footer .end-footer ul {
@@ -696,31 +718,13 @@ footer .bottom-footer .end-footer ul {
           justify-content: space-evenly;
 }
 
+footer .bottom-footer .end-footer ul li {
+  color: #fff;
+}
+
 footer .bottom-footer .end-footer ul li a {
   color: #fff;
   font-size: 16px;
-}
-
-footer .bottom-footer .rights {
-  position: relative;
-}
-
-footer .bottom-footer .rights p {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 0rem;
-}
-
-footer .bottom-footer .rights .watermark {
-  position: absolute;
-  bottom: -30px;
-  left: 0px;
-  color: #fff;
-  opacity: 0.5;
-}
-
-footer .bottom-footer .rights .watermark a {
-  color: #fff;
 }
 
 /* */
@@ -834,6 +838,10 @@ footer .bottom-footer .rights .watermark a {
   }
   .search-box .input-search:focus {
     width: 150px;
+  }
+  footer .bottom-footer .end-footer ul {
+    display: block;
+    text-align: center;
   }
   /* footer .footer-newslatter form button {
         top: 0px;

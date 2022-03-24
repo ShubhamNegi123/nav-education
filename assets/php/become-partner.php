@@ -1,5 +1,5 @@
 <?php
-$to = "shubhamraj.srg65@gmail.com";
+$to = "shubham@navchetanaglobal.com";
 $name = $_REQUEST['name'];
 $phone = $_REQUEST['phone'];
 $email = $_REQUEST['email'];
@@ -9,7 +9,7 @@ $message = $_REQUEST['message'];
 
 
 $subject = "Message from: $name";
-$headers = "shubhamraj.srg65@gmail.com";
+$headers = "shubham@navchetanaglobal.com";
 
 
 $body = "From: $name \n
@@ -20,9 +20,13 @@ $body = "From: $name \n
 
 $sent = mail($to, $subject, $body, $headers);
 if ($sent) {
-    echo "<script language=javascript>window.location = 'index.html';</script>";
+    echo "<script language=javascript>
+        window.location = 'index.html';
+    </script>";
 } else {
-    echo "<script language=javascript>window.location = 'index.html';</script>";
+    echo "<script language=javascript>
+        window.location = 'index.html';
+    </script>";
 }
 
 

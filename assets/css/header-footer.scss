@@ -5,6 +5,7 @@ $text-color2: #4d4d4d;
 $button-bg-color: #fec407;
 
 .mode {
+    
     background-color: $heading-primary-color;
     color: #fff;
     h1,
@@ -197,6 +198,9 @@ $button-bg-color: #fec407;
     header nav .nav-bar-tabs ul li {      
         color: #000;
       }
+      .universities-in-russia .universities-name ul li i {
+        color: $button-bg-color;
+    }
 }
 
 
@@ -588,14 +592,16 @@ footer {
                 display: flex;
                 justify-content: space-evenly;
                 li {
+                    color: #fff;
                     a {
                         color: #fff;
                         font-size: 16px;
                     }
                 }
+                
             }
         }
-        .rights {
+        /* .rights {
             position: relative;
             p {
                 color: #fff;
@@ -612,7 +618,7 @@ footer {
                     color: #fff;
                 }
             }
-        }
+        } */
     }
 }
 /* */
@@ -726,6 +732,10 @@ footer {
         &:focus{
             width: 150px;
         }
+    }
+    footer .bottom-footer .end-footer ul {
+        display: block;
+        text-align: center;
     }
     
     

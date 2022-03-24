@@ -267,7 +267,8 @@ body .container {
 
 .admission-process .admission-process-details .admission-card p {
   color: #fff;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: center;
 }
 
 .top-header .currency-exchange a img {

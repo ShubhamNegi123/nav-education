@@ -1,10 +1,10 @@
 <?php
-$to = "shubhamraj.srg65@gmail.com";
+$to = "shubham@navchetanaglobal.com";
 $newsletter = $_REQUEST['newsletter'];
 
 
 $subject = "Newsletter : ";
-$headers = "shubhamraj.srg65@gmail.com";
+$headers = "shubham@navchetanaglobal.com";
 
 
 $body = "User Email: $newsletter \n";
